@@ -8,4 +8,10 @@ But you have to be careful with it as you can directly commit changes to the ori
 
 Please read and understand the git workflow beforehand. Acquire some basic knowledge of working with git before commiting anything to the original branch.
 
-
+# Basic steps which you have to perform
+1. Fork this repo using fork button 
+2. Clone this repo to your local computer using : git clone <url> local-repo-name(it will automatically create a new repo with this name.)
+3. Make changes, add html, css and js files as needed in local repo.
+4. Add and commit changes in the local repo. (using: git add and git commit commands)
+5. Push changes to your forked repo on github. (use :  git push origin <local-branchname-which-should-be-master-by-default>)
+6. Then we will merge all the forked repos to the main repo.
