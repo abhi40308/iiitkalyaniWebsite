@@ -2,16 +2,17 @@
 This repository contains the ongoing iiit Kalyani college website project.
 
 # How to work with this repo
-Fork this repository. Add the pages which you are assigned in your forked repo. And finally you can merge the forked repo with the original repo. 
+Clone this repo. Then work on it in your local computer. Then finally if everything is working as you expected, you can push the changes to this repo.
 
-But you have to be careful with it as you can directly commit changes to the original repo because you are collaborators. So any changes you make will directly take place to the original repo when you will merge. 
+### Warning:
+Be careful while pushing. You will push to the original repo having all the code written by others. So if you delete anything from local repo and the apply git push, then it will be deleted from the original/online repo also. If you are a collabrator, you should be able to push changes directly. If not, give your github username to me.
 
-Please read and understand the git workflow beforehand. Acquire some basic knowledge of working with git before commiting anything to the original branch.
+Please read and understand the git workflow before doing anything. Acquire good knowledge of working with git before commiting anything to the original branch. Also some things might work on local repo but would not work on internet. So check before pushing (in your locally available cloned repo ) and also after pushing here : https://abhi40308.github.io/
 
 # Basic steps which you have to perform
-1. Fork this repo using fork button 
-2. Clone this repo to your local computer using : git clone <url> local-repo-name(it will automatically create a new repo with this name.)
-3. Make changes, add html, css and js files as needed in local repo.
-4. Add and commit changes in the local repo. (using: git add and git commit commands)
-5. Push changes to your forked repo on github. (use :  git push origin master(master is the local branchname) )
-6. Then we will merge all the forked repos to the main repo.
+1. Clone this repo.
+2. Make changes, add html, css and js files as needed in local repo. Then see those changes are working or not. 
+3. Add and commit changes in the local repo. (using: git add and git commit commands)
+4. Push changes to original repo on github. (use :  git push origin master(master is the local branchname) )
+
+Read and understand git and github fully before doing anything else you will fuck up everyone else's work.
