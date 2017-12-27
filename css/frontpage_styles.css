@@ -161,10 +161,10 @@ body,html {
   font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
   padding-top: 20px !important;
   padding-bottom: 20px !important;
-  padding-left: 15px !important;  
+  padding-left: 15px !important;
   padding-right: 15px !important;
   color: grey;
-} 
+}
 
 .dropdown-link:hover .nav-item{
     transition: background 500ms;
@@ -194,7 +194,7 @@ body,html {
     font-size: 12px !important;
     padding-top: 10px !important;
     padding-bottom: 10px !important;
-    padding-left: 15px !important;  
+    padding-left: 15px !important;
     padding-right: 15px !important;
     color: grey;
     text-decoration: none;
@@ -213,9 +213,9 @@ body,html {
 /*.tinted-image {
   height: 1500px;
   background:  linear-gradient(
-      rgba(61, 62, 63, 0.7), 
+      rgba(61, 62, 63, 0.7),
       rgba(85, 100, 124, 0.7)
-    ), 
+    ),
     background-size: cover;
 }*/
 
@@ -287,35 +287,35 @@ body,html {
       /*opacity: 0.9;*/
       top: 0;
       left: 0;
-/*      min-height: 350px;*/ 
+/*      min-height: 350px;*/
       width: 100%;
-      height: 100%;      
+      height: 100%;
 }
 
 
 @media only screen and (max-width: 1000px) {
     .slideshow .carousel .carousel-item {
-    height: 300px; }  
+    height: 300px; }
 }
 
 @media only screen and (max-width: 800px) {
     .slideshow .carousel .carousel-item {
-    height: 240px; }  
+    height: 240px; }
 }
 
 @media only screen and (max-width: 720px) {
     .slideshow .carousel .carousel-item {
-    height: 240px; }  
+    height: 240px; }
 }
 
 @media only screen and (max-width: 600px) {
     .slideshow .carousel .carousel-item {
-    height: 220px; }  
+    height: 220px; }
 }
 
 @media only screen and (max-width: 480px) {
     .slideshow .carousel .carousel-item {
-    height: 200px; }  
+    height: 200px; }
 }
 
 /******************/
@@ -327,7 +327,7 @@ body,html {
 
 .head-quotes{
   color: grey;
-  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif; 
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
 }
 
 .quotes-section .img-circle{
@@ -335,11 +335,11 @@ body,html {
 }
 
 /* Changes the color of the indicators */
-#quote-carousel .carousel-indicators li 
+#quote-carousel .carousel-indicators li
 {
   background: #c0c0c0;
 }
-#quote-carousel .carousel-indicators .active 
+#quote-carousel .carousel-indicators .active
 {
   background: #333333;
 }
@@ -452,7 +452,7 @@ body,html {
   background-color: #484849;
   padding: 9px 22px;
   font-size: 14px;
-} 
+}
 
 #aboutus a{
   color:  #6CCAFB;
@@ -507,7 +507,39 @@ body,html {
   color: grey;
   font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
 }
+.flip{
+  height:240px;
+  width:240px;
+  padding:20px;
 
+}
+.flip>.front{
+  position:absolute;
+  height:240px;
+  width:240px;
+  background:#565B5D;
+  backface-visibility:hidden;
+  transform:perspective(600px)rotateY(0deg);
+  transition:transform .5s linear 0s;
+  border-radius:10%;
+}
+.flip>.back{
+  position:absolute;
+  height:240px;
+  width:240px;
+  background:#21272A;
+  color:white;
+  backface-visibility:hidden;
+  transform:perspective(600px)rotateY(180deg);
+  transition:transform .5s linear 0s;
+  border-radius: 10%;
+}
+.flip:hover>.front{
+  transform:perspective(600px)rotateY(-180deg);
+}
+.flip:hover>.back{
+  transform:perspective(600px)rotateY(0deg);
+}
 /*footer styles*/
 
 .footer {
@@ -542,7 +574,7 @@ footer address{
 }
 
 footer .node{
-  color: navy;  
+  color: navy;
   font-family: Helvetica, sans-serif;
 }
 
