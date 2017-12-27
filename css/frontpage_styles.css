@@ -208,6 +208,20 @@ body,html {
     display: block;
 }
 
+@media only screen and (max-device-width: 600px) {
+#startchange .nav-item{
+  font-size: 12px !important;
+  padding-top: 10px !important;
+  padding-bottom: 10px !important;
+}
+
+.dropdown-content a {
+    font-size: 10px !important;
+    padding-top: 8px !important;
+    padding-bottom: 8px !important;
+}
+}
+
 /*///////////////*/
 
 /*.tinted-image {
@@ -397,7 +411,7 @@ body,html {
     display: none;
   }
   #second-nav{
-    top: 49px;
+    top: 47px;
   }
 
   #second-nav a{

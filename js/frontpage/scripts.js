@@ -33,3 +33,19 @@ $(document).ready(function(){
                 }
 });
 });
+
+$(document).ready(function () {
+  $("body").click(function(event) {
+    if(event.target.id != "first-nav" && event.target.id != "dropdown-content" ){
+    $(".navbar-collapse").collapse('hide');
+  }
+  });
+});
+
+// $(document).ready(function () {
+//   $(document).scroll(function() {
+//     if($(".navbar-collapse") && event.target.id != "quotes-section"){
+//      $(".navbar-collapse").collapse('hide');
+//     }
+//   });
+// });
