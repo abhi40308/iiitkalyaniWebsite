@@ -1,0 +1,59 @@
+body{
+  margin:0px;
+  padding:0px;
+  border:0px;
+}
+.main{
+  background:url('main2.jpg');
+  height:630px;
+  width:100%;
+  background-position:center;
+  background-size:cover;
+  background-repeat: no-repeat;
+}
+.iiitk_sports{
+  background: url("iiitsports.jpg");
+  height:400px;
+  width:100%;
+  background-size:cover;
+  background-repeat:no-repeat;
+  background-attachment: fixed;
+}
+@media only screen and (max-width:29.9em){
+  .iiitk_sports{
+    background: url("iiitsports.jpg");
+    height:500px;
+    width:100%;
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-attachment: fixed;
+  }
+  .slogan{
+  font-size:250%;
+  padding-top:450px;
+  color:black;
+  }
+
+}
+@media only screen and (min-width:30em) and (max-width:59.9em){
+  .slogan{
+    font-size:350%;
+    color:black;
+    padding-top:400px;
+  }
+
+}
+@media only screen and (min-width:60em) and (max-width:89.9em){
+  .slogan{
+    color:black;
+    font-size:500%;
+    padding-top: 400px;
+    padding-left: 30px;
+  }
+}
+.slogan{
+font-family:'Oswald',sans-serif;
+}
+.fa-facebook,.fa-twitter,.fa-linkedin,.fa-user-circle,.fa-location-arrow{
+  color:#0376DE;
+}
