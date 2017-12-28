@@ -4,7 +4,7 @@ body{
   border:0px;
 }
 .main{
-  background:url('main2.jpg');
+  background:url('../images/sports/main2.jpg');
   height:630px;
   width:100%;
   background-position:center;
@@ -12,7 +12,7 @@ body{
   background-repeat: no-repeat;
 }
 .iiitk_sports{
-  background: url("iiitsports.jpg");
+  background: url("../images/sports/iiitsports.jpg");
   height:400px;
   width:100%;
   background-size:cover;
@@ -21,7 +21,7 @@ body{
 }
 @media only screen and (max-width:29.9em){
   .iiitk_sports{
-    background: url("iiitsports.jpg");
+    background: url("../images/sports/iiitsports.jpg");
     height:500px;
     width:100%;
     background-size:cover;
