@@ -1,0 +1,54 @@
+html
+{
+	width: 100%;
+	margin:0px;
+}
+body
+{
+    background-color: #444444;
+    color: #9ba2a8;
+}
+
+p
+{
+	font-family: 'Nunito', sans-serif;
+	font-size: 20px;
+}
+img
+{
+	max-width:100%;
+	height: auto;
+}
+
+.hero-image
+{
+	background-image: url("../../images/Reach_iiit_kalyani_images/trial_background.jpg");
+	background-position:center;
+	background-repeat: no-repeat;
+	height: 50%;
+	background-size: cover;
+	opacity: 0.7;
+	position: relative;
+}
+.hero-image:hover
+{
+	background-image: url("../../images/Reach_iiit_kalyani_images/trial_background.jpg");
+	background-position:center;
+	background-repeat: no-repeat;
+	height: 50%;
+	background-size: cover;
+	opacity: 1;
+	position: relative;
+}
+.hero-text
+{
+	color:#FAFAFB;
+	text-align: left;	
+	padding-top: 200px;
+	padding-bottom:100px;
+	padding-left: 20px;
+}
+#main
+{
+	background-color:#202021;
+}

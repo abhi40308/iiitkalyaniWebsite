@@ -1,0 +1,211 @@
+html
+{
+  margin:0rem;
+  min-width: 440px;
+}
+body
+{
+  background-color: ;
+  padding-top: 3.125em;  
+}
+/*Code for the header*/
+
+
+
+
+/*Code for the facilities page*/
+#First-container
+{
+  position:center; 
+  padding-left: 1.25em;
+  padding-right: 1.25em;
+  padding-bottom: 1.25em;
+}
+.carousel-caption
+{
+  text-align: left;
+  padding-left: 1.25em;
+  color: #DBE4EC;
+  background-color: #0255A3;  
+}
+.carousel-inner> .carousel-item> img
+{
+  background-size: cover;
+  background-repeat: no-repeat;
+  height:31.25em;
+  width: 100%;
+}
+
+#page-title
+{
+  padding-top: 1em;
+  padding-left: 0.5em;
+  padding-right: 1.25em;
+  font-color:#414447;
+  font-size: 2em; 
+  text-shadow: 2px 2px 4px #E6E7E8;
+}
+
+#Second-container
+{
+  position: center;
+  padding-top: 2em;
+  padding-left: 1.25em;
+  padding-right: 1.25em;
+  padding-bottom: 2.5em;
+  margin: :0.5em;
+  shape-margin: 0.7em;
+}
+.card
+{
+  padding:0em;
+  margin:0em;
+  border: 0em;
+  height:auto;
+  margin: 0.5em;
+  max-width: 28em;
+  width: auto;
+}
+
+.card:hover
+{
+  border: 0.5em;
+  border-color: #A3A5A6;
+  box-shadow: 0px 6px 6px 6px #CBD5DF;
+  position: center;
+  margin: 0em;
+}
+.card-title
+{
+  text-align: center;
+  font-color: #566573;
+  font-family: 'Source Serif Pro', serif;
+  padding: 0em;
+  margin: 0em;
+  font-size: 1.225em;
+}
+.card > img
+{
+  width: 100%;
+  height: 15.625em;
+  border-radius: 0.5em;
+
+}
+
+
+
+
+@media screen and (min-width: 30em) and (max-width: 90em)
+{
+  .container,.First-container,.Second-container
+  {
+    padding-left:1em;
+    padding-right: 1em;
+  }
+  .card:hover
+  {
+  border: 0.225em;
+  border-color: #ABB2B9;
+  }
+}
+
+
+
+
+@media screen and (max-width: 30em)
+{
+  .container,.Second-container
+  {
+    padding: 0em;
+  }
+  .First-container
+  {
+    padding-left: 0.125em;
+  }
+  .carousel-inner> .item> img
+  {
+  padding: 0em;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height:22.5em;
+  width: 100%;
+  }
+  .carousel-caption
+  {
+    text-align: left;
+    color: #DBE4EC;
+    background-color: #0255A3;  
+  }
+  .carousel-caption > h2
+  {
+    font-size: 1.5em
+  }
+  .carousel-caption>p
+  {
+    visibility: hidden;
+   display: none;
+  }
+  #page-title
+  {
+    font-size: 2em;
+  }
+  .card-block > img
+  {
+    padding: 0em;
+  }
+  .container-fluid
+  {
+    padding-top: 0em;
+  }
+
+
+}
+/* Code for Footer CSS*/
+.footer {
+  background: linear-gradient(to right, #0099FF ,#00CCFF, #00FFFF );
+  margin: 0px auto;
+  padding: 20px 0px; }
+
+.footer a{
+  transition: 0.4s;
+  font-size: 14px;
+}
+
+footer .leaf{
+  list-style-type: circle;
+  list-style-position: inside;
+  color: white;
+}
+
+footer a:hover{
+  text-decoration: none;
+  color: navy !important;
+}
+
+footer .social-links a{
+  font-size: 40px !important;
+  padding-left: 15px;
+}
+
+footer address{
+  font-size: 14px;
+  color: #0000EE;
+}
+
+footer .node{
+  color: navy;  
+  font-family: Helvetica, sans-serif;
+}
+
+footer .list-end li{
+  display: inline;
+  list-style-type: none;
+}
+
+footer .list-end li a{
+  font-size: 11px !important;
+}
+
+footer .list-end li:not(:first-child):before {
+    content: " | ";
+}
