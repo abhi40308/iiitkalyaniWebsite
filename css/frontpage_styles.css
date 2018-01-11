@@ -15,27 +15,6 @@ body,html {
   background: white;
 }
 
-.header-top a img{
-  image-rendering: -webkit-optimize-contrast;
-  width: 530px;
-  height: 180px;
-}
-
-@media only screen and (max-width: 770px) {
-  .header-top a img{
-  image-rendering: -webkit-optimize-contrast;
-  width: 420px;
-  height: 160px;
-  }
-}
-
-@media only screen and (max-width: 500px) {
-  .header-top a img{
-  image-rendering: -webkit-optimize-contrast;
-  width: 360px;
-  height: 130px;
-  }
-}
 
 .header-navbar nav{
   margin: 0;
@@ -92,31 +71,53 @@ body,html {
   outline: none;
 }*/
 
+.header-top a img{
+  image-rendering: -webkit-optimize-contrast;
+  width: 100px;
+  height: 130px;
+}
+
+/*@media only screen and (max-width: 770px) {
+  .header-top a img{
+  image-rendering: -webkit-optimize-contrast;
+  width: 360px;
+  height: 130px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .header-top a img{
+  image-rendering: -webkit-optimize-contrast;
+  width: 360px;
+  height: 130px;
+  }
+}*/
+
 .top-logo-text a{
   text-decoration: none;
   color: grey;
-  font-size: 30px !important;
+  font-size: 22px !important;
   /*font-family: Georgia, serif;*/
   font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
 }
 
 @media only screen and (max-width: 770px) {
   .top-logo-text a{
-  font-size: 20px !important;
+  font-size: 18px !important;
   /*font-family: Georgia, serif;*/
   }
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 480px) {
   .top-logo-text a{
-  font-size: 17px !important;
+  font-size: 13px !important;
   /*font-family: Georgia, serif;*/
   }
 }
 
 .top-logo-text a:hover{
-  color: #4892F1;
-  transition: color 1000ms;
+  color: #484A4B;
+  transition: color 400ms;
 }
 
 @media only screen and (max-width: 770px) {
@@ -235,7 +236,7 @@ body,html {
 
 
 .tinted-back-slideshow {
-  height: 770px;
+  height: 45em;
   display: -webkit-flex; /* Safari */
     -webkit-align-items: center; /* Safari 7.0+ */
     display: flex;
@@ -246,17 +247,17 @@ body,html {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    box-shadow: 0px 800px rgba(255, 0, 92, 0.4) inset;
+    box-shadow: 0px 45em rgba(255, 0, 92, 0.4) inset;
 }
 
-@media only screen and (max-device-width: 1024px) {
+/*@media only screen and (max-device-width: 1024px) {
     .tinted-back-slideshow {
-  height: 770px;
-  display: -webkit-flex; /* Safari */
-    -webkit-align-items: center; /* Safari 7.0+ */
+  height: 80px;
+  display: -webkit-flex; 
+    -webkit-align-items: center; 
     display: flex;
     align-items: center;
-  /*-webkit-background-size: 100%;*/
+  -webkit-background-size: 100%;
     background: url(../images/front-page/back1.jpg);
     background-attachment: scroll;
     background-position: center;
@@ -264,12 +265,12 @@ body,html {
     background-size: cover;
     box-shadow: 0px 800px rgba(255, 0, 92, 0.4) inset;
 }
-}
+}*/
 
 
 @media only screen and (max-device-width: 500px) {
     .tinted-back-slideshow {
-    height: 600px;
+    height: 40em;
     display: -webkit-flex; /* Safari */
     -webkit-align-items: center; /* Safari 7.0+ */
     display: flex;
@@ -280,7 +281,7 @@ body,html {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    box-shadow: 0px 600px rgba(255, 0, 92, 0.4) inset;
+    box-shadow: 0px 40em rgba(255, 0, 92, 0.4) inset;
     }
 }
 
