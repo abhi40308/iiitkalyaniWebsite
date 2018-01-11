@@ -83,15 +83,15 @@ body,html {
   width: 360px;
   height: 130px;
   }
-}
+}*/
 
 @media only screen and (max-width: 500px) {
   .header-top a img{
   image-rendering: -webkit-optimize-contrast;
-  width: 360px;
-  height: 130px;
+  width: 80px;
+  height: 110px;
   }
-}*/
+}
 
 .top-logo-text a{
   text-decoration: none;
