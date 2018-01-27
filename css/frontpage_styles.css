@@ -370,7 +370,8 @@ body,html {
 
 #second-nav{
   top: 60px;
-  background:  linear-gradient(to right,  #6AD497, #48F2E0, #7DC5F0) !important;
+  /*background:  linear-gradient(to right,  #6AD497, #48F2E0, #7DC5F0) !important;*/
+  background:  #18BDE6 !important;
   padding: 0 !important;
   margin: 0  !important;
   border-bottom: 1px solid green;
