@@ -1,8 +1,17 @@
 $(document).ready(function(){       
    var scroll_start = 0;
-   var startchange = $('#startchange');
+   var startchange = $('#first-navbar');
    var offset = startchange.offset();
-    if (startchange.length){
+
+   var temp = $(document).scrollTop();
+   if(temp > offset.top){
+      $("#startchange").css({
+                            'background-color': '#484A4B',
+                            'transition': 'background-color 100ms linear'});
+          $("#startchange .leaf").css('color', 'white');
+          $("#startchange .fa").css('color', 'white');
+   }
+    // if (startchange.length){
    $(document).scroll(function() { 
       scroll_start = $(this).scrollTop();
       if(scroll_start > offset.top) {
@@ -17,7 +26,7 @@ $(document).ready(function(){
           $("#startchange .fa").css('color', 'grey');
         }
     });
-    }
+    
 });
 
 $(document).ready(function(){ 
