@@ -594,10 +594,10 @@ body,html {
 /*footer styles*/
 
 .footer {
-  background:linear-gradient(to right, #0099FF ,#00CCFF, #00FFFF );
+  background: linear-gradient(to right, #0099FF ,#00CCFF, #00FFFF );
   margin: 0px auto;
   padding: 20px 0px; }
-
+  
 .footer a{
   transition: 0.4s;
   font-size: 14px;
