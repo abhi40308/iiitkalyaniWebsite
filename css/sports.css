@@ -40,6 +40,9 @@ body{
     font-size:350%;
     color:black;
     padding-top:350px;
+    -webkit-font-size:350%;
+    -webkit-color:black;
+    -webkit-padding-top:400px;
   }
 
 }
