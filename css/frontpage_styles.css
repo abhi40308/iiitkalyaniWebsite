@@ -581,20 +581,16 @@ body,html {
   color:white;
   backface-visibility:hidden;
   transform:perspective(600px)rotateY(180deg);
-  -webkit-transform:perspective(600px)rotateY(180deg);
-  transition:transform .5s linear 0s;
-  -webkit-transition:transform .5s linear 0s;
-  border-radius: 10%;
+   transition:transform .5s linear 0s;
+   border-radius: 10%;
 }
 .flip:hover>.front{
   transform:perspective(600px)rotateY(-180deg);
-  -webkit-transform:perspective(600px)rotateY(-180deg);
-}
+ 
 }
 .flip:hover>.back{
   transform:perspective(600px)rotateY(0deg);
-  -webkit-transform:perspective(600px)rotateY(0deg);
-}
+  
 /*footer styles*/
 
 .footer {
