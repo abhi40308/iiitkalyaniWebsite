@@ -73,8 +73,8 @@ body,html {
 
 .header-top a img{
   image-rendering: -webkit-optimize-contrast;
-  width: 100px;
-  height: 130px;
+  width: 90px;
+  height: 120px;
 }
 
 /*@media only screen and (max-width: 770px) {
@@ -85,11 +85,19 @@ body,html {
   }
 }*/
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 550px) {
   .header-top a img{
   image-rendering: -webkit-optimize-contrast;
   width: 80px;
   height: 110px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .header-top a img{
+  image-rendering: -webkit-optimize-contrast;
+  width: 70px;
+  height: 95px;
   }
 }
 
@@ -236,7 +244,7 @@ body,html {
 
 
 .tinted-back-slideshow {
-  height: 45em;
+  height: 35em;
   display: -webkit-flex; /* Safari */
     -webkit-align-items: center; /* Safari 7.0+ */
     display: flex;
@@ -247,7 +255,7 @@ body,html {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    box-shadow: 0px 45em rgba(255, 0, 92, 0.4) inset;
+    box-shadow: 0px 35em rgba(85, 88, 88, 0.6) inset;
 }
 
 /*@media only screen and (max-device-width: 1024px) {
@@ -281,7 +289,7 @@ body,html {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    box-shadow: 0px 40em rgba(255, 0, 92, 0.4) inset;
+    box-shadow: 0px 40em rgba(85, 88, 88, 0.4) inset;
     }
 }
 
@@ -291,11 +299,19 @@ body,html {
 
 .carousel-caption h3{
   color: white;
+  animation-delay: .5s;
   font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 }
 
-.carousel-caption h3:first-child {
-  animation-delay: .5s;
+.carousel-caption a{
+  text-decoration: none;
+}
+
+.carousel-caption p{
+  color: white;
+  font-size: 20px;
+  animation-delay: 1s;
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 }
 
 /*slideshow style*/
@@ -304,7 +320,7 @@ body,html {
 }
 
 .slideshow .carousel .carousel-item {
-    height: 400px; }
+    height: 450px; }
 .slideshow .carousel .carousel-item img {
       position: absolute;
       /*opacity: 0.9;*/
@@ -325,27 +341,27 @@ body,html {
 
 @media only screen and (max-width: 1000px) {
     .slideshow .carousel .carousel-item {
-    height: 300px; }
+    height: 350px; }
 }
 
 @media only screen and (max-width: 800px) {
     .slideshow .carousel .carousel-item {
-    height: 240px; }
+    height: 300px; }
 }
 
 @media only screen and (max-width: 720px) {
     .slideshow .carousel .carousel-item {
-    height: 240px; }
+    height: 270px; }
 }
 
 @media only screen and (max-width: 600px) {
     .slideshow .carousel .carousel-item {
-    height: 220px; }
+    height: 240px; }
 }
 
 @media only screen and (max-width: 480px) {
     .slideshow .carousel .carousel-item {
-    height: 200px; }
+    height: 220px; }
 }
 
 /******************/
@@ -386,7 +402,7 @@ body,html {
 #second-nav{
   top: 60px;
   /*background:  linear-gradient(to right,  #6AD497, #48F2E0, #7DC5F0) !important;*/
-  background:  #18BDE6 !important;
+  background:  #54C5F9 !important;
   padding: 0 !important;
   margin: 0  !important;
   border-bottom: 1px solid green;
@@ -445,7 +461,7 @@ body,html {
 /*aboutus section*/
 
 .tinted-back-aboutus {
-    height: 750px;
+    height: 35em;
     display: -webkit-flex; /* Safari */
     -webkit-align-items: center; /* Safari 7.0+ */
     display: flex;
@@ -455,7 +471,7 @@ body,html {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    box-shadow: 0px 750px rgba(255, 0, 92, 0.4) inset;
+    box-shadow: 0px 35em rgba(81, 85, 86  , 0.6) inset;
 }
 
 @media only screen and (max-device-width: 1024px) {
