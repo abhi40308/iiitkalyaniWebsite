@@ -68,6 +68,10 @@ $(document).ready(function(){
   });
 });
 
+$(document).ready(function() {
+  jQuery.fn.carousel.Constructor.TRANSITION_DURATION = 500  // 2 seconds
+});
+
 $(document).ready(function () {
   $("body").click(function(event) {
     if(event.target.id != "first-nav" && event.target.id != "dropdown-content" ){
