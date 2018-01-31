@@ -104,6 +104,22 @@ body,html {
   }
 }
 
+@media only screen and (max-width: 380px) {
+  .header-top a img{
+  image-rendering: -webkit-optimize-contrast;
+  width: 60px;
+  height: 85px;
+  }
+}
+
+@media only screen and (max-width: 340px) {
+  .header-top a img{
+  image-rendering: -webkit-optimize-contrast;
+  width: 50px;
+  height: 65px;
+  }
+}
+
 .top-logo-text a{
   text-decoration: none;
   color: grey;
@@ -298,6 +314,19 @@ body,html {
 
 .tinted-text{
   color: white;
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+
+.tinted-text h2{
+  animation-delay: 0.5s;
+}
+
+.tinted-text h3{
+  animation-delay: 2s;
+}
+
+.tinted-text p{
+  animation-delay: 4s;
 }
 
 .carousel-caption h3{
