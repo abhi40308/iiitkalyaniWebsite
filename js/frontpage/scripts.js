@@ -43,6 +43,8 @@ $(document).ready(function(){
 });
 });
 
+
+
 $(document).ready(function(){
   // Add smooth scrolling to all links
   $('.scroll-link').on('click', function(event) {
