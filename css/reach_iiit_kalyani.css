@@ -5,14 +5,14 @@ html
 }
 body
 {
-    background-color: #444444;
-    color: #9ba2a8;
+    background-color:white;
+    color: black;
 }
 
 p
 {
 	font-family: 'Nunito', sans-serif;
-	font-size: 20px;
+	font-size: 1em;
 }
 img
 {
@@ -22,22 +22,20 @@ img
 
 .hero-image
 {
-	background-image: url("../../images/Reach_iiit_kalyani_images/trial_background.jpg");
+	background-image: url("../images/facilities/Reach_iiit_kalyani_images/trial_background.jpg");
 	background-position:center;
 	background-repeat: no-repeat;
 	height: 50%;
 	background-size: cover;
-	opacity: 0.7;
 	position: relative;
 }
 .hero-image:hover
 {
-	background-image: url("../../images/Reach_iiit_kalyani_images/trial_background.jpg");
+	background-image: url("../images/facilities/Reach_iiit_kalyani_images/trial_background.jpg");
 	background-position:center;
 	background-repeat: no-repeat;
 	height: 50%;
 	background-size: cover;
-	opacity: 1;
 	position: relative;
 }
 .hero-text
@@ -50,5 +48,54 @@ img
 }
 #main
 {
-	background-color:#202021;
+	background-color:white;
+}
+/* Code for Footer CSS*/
+.footer {
+  background: linear-gradient(to right, #0099FF ,#00CCFF, #00FFFF );
+  margin: 0px auto;
+  padding: 20px 0px; }
+
+.footer a{
+  transition: 0.4s;
+  font-size: 14px;
+}
+
+footer .leaf{
+  list-style-type: circle;
+  list-style-position: inside;
+  color: white;
+}
+
+footer a:hover{
+  text-decoration: none;
+  color: navy !important;
+}
+
+footer .social-links a{
+  font-size: 40px !important;
+  padding-left: 15px;
+}
+
+footer address{
+  font-size: 14px;
+  color: #0000EE;
+}
+
+footer .node{
+  color: navy;  
+  font-family: Helvetica, sans-serif;
+}
+
+footer .list-end li{
+  display: inline;
+  list-style-type: none;
+}
+
+footer .list-end li a{
+  font-size: 11px !important;
+}
+
+footer .list-end li:not(:first-child):before {
+    content: " | ";
 }

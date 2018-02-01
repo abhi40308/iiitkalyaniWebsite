@@ -1,0 +1,300 @@
+@import url('https://fonts.googleapis.com/css?family=Slabo+27px');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab');
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+html
+{
+  margin:0rem;
+  min-width: 370px;
+}
+body
+{
+  background-color: ;
+  padding-top:0em;  
+}
+/*Code for the header*/
+
+
+
+
+/*Code for the Campus page*/
+
+.carousel-inner> .carousel-item> img
+  {
+    background-size: cover;
+    background-repeat: no-repeat;
+    height:40em;
+    width: 100%;
+  } 
+.carousel-caption
+  {
+    text-align: left;
+    padding-left: 1.25em;
+    color: #DBE4EC;
+    background-color: #5E5E6C; 
+    opacity: 0.5;
+  }
+#spacing
+  {
+    padding:1.5em;  
+  }
+#Campus-Content
+{
+  padding-top: 1em;
+  padding-bottom: 1em;
+  padding-left: 0em;  
+  box-shadow: 20px 20px 50px 15px #B3B6B7;
+}
+#content>h5
+{
+  text-align: left;
+  font-size: 1.5em;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: bold; 
+}
+.sidebar
+{
+  padding-top: 1em;
+  padding-bottom: 1em;
+  box-shadow: 15px 15px 30px 10px #B3B6B7;
+  height:18em;
+}
+#title
+{
+  opacity: 1;
+  font-weight: bold; 
+}
+.list 
+{
+    list-style: none;
+    padding-left: 0em;
+}
+.list>h5
+{
+    padding: 5px 0px 4px 30px;
+    font-size:1.5em;
+  font-weight: bold; 
+
+
+}
+
+.list> li
+{
+    padding: 5px 0px 4px 30px;
+    font-size:1.2em;
+}
+.list>li
+{
+  opacity: 0.5;
+  font-family: 'Slabo 27px', serif;
+}
+.list>li:hover
+{
+    background-color: #9B9B9D;
+    border: 0.125em solid #AAAAAF;
+    border-radius:0.2em; 
+    color: #3F3F3F;
+    font-weight: bold;
+    padding-left: 20px;
+    opacity: 1;
+
+}
+#content
+{
+  padding-right: 5em;
+  padding-left: 3em;
+}
+#hostel-row
+{
+  padding-top: 1em;
+  padding-bottom: 1em;
+  padding-left: 2em;  
+}
+#hostel-col
+{
+  width: 15em;
+}
+#content>h3
+{
+  font-family: 'Roboto Slab', serif;
+  font-size: 2em;
+  text-align: center;
+
+}
+#content>p
+{
+  font-family: 'Average', serif;
+  font-size: 1em;
+}
+
+
+
+@media only screen and (min-width: 64em) and (max-width: 78em)
+{
+  .sidebar
+{
+  padding-top: 1em;
+  padding-bottom: 1em;
+  box-shadow: 15px 15px 30px 10px #B3B6B7;
+  height:21.5em;
+}
+}
+
+/* FOR TABLETS*/
+@media only screen and (min-width: 48.063em) and (max-width: 64em)
+{
+  .carousel-inner> .carousel-item> img
+  {
+    background-size: cover;
+    background-repeat: no-repeat;
+    height:30em;
+    width: 100%;
+  } 
+  #spacing
+  {
+    padding:1.5em;  
+  }
+  #Campus-Content
+{
+  padding-top: 1em;
+  padding-bottom: 1em;
+  padding-left: 0em;  
+  box-shadow: 20px 20px 50px 15px #B3B6B7;
+}
+#content>h5
+{
+  text-align: left;
+  font-size: 1.5em;
+  font-family: 'Ubuntu', sans-serif;
+}
+.sidebar
+{
+  padding-top: 1em;
+  padding-bottom: 1em;
+  box-shadow: 15px 15px 30px 10px #B3B6B7;
+  height:22em;
+}
+
+#content
+{
+  padding-right: 4em;
+  padding-left: 3em;
+}
+#content>h3
+{
+  font-family: 'Roboto Slab', serif;
+  text-align: center;
+  font-size: 2.3em;
+}
+#content::p
+{
+  font-family: 'Average', serif;
+}
+
+}
+
+/*for SMALL SCREENS*/
+
+
+@media screen and (max-width: 48.063em)
+{
+  .carousel-inner> .carousel-item> img
+  {
+    background-size: cover;
+    background-repeat: no-repeat;
+    height:20em;
+    width: 100%;
+  } 
+  #spacing
+  {
+    padding:1em;  
+  }
+  #Campus-Content
+{
+  padding-top: 1em;
+  padding-bottom: 1em;
+  padding-left: 0em;  
+  box-shadow: 20px 20px 50px 15px #B3B6B7;
+}
+#content>h5
+{
+  text-align: left;
+  font-size: 1.2em;
+  font-family: 'Ubuntu', sans-serif;
+}
+.sidebar
+{
+  padding-top: 1em;
+  padding-bottom: 1em;
+  box-shadow: 15px 15px 30px 10px #B3B6B7;
+  height:18em;
+  display: none;
+}
+
+#content
+{
+  padding-right: 2em;
+  padding-left: 2em;
+}
+#content>h3
+{
+  font-family: 'Roboto Slab', serif;
+  text-align: center;
+  font-size: 1.7em;
+}
+#content::p
+{
+  font-family: 'Average', serif;
+}
+
+  
+}
+
+/* Code for Footer CSS*/
+.footer {
+  background: linear-gradient(to right, #0099FF ,#00CCFF, #00FFFF );
+  margin: 0px auto;
+  padding: 20px 0px; }
+
+.footer a{
+  transition: 0.4s;
+  font-size: 14px;
+}
+
+footer .leaf{
+  list-style-type: circle;
+  list-style-position: inside;
+  color: white;
+}
+
+footer a:hover{
+  text-decoration: none;
+  color: navy !important;
+}
+
+footer .social-links a{
+  font-size: 40px !important;
+  padding-left: 15px;
+}
+
+footer address{
+  font-size: 14px;
+  color: #0000EE;
+}
+
+footer .node{
+  color: navy;  
+  font-family: Helvetica, sans-serif;
+}
+
+footer .list-end li{
+  display: inline;
+  list-style-type: none;
+}
+
+footer .list-end li a{
+  font-size: 11px !important;
+}
+
+footer .list-end li:not(:first-child):before {
+    content: " | ";
+}
