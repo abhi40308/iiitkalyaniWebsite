@@ -3,6 +3,7 @@
 
 
 @import url('https://fonts.googleapis.com/css?family=Source+Serif+Pro');
+@import url('https://fonts.googleapis.com/css?family=Dosis');
 html
 {
   margin:0rem;
@@ -14,7 +15,6 @@ body
   padding-top: 0em;  
   overflow-x:hidden;
 }
-
 
 /*search box*/
 
@@ -51,12 +51,6 @@ body
     box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(0, 0, 0, 0.9) inset;
     text-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
     }
-
-
-.iiitppp h1{
-  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
-}
-
 
     
 /*Header styles*/
@@ -306,6 +300,9 @@ body
 }
 
 
+
+
+
 /*Code for the facilities page*/
 /* For Large screens - DESKTOP; XLarge screens;  XXLarge screens*/
 @media only screen and (min-width: 62.063em) 
@@ -330,7 +327,7 @@ body
   {
     background-size: cover;
     background-repeat: no-repeat;
-    height:40em;
+    height:37em;
     width: 100%;
   } 
 
@@ -407,8 +404,7 @@ body
   .card > img
   {
     width: 100%;
-    min-height: 15.625em ; 
-    height:auto;
+    height: 17.625em ; 
     border-radius: 0.5em;
   }
 
