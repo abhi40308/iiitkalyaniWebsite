@@ -18,6 +18,9 @@ body
 
 /*Code for the Campus page*/
 
+@media only screen and (min-width: 62em)
+{
+
 .carousel-inner> .carousel-item> img
   {
     background-size: cover;
@@ -51,12 +54,13 @@ body
   font-family: 'Ubuntu', sans-serif;
   font-weight: bold; 
 }
-.sidebar
+
+  .sidebar
 {
   padding-top: 1em;
   padding-bottom: 1em;
-  box-shadow: 15px 15px 30px 10px #B3B6B7;
-  height:18em;
+  box-shadow: 30px 10px 35px 5px #B3B6B7;
+  height:21.5em;
 }
 #title
 {
@@ -128,19 +132,12 @@ body
 
 
 
-@media only screen and (min-width: 64em) and (max-width: 78em)
-{
-  .sidebar
-{
-  padding-top: 1em;
-  padding-bottom: 1em;
-  box-shadow: 15px 15px 30px 10px #B3B6B7;
-  height:21.5em;
-}
+
+
 }
 
 /* FOR TABLETS*/
-@media only screen and (min-width: 48.063em) and (max-width: 64em)
+@media only screen and (min-width: 48.063em) and (max-width: 62em)
 {
   .carousel-inner> .carousel-item> img
   {
@@ -169,9 +166,49 @@ body
 .sidebar
 {
   padding-top: 1em;
-  padding-bottom: 1em;
-  box-shadow: 15px 15px 30px 10px #B3B6B7;
+  padding-bottom: 1em;  
+  box-shadow: 30px 10px 35px 5px #B3B6B7;
   height:22em;
+}
+#title
+{
+  opacity: 1;
+  font-weight: bold; 
+}
+.list 
+{
+    list-style: none;
+    padding-left: 0em;
+}
+.list>h5
+{
+    padding: 5px 0px 4px 30px;
+    font-size:1.5em;
+  font-weight: bold; 
+
+
+}
+
+.list> li
+{
+    padding: 5px 0px 4px 30px;
+    font-size:1.2em;
+}
+.list>li
+{
+  opacity: 0.5;
+  font-family: 'Slabo 27px', serif;
+}
+.list>li:hover
+{
+    background-color: #9B9B9D;
+    border: 0.125em solid #AAAAAF;
+    border-radius:0.2em; 
+    color: #3F3F3F;
+    font-weight: bold;
+    padding-left: 20px;
+    opacity: 1;
+
 }
 
 #content
@@ -192,18 +229,23 @@ body
 
 }
 
-/*for SMALL SCREENS*/
-
-
-@media screen and (max-width: 48.063em)
+@media screen and (min-width: 34em) and (max-width: 48.063em)
 {
   .carousel-inner> .carousel-item> img
   {
     background-size: cover;
     background-repeat: no-repeat;
-    height:20em;
+    height:18em;
     width: 100%;
   } 
+  /*.carousel-caption
+  {
+    text-align: left;
+    padding-left: 1.25em;
+    color: #DBE4EC;
+    background-color: #5E5E6C; 
+    opacity: 0.5;
+  }*/
   #spacing
   {
     padding:1em;  
@@ -212,24 +254,18 @@ body
 {
   padding-top: 1em;
   padding-bottom: 1em;
-  padding-left: 0em;  
+  padding-left: 2em;
+  padding-right: 2em;
+  text-align: left;   
   box-shadow: 20px 20px 50px 15px #B3B6B7;
 }
 #content>h5
 {
   text-align: left;
-  font-size: 1.2em;
-  font-family: 'Ubuntu', sans-serif;
+  font-size: 1em;
+  font-family: 'Ubuntu', sans-serif;  
+  font-weight: bold; 
 }
-.sidebar
-{
-  padding-top: 1em;
-  padding-bottom: 1em;
-  box-shadow: 15px 15px 30px 10px #B3B6B7;
-  height:18em;
-  display: none;
-}
-
 #content
 {
   padding-right: 2em;
@@ -239,14 +275,175 @@ body
 {
   font-family: 'Roboto Slab', serif;
   text-align: center;
-  font-size: 1.7em;
+  font-size: 1.5em;
 }
 #content::p
 {
-  font-family: 'Average', serif;
+  font-family: 'Average', serif;  
+  font-size: 0.8em;
 }
 
-  
+/*sidebar not applicable for small screen to enable remove display*/
+.sidebar
+{
+  padding-top: 1em;
+  padding-bottom: 1em;
+  box-shadow: 15px 15px 30px 10px #B3B6B7;
+  height:18em;
+  display: none;
+}
+#title
+{
+  opacity: 1;
+  font-weight: bold; 
+}
+
+.list 
+{
+    list-style: none;
+    padding-left: 0em;
+}
+.list>h5
+{
+    padding: 5px 0px 4px 30px;
+    font-size:1em;
+    font-weight: bold; 
+
+}
+
+.list> li
+{
+    padding: 5px 0px 4px 30px;
+    font-size:1.2em;
+}
+.list>li
+{
+  opacity: 0.5;
+  font-family: 'Slabo 27px', serif;
+}
+.list>li:hover
+{
+    background-color: #9B9B9D;
+    border: 0.125em solid #AAAAAF;
+    border-radius:0.2em; 
+    color: #3F3F3F;
+    font-weight: bold;
+    padding-left: 20px;
+    opacity: 1;
+
+}
+ 
+}
+
+/*for SMALL SCREENS*/
+
+
+@media screen and (max-width: 35em)
+{
+  .carousel-inner> .carousel-item> img
+  {
+    background-size: cover;
+    background-repeat: no-repeat;
+    height:15em;
+    width: 100%;
+  } 
+  /*.carousel-caption
+  {
+    text-align: left;
+    padding-left: 1.25em;
+    color: #DBE4EC;
+    background-color: #5E5E6C; 
+    opacity: 0.5;
+  }*/
+  #spacing
+  {
+    padding:1em;  
+  }
+  #Campus-Content
+{
+  padding-top: 1em;
+  padding-bottom: 1em;
+  padding-left: 0.5em;
+  padding-right: 0.2em;
+  text-align: left;  
+  border:0px;
+
+  margin:0em;
+}
+#content>h5
+{
+  text-align: left;
+  font-size: 1em;
+  font-family: 'Ubuntu', sans-serif;  
+  font-weight: bold; 
+}
+#content
+{
+  padding-right: 2em;
+  padding-left: 2em;
+}
+#content>h3
+{
+  font-family: 'Roboto Slab', serif;
+  text-align: center;
+  font-size: 1.5em;
+}
+#content::p
+{
+  font-family: 'Average', serif;  
+  font-size: 0.8em;
+}
+
+/*sidebar not applicable for small screen to enable remove display*/
+.sidebar
+{
+  padding-top: 1em;
+  padding-bottom: 1em;
+  box-shadow: 15px 15px 30px 10px #B3B6B7;
+  height:18em;
+  display: none;
+}
+#title
+{
+  opacity: 1;
+  font-weight: bold; 
+}
+
+.list 
+{
+    list-style: none;
+    padding-left: 0em;
+}
+.list>h5
+{
+    padding: 5px 0px 4px 30px;
+    font-size:1em;
+    font-weight: bold; 
+
+}
+
+.list> li
+{
+    padding: 5px 0px 4px 30px;
+    font-size:1.2em;
+}
+.list>li
+{
+  opacity: 0.5;
+  font-family: 'Slabo 27px', serif;
+}
+.list>li:hover
+{
+    background-color: #9B9B9D;
+    border: 0.125em solid #AAAAAF;
+    border-radius:0.2em; 
+    color: #3F3F3F;
+    font-weight: bold;
+    padding-left: 20px;
+    opacity: 1;
+
+}
+ 
 }
 
 /* Code for Footer CSS*/
