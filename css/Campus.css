@@ -8,12 +8,292 @@ html
 }
 body
 {
-  background-color: ;
   padding-top:0em;  
 }
 /*Code for the header*/
 
+/*search box*/
 
+#search {
+ 
+}
+ 
+#search input[type="text"] {
+    background: url(http://4.bp.blogspot.com/-239R3H-ONfw/TjRXPkTSusI/AAAAAAAAA3M/pgaoKdDCypg/s1600/search-white.png) no-repeat 10px 6px #444;
+    border: 0 none;
+    font: bold 12px Arial,Helvetica,Sans-serif;
+    color: #d7d7d7;
+    width:150px;
+    padding: 6px 15px 6px 35px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    text-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 3px rgba(0, 0, 0, 0.2) inset;
+    -moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 3px rgba(0, 0, 0, 0.2) inset;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 3px rgba(0, 0, 0, 0.2) inset;
+    -webkit-transition: all 0.7s ease 0s;
+    -moz-transition: all 0.7s ease 0s;
+    -o-transition: all 0.7s ease 0s;
+    transition: all 0.7s ease 0s;
+    }
+ 
+#search input[type="text"]:focus {
+    background: url(http://1.bp.blogspot.com/-XNPyh_l2WB8/TjRXPfrbJVI/AAAAAAAAA3I/R8Mia0bYtME/s1600/search-dark.png) no-repeat 10px 6px #fcfcfc;
+    color: #6a6f75;
+    width: 200px;
+    -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(0, 0, 0, 0.9) inset;
+    -moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(0, 0, 0, 0.9) inset;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(0, 0, 0, 0.9) inset;
+    text-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+    }
+
+    
+/*Header styles*/
+
+.header-top{
+  /*background: linear-gradient(to right, #1E1F20 ,#4E4F4D, #1E1F20);*/
+  background: white;
+}
+
+
+.header-navbar nav{
+  margin: 0;
+  padding: 0;
+/*  background-color: transparent;*/
+  background-color:#505150;
+  /*border-bottom-right-radius:50px;*/
+ /* border-bottom-left-radius:50px;*/
+}
+
+#big-screen a{
+  font-size: 12px;
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  padding-left: 15px !important;
+  padding-right: 15px !important;
+  color: white;
+}
+
+#small-screen a{
+  font-size: 12px;
+  padding-left: 8px !important;
+  padding-right: 8px !important;
+  color: white;
+}
+
+.header-navbar ul a:hover{
+  transition: color 500ms;
+  color: #91DCF6 !important;
+}
+
+.header-navbar input{
+  height: 32px;
+  font-size: 13px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-bottom: none;
+  border-top: none;
+  border-right: none;
+  border-left: 5px solid #48B0E7;
+}
+
+.header-navbar .input-group button{
+  border: none;
+  color: white !important;
+  background-color: transparent;
+  text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 13px;
+}
+
+
+/*.header-navbar .input-group button:focus{
+  outline: none;
+}*/
+
+.header-top a img{
+  image-rendering: -webkit-optimize-contrast;
+  width: 90px;
+  height: 120px;
+}
+
+/*@media only screen and (max-width: 770px) {
+  .header-top a img{
+  image-rendering: -webkit-optimize-contrast;
+  width: 360px;
+  height: 130px;
+  }
+}*/
+
+@media only screen and (max-width: 550px) {
+  .header-top a img{
+  image-rendering: -webkit-optimize-contrast;
+  width: 80px;
+  height: 110px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .header-top a img{
+  image-rendering: -webkit-optimize-contrast;
+  width: 70px;
+  height: 95px;
+  }
+}
+
+@media only screen and (max-width: 380px) {
+  .header-top a img{
+  image-rendering: -webkit-optimize-contrast;
+  width: 60px;
+  height: 85px;
+  }
+}
+
+@media only screen and (max-width: 340px) {
+  .header-top a img{
+  image-rendering: -webkit-optimize-contrast;
+  width: 50px;
+  height: 65px;
+  }
+}
+
+.top-logo-text a{
+  text-decoration: none;
+  color: grey;
+  font-size: 22px !important;
+  /*font-family: Georgia, serif;*/
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+}
+
+@media only screen and (max-width: 770px) {
+  .top-logo-text a{
+  font-size: 18px !important;
+  /*font-family: Georgia, serif;*/
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .top-logo-text a{
+  font-size: 13px !important;
+  /*font-family: Georgia, serif;*/
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  .top-logo-text a{
+  font-size: 11px !important;
+  /*font-family: Georgia, serif;*/
+  }
+}
+
+.top-logo-text a:hover{
+  color: #484A4B;
+  transition: color 400ms;
+}
+
+@media only screen and (max-width: 770px) {
+  #big-screen{
+    display: none;
+  }
+
+}
+
+@media only screen and (min-width: 770px) {
+
+  #small-screen{
+    display: none;
+  }
+}
+
+
+/*////////////////////*/
+/*@media only screen and (max-width: 450px){
+  html,body {
+  padding: 0px 0px 0px 0px;
+  z-index: 0;
+  width: 100% !important;
+  height: 100% !important;
+  overflow-x: hidden;  }
+}*/
+
+#startchange{
+  margin: 0;
+  padding: 0;
+}
+
+#startchange button{
+    border: none;
+/*    font-size: 25px !important;*/
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#startchange .nav-item{
+  font-size: 14px !important;
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  padding-top: 20px !important;
+  padding-bottom: 20px !important;
+  padding-left: 15px !important;
+  padding-right: 15px !important;
+  color: grey;
+}
+
+.dropdown-link:hover .nav-item{
+    transition: background 500ms;
+    background-color: #D7DBDD;
+}
+
+.nav-imagelogo img{
+  width: 50px;
+  height: 60px;
+}
+
+.dropdown-link {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    font-size: 12px !important;
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+    color: grey;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #E5E7E9;
+  transition: background 400ms;}
+
+.dropdown-link:hover .dropdown-content {
+    display: block;
+}
+
+@media only screen and (max-device-width: 600px) {
+#startchange .nav-item{
+  font-size: 12px !important;
+  padding-top: 10px !important;
+  padding-bottom: 10px !important;
+}
+
+.dropdown-content a {
+    font-size: 10px !important;
+    padding-top: 8px !important;
+    padding-bottom: 8px !important;
+}
+}
 
 
 /*Code for the Campus page*/
@@ -119,7 +399,7 @@ body
 }
 #content>h3
 {
-  font-family: 'Roboto Slab', serif;
+  font-family: '', serif;
   font-size: 2em;
   text-align: center;
 
@@ -129,10 +409,6 @@ body
   font-family: 'Average', serif;
   font-size: 1em;
 }
-
-
-
-
 
 }
 
@@ -273,7 +549,7 @@ body
 }
 #content>h3
 {
-  font-family: 'Roboto Slab', serif;
+  font-family: 'Slabo 27px', serif;
   text-align: center;
   font-size: 1.5em;
 }
