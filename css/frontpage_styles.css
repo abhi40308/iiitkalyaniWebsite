@@ -158,7 +158,7 @@ body,html {
 
 .top-logo-text a{
   text-decoration: none;
-  color: grey;
+  color: #484A4B;
   font-size: 22px !important;
   /*font-family: Georgia, serif;*/
   font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
@@ -186,7 +186,7 @@ body,html {
 }
 
 .top-logo-text a:hover{
-  color: #484A4B;
+  color: #0C86D5;
   transition: color 400ms;
 }
 
@@ -240,6 +240,10 @@ body,html {
 .dropdown-link:hover .nav-item{
     transition: background 500ms;
     background-color: #D7DBDD;
+}
+
+.first-nav-active{
+  background-color: #D7DBDD;
 }
 
 .nav-imagelogo img{
