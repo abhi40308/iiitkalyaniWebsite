@@ -266,7 +266,7 @@ body,html {
 }
 
 .dropdown-content a {
-    font-size: 12px !important;
+    font-size: 12px;
     padding-top: 10px !important;
     padding-bottom: 10px !important;
     padding-left: 15px !important;
@@ -283,7 +283,7 @@ body,html {
     display: block;
 }
 
-@media only screen and (max-device-width: 600px) {
+@media only screen and (max-device-width: 800px) {
 #startchange .nav-item{
   font-size: 12px !important;
   padding-top: 10px !important;
