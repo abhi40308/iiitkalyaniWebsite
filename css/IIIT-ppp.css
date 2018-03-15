@@ -1,3 +1,4 @@
+
 /*search box*/
 
 #search {
@@ -33,12 +34,6 @@
     box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(0, 0, 0, 0.9) inset;
     text-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
     }
-
-
-.iiitppp h1{
-  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
-}
-
 
     
 /*Header styles*/
@@ -152,7 +147,7 @@
 
 .top-logo-text a{
   text-decoration: none;
-  color: grey;
+  color: #484A4B;
   font-size: 22px !important;
   /*font-family: Georgia, serif;*/
   font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
@@ -180,7 +175,7 @@
 }
 
 .top-logo-text a:hover{
-  color: #484A4B;
+  color: #0C86D5;
   transition: color 400ms;
 }
 
@@ -236,6 +231,10 @@
     background-color: #D7DBDD;
 }
 
+.first-nav-active{
+  background-color: #D7DBDD;
+}
+
 .nav-imagelogo img{
   width: 50px;
   height: 60px;
@@ -256,7 +255,7 @@
 }
 
 .dropdown-content a {
-    font-size: 12px !important;
+    font-size: 12px;
     padding-top: 10px !important;
     padding-bottom: 10px !important;
     padding-left: 15px !important;
@@ -273,7 +272,7 @@
     display: block;
 }
 
-@media only screen and (max-device-width: 600px) {
+@media only screen and (max-device-width: 800px) {
 #startchange .nav-item{
   font-size: 12px !important;
   padding-top: 10px !important;
@@ -286,6 +285,7 @@
     padding-bottom: 8px !important;
 }
 }
+
 /*footer styles*/
 
 

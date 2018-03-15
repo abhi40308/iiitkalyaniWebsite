@@ -22,6 +22,7 @@ body
   padding:0em;
 }
 
+
 /*search box*/
 
 #search {
@@ -170,7 +171,7 @@ body
 
 .top-logo-text a{
   text-decoration: none;
-  color: grey;
+  color: #484A4B;
   font-size: 22px !important;
   /*font-family: Georgia, serif;*/
   font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
@@ -198,7 +199,7 @@ body
 }
 
 .top-logo-text a:hover{
-  color: #484A4B;
+  color: #0C86D5;
   transition: color 400ms;
 }
 
@@ -254,6 +255,10 @@ body
     background-color: #D7DBDD;
 }
 
+.first-nav-active{
+  background-color: #D7DBDD;
+}
+
 .nav-imagelogo img{
   width: 50px;
   height: 60px;
@@ -274,7 +279,7 @@ body
 }
 
 .dropdown-content a {
-    font-size: 12px !important;
+    font-size: 12px;
     padding-top: 10px !important;
     padding-bottom: 10px !important;
     padding-left: 15px !important;
@@ -291,7 +296,7 @@ body
     display: block;
 }
 
-@media only screen and (max-device-width: 600px) {
+@media only screen and (max-device-width: 800px) {
 #startchange .nav-item{
   font-size: 12px !important;
   padding-top: 10px !important;
@@ -303,6 +308,59 @@ body
     padding-top: 8px !important;
     padding-bottom: 8px !important;
 }
+}
+
+/*footer styles*/
+
+
+
+.footer {
+  background:linear-gradient(to right, #0099FF ,#00CCFF, #00FFFF );
+  margin: 0px auto;
+  padding: 20px 0px; }
+  
+.footer a{
+  transition: 0.4s;
+  font-size: 14px;
+}
+
+footer .leaf{
+  list-style-type: circle;
+  list-style-position: inside;
+  color: white;
+}
+
+footer a:hover{
+  text-decoration: none;
+  color: navy !important;
+}
+
+footer .social-links a{
+  font-size: 40px !important;
+  padding-left: 15px;
+}
+
+footer address{
+  font-size: 14px;
+  color: #0000EE;
+}
+
+footer .node{
+  color: navy;
+  font-family: Helvetica, sans-serif;
+}
+
+footer .list-end li{
+  display: inline;
+  list-style-type: none;
+}
+
+footer .list-end li a{
+  font-size: 11px !important;
+}
+
+footer .list-end li:not(:first-child):before {
+    content: " | ";
 }
 
 
@@ -615,53 +673,3 @@ body
 
 
 
-/* Code for Footer CSS*/
-
-.footer {
-  background: linear-gradient(to right, #0099FF ,#00CCFF, #00FFFF );
-  margin: 0px auto;
-  padding: 20px 0px; }
-
-.footer a{
-  transition: 0.4s;
-  font-size: 14px;
-}
-
-footer .leaf{
-  list-style-type: circle;
-  list-style-position: inside;
-  color: white;
-}
-
-footer a:hover{
-  text-decoration: none;
-  color: navy !important;
-}
-
-footer .social-links a{
-  font-size: 40px !important;
-  padding-left: 15px;
-}
-
-footer address{
-  font-size: 14px;
-  color: #0000EE;
-}
-
-footer .node{
-  color: navy;  
-  font-family: Helvetica, sans-serif;
-}
-
-footer .list-end li{
-  display: inline;
-  list-style-type: none;
-}
-
-footer .list-end li a{
-  font-size: 11px !important;
-}
-
-footer .list-end li:not(:first-child):before {
-    content: " | ";
-}
