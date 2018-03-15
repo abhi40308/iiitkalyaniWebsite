@@ -6,14 +6,20 @@
 @import url('https://fonts.googleapis.com/css?family=Dosis');
 html
 {
-  margin:0rem;
+  margin:0em;
   min-width: 20em;
+  overflow-x: hidden;
 }
 body
 {
   background-color:#FCF4F4;
   padding-top: 0em;  
-  overflow-x:hidden;
+  padding-left: 1em;
+}
+
+#nopad
+{
+  padding:0em;
 }
 
 /*search box*/
@@ -389,7 +395,6 @@ body
     border: 0.5em;
     border-color: #A3A5A6;
     box-shadow: 0px 6px 6px 6px #CBD5DF;
-    position: center;
     margin: 0em;
   }
   .card-title
@@ -457,7 +462,6 @@ body
 
   #cards-container
   {
-    position: center;
     shape-margin: 0.7em;
     padding-bottom: 1em;
   }
@@ -484,7 +488,6 @@ body
     border: 0.5em;
     border-color: #A3A5A6;
     box-shadow: 0px 0.4em 0.4em 0.4em #CBD5DF;
-    position: center;
     margin: 0em;
   }
 }
@@ -553,7 +556,6 @@ body
 
   #cards-container
   {
-    position: center;
     shape-margin: 0.7em;
     padding-bottom: 1em;
   }
@@ -591,7 +593,6 @@ body
     border: 0.5em;
     border-color: #A3A5A6;
     box-shadow: 0px 0.4em 0.4em 0.4em #CBD5DF;
-    position: center;
     margin: 0em;
   }
   #facilities-content
@@ -606,6 +607,7 @@ body
   .container-fluid
   {
     padding-top: 0em;
+    margin:0em;
   }
 
 }

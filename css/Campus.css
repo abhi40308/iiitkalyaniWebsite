@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Slabo+27px');
 @import url('https://fonts.googleapis.com/css?family=Roboto+Slab');
 @import url('https://fonts.googleapis.com/css?family=Ubuntu');
+@import url('https://fonts.googleapis.com/css?family=Mina');
 html
 {
   margin:0rem;
@@ -320,26 +321,21 @@ body
   {
     padding:1.5em;  
   }
-#Campus-Content
+
+#content>h3
 {
-  padding-top: 1em;
-  padding-bottom: 1em;
-  padding-left: 0em;  
-  box-shadow: 20px 20px 50px 15px #B3B6B7;
-}
-#content>h5
-{
-  text-align: left;
-  font-size: 1.5em;
+  text-align: center;
+  font-size: 1.3em;
   font-family: 'Ubuntu', sans-serif;
   font-weight: bold; 
 }
 
-  .sidebar
+  .fac-sidebar
 {
   padding-top: 1em;
   padding-bottom: 1em;
-  box-shadow: 30px 10px 35px 5px #B3B6B7;
+  padding-right: 2em;
+  padding-left: 2em;
   height:21.5em;
 }
 #title
@@ -384,8 +380,10 @@ body
 }
 #content
 {
-  padding-right: 5em;
+  padding-right: 3em;
   padding-left: 3em;
+  font-family: 'Average', serif;
+  font-size: 1em;
 }
 #hostel-row
 {
@@ -397,18 +395,11 @@ body
 {
   width: 15em;
 }
-#content>h3
+.img-fluid
 {
-  font-family: '', serif;
-  font-size: 2em;
-  text-align: center;
+  margin:0em;
+}
 
-}
-#content>p
-{
-  font-family: 'Average', serif;
-  font-size: 1em;
-}
 
 }
 
@@ -426,24 +417,21 @@ body
   {
     padding:1.5em;  
   }
-  #Campus-Content
+ 
+#content>h3
 {
-  padding-top: 1em;
-  padding-bottom: 1em;
-  padding-left: 0em;  
-  box-shadow: 20px 20px 50px 15px #B3B6B7;
-}
-#content>h5
-{
-  text-align: left;
-  font-size: 1.5em;
+  text-align: center;
+  font-size: 1.2em;
   font-family: 'Ubuntu', sans-serif;
+  font-weight: bold; 
 }
-.sidebar
+
+.fac-sidebar
 {
   padding-top: 1em;
   padding-bottom: 1em;  
-  box-shadow: 30px 10px 35px 5px #B3B6B7;
+  padding-right: 0.5em;
+  padding-left: 0.5em; 
   height:22em;
 }
 #title
@@ -489,16 +477,25 @@ body
 
 #content
 {
-  padding-right: 4em;
-  padding-left: 3em;
+  padding-right: 2em;
+  padding-left: 2em;
+}
+#content>h5
+{
+
+  font-family: 'Slabo 27px', serif;
+  text-align: left;
+  font-size: 1.2em;
+  font-weight: bold;
 }
 #content>h3
 {
-  font-family: 'Roboto Slab', serif;
+
+  font-family: 'Slabo 27px', serif;
   text-align: center;
-  font-size: 2.3em;
+  font-size: 1.3em;
 }
-#content::p
+#content
 {
   font-family: 'Average', serif;
 }
@@ -526,45 +523,35 @@ body
   {
     padding:1em;  
   }
-  #Campus-Content
-{
-  padding-top: 1em;
-  padding-bottom: 1em;
-  padding-left: 2em;
-  padding-right: 2em;
-  text-align: left;   
-  box-shadow: 20px 20px 50px 15px #B3B6B7;
-}
-#content>h5
-{
-  text-align: left;
-  font-size: 1em;
-  font-family: 'Ubuntu', sans-serif;  
-  font-weight: bold; 
-}
+  
+
 #content
 {
   padding-right: 2em;
   padding-left: 2em;
+  font-family: 'Average', serif;  
+  font-size: 0.8em;
 }
 #content>h3
 {
   font-family: 'Slabo 27px', serif;
   text-align: center;
-  font-size: 1.5em;
+  font-size: 1.1em;
 }
-#content::p
+  
+#content>h5
 {
-  font-family: 'Average', serif;  
-  font-size: 0.8em;
-}
 
+  font-family: 'Slabo 27px', serif;
+  text-align: left;
+  font-size: 1.1em;
+  font-weight: bold;
+}
 /*sidebar not applicable for small screen to enable remove display*/
-.sidebar
+.fac-sidebar
 {
   padding-top: 1em;
   padding-bottom: 1em;
-  box-shadow: 15px 15px 30px 10px #B3B6B7;
   height:18em;
   display: none;
 }
@@ -635,43 +622,34 @@ body
   {
     padding:1em;  
   }
-  #Campus-Content
-{
-  padding-top: 1em;
-  padding-bottom: 1em;
-  padding-left: 0.5em;
-  padding-right: 0.2em;
-  text-align: left;  
-  border:0px;
+ 
 
-  margin:0em;
-}
-#content>h5
-{
-  text-align: left;
-  font-size: 1em;
-  font-family: 'Ubuntu', sans-serif;  
-  font-weight: bold; 
-}
 #content
 {
   padding-right: 2em;
   padding-left: 2em;
-}
-#content>h3
-{
-  font-family: 'Roboto Slab', serif;
-  text-align: center;
-  font-size: 1.5em;
-}
-#content::p
-{
   font-family: 'Average', serif;  
   font-size: 0.8em;
 }
+#content>h3
+{
+  text-align: center;
+  font-size: 1em;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: bold; 
+}
+#content>h5
+{
+
+  font-family: 'Slabo 27px', serif;
+  text-align: left;
+  font-size: 1em;
+  font-weight: bold;
+}
+
 
 /*sidebar not applicable for small screen to enable remove display*/
-.sidebar
+.fac-sidebar
 {
   padding-top: 1em;
   padding-bottom: 1em;
@@ -720,6 +698,105 @@ body
 
 }
  
+}
+
+/*code for others.html*/
+@media only screen and (min-width: 62em)
+{
+  .others-box
+  {
+    float: left;
+    padding-right: 1em;
+    padding-top: 1.5em;
+    padding-left: 1em;
+    padding-bottom: 1em;
+    /*box-shadow: 10px 10px 30px 5px #B3B6B7;*/
+  }
+
+  .others-title > h3
+  {
+    font-family: 'Mina', sans-serif;
+    text-align: center;
+    font-size: 2em;
+    font-weight: bold;
+  }
+  #others-sidebar
+  {
+    padding-top: 1em;
+    padding-bottom: 1em;
+      /*box-shadow: 10px 10px 15px 5px #B3B6B7;*/
+    padding-left: 2em;
+    height:21.5em;
+  }
+  .others-image > img
+  {
+    max-height: 15em;
+    max-width: 13em;
+    width: auto;
+    height: auto;
+    padding-left: 1em;
+    overflow:hidden;
+    border-radius: 0.5em;
+  }
+  .others-content
+  {
+    text-align: left;
+    padding-right: 1em;
+  }
+  #Network-facility > img
+  {
+    max-width: 12em;
+    max-height: 18em;
+    min-height: 3em;
+    min-width:2em;
+    height: auto;
+    width: auto;
+    position: relative; 
+  }
+}
+@media only screen and (min-width: 48.063em) and (max-width: 62em)
+{
+  #Network-facility > img
+  {
+    max-width: 9em;
+    max-height: 6em;
+    min-height: 3em;
+    min-width:2em;
+    height: auto;
+    width: auto;
+    position: relative; 
+  }
+  #others-sidebar
+  {
+    padding-top: 1em;
+    padding-bottom: 1em;
+      /*box-shadow: 10px 10px 15px 5px #B3B6B7;*/
+    padding-left: 1em;
+    height:21.5em;
+  }
+}
+
+@media screen and (min-width: 34em) and (max-width: 48.063em)
+{
+  .others-image > img
+  {
+    display: none;
+  }
+  #others-sidebar
+  {
+    display: none;
+  }
+}
+@media screen and (max-width: 34em)
+{
+  .others-image > img
+  {
+    display: none;
+  }
+  #others-sidebar
+  {
+    display: none;
+  }
 }
 
 /* Code for Footer CSS*/
