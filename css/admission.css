@@ -4,7 +4,6 @@
 */
 
 /*search box*/
-
 #search {
 
 }
@@ -291,7 +290,12 @@
 
 
 
-
+.mobileview{
+  display: none;
+}
+.desktopview {
+  display: block;
+}
 
 .header{
   font-family: 'Archivo Black', sans-serif;
@@ -301,19 +305,20 @@
   margin-top: 2%;
 }
 .mainline{
+  color: grey;
   font-size: 2.3vw;
   text-align: center;
-  margin-top: 3%;
-  margin-bottom: 3%;
+  margin-top: 0%;
+  margin-bottom: 2%;
   margin-left: 16%;
   margin-right: 16%;
 }
-.mainimg{
-  margin-left:3%;
+.mainimg img{
+  height:510px;
 }
 .content{
-  background-color:blue;
-  color: white;
+  background-color:#eaebed;
+  /*color: white;*/
   padding: 3%;
   padding-left: 14%;
   padding-right: 14%;
@@ -352,16 +357,20 @@ background-color: black;
 }
 .cse{
   margin-top: 2%;
+font-size: 30px;
+margin-bottom: 3%;
+margin-left: 18%;
 
 }
-.bullet{
-  margin-top: .3%;
-  margin-left: 15%;
+.cse i{
+  margin-top: -.4%;
+  margin-right: 2%;
 }
-.cse1{
-  margin-left: -17%;
-font-size: 1.8vw;
+.bt{
+  margin-top: -3%;
+font-size: 24px;
 margin-bottom: 3%;
+margin-left: 25%;
 }
 .darkdiv{
   background-color: #eaebed;
@@ -383,6 +392,9 @@ margin-bottom: 3%;
 .bgb{
   background-color: blue;
   color: white;
+}
+table,th, td,tr {
+    border: 1px solid white;
 }
 .fee{
   font-size: 3vw;
@@ -487,6 +499,9 @@ padding: 1%;
   width:50%;
   height: 40vw;
   background-image:url("../images/admissionimg/diverse-students-1140x524.jpg");
+  background-repeat: no-repeat;
+  background-size: 105%;
+  background-position: right;
   position:absolute;
   margin-left:45%;
   margin-top: 11%;
@@ -506,6 +521,7 @@ padding: 1%;
   margin-right: 15%;
 }
 .cont{
+
   text-align: center;
   font-size: 1.4vw;
   border: 1px solid black;
@@ -527,7 +543,7 @@ transition: background-position 300ms, color 300ms ease, border-color 300ms ease
 }
 .cont:hover {color: white;
   font-weight: bolder;
-  padding-top: 4%;
+  /*padding-top: 4%;*/
   font-size: 1.6vw;
 border-color: #A72424;
 background-image:
@@ -541,10 +557,70 @@ transition: background-position 300ms, color 300ms ease, border-color 300ms ease
 .cont:hover img{
    display: none;
 }
+.cont:hover .contname1,.contname2,.contname5,.contname6,.contname7,.contname9{
+  margin-top: 12%;
+}
+.cont:hover .contname4,.contname8{
+  margin-top: 2%;
+}
+.cont:hover .contname3{
+  margin-top: 14%;
+}
+@media screen and (max-width: 69em){
+
+.cont:hover .contname7{
+      margin-top: 2%;
+    }
+}
+@media screen and (max-width: 62em){
+
+.cont:hover .contname1,.contname5{
+      margin-top: 2%;
+    }
+    .cse{
+      margin-top: 2%;
+    font-size: 28px;
+    margin-bottom: 3%;
+    margin-left: 18%;
+
+    }
+    .cse i{
+      font-size:50px !important;
+      margin-top: -.6%;
+      margin-right: 2%;
+    }
+    .bt{
+      margin-top: -3%;
+    font-size: 22px;
+    margin-bottom: 3%;
+    margin-left: 28%;
+    }
+}
+@media screen and (max-width: 55em){
+
+  .cont{
+
+    text-align: center;
+    font-size: 1.7vw;
+    border: 1px solid black;
+    margin: 2%;
+    height: 140px;
+  color: black;
+  padding-top: 2%;
+  padding-bottom: 18%;}
+
+
+.cont:hover .contname2,.contname9{
+        margin-top: 25%;
+      }
+.cont:hover .contname1,.contname3,.contname4,.contname5,.contname6,.contname7,.contname8{
+        margin-top: 17%;
+      }
+}
 .mq{
   font-size: 1.3vw;
   margin: 3%;
-  margin-left: 20%;
+  margin-left: 15%;
 }
 .adin{
   /*margin: 10%;*/
@@ -589,7 +665,7 @@ transition: background-position 300ms, color 300ms ease, border-color 300ms ease
   margin-left: 5%;
   margin-right: 65%;
   padding: .3%;
-  padding-left: 1%;
+  padding-left: 3%;
   margin-top: 2%;
   margin-bottom: 2%;
 }
@@ -606,7 +682,7 @@ transition: background-position 300ms, color 300ms ease, border-color 300ms ease
   margin-left: 5%;
   margin-right: 60%;
   padding: .3%;
-  padding-left: 1%;
+  padding-left: 3%;
   margin-top: 2%;
   margin-bottom: 2%;
 }
@@ -629,7 +705,7 @@ transition: background-position 300ms, color 300ms ease, border-color 300ms ease
   margin-left: 5%;
   margin-right: 60%;
   padding: .3%;
-  padding-left: 1%;
+  padding-left: 3%;
   margin-top: 2%;
   margin-bottom: 2%;
 }
@@ -653,9 +729,9 @@ transition: background-position 300ms, color 300ms ease, border-color 300ms ease
   color: white;
   background-color: blue;
   margin-left: 5%;
-  margin-right: 25%;
+  margin-right: 30%;
   padding: .3%;
-  padding-left: 2%;
+  padding-left: 3%;
   margin-top: 2%;
   margin-bottom: 2%;
 
@@ -681,7 +757,12 @@ transition: background-position 300ms, color 300ms ease, border-color 300ms ease
   margin-left: 5%;
 }
 @media screen and (max-width: 50em) {
+
+  .mainimg img{
+    height:350px;
+  }
   .header{
+    /*border: solid 1px red;*/
     font-family: 'Archivo Black', sans-serif;
     font-size: 6vw;
     font-weight: 1000px;
@@ -696,12 +777,9 @@ transition: background-position 300ms, color 300ms ease, border-color 300ms ease
     margin-left: 6%;
     margin-right: 6%;
   }
-  .mainimg{
-    margin-left:3%;
-  }
+
   .content{
-    background-color:blue;
-    color: white;
+    background-color:#eaebed;
     padding: 3%;
     padding-left: 2%;
     padding-right: 2%;
@@ -728,22 +806,15 @@ transition: background-position 300ms, color 300ms ease, border-color 300ms ease
      background-size:100%;
     margin-top: 0%;
     margin-left: 15%;
-    margin-right: 55%;
+    margin-right: 52%;
     padding: 0%;
-    padding-left: 1.5%;
+    padding-left: 2%;
     padding-bottom: 20%;
     font-size: 2.9vw;
     font-weight: bolder;
   }
   .cse{
-    margin-top: -10%;
-
-  }
-  .bullet{
-    margin-top: .1%;
-    margin-left: 11%;
-    height: 5px
-  }
+    margin-top: -17%;}
   .cse1{
     margin-left: -13%;
   font-size: 3.5vw;
@@ -755,13 +826,13 @@ transition: background-position 300ms, color 300ms ease, border-color 300ms ease
     padding-bottom: 1%;
   }
   .seat{
-    font-size: 3vw;
+    font-size: 4.5vw;
     font-weight: bolder;
   }
   .smd{
-    font-size: 1.5vw;
+    font-size: 2vw;
     font-weight: 900px;
-    margin-left: 0.3%;
+    margin-left: 3%;
     /*margin-right: 15%;*/
     margin-top: 2%;
   }
@@ -783,21 +854,21 @@ transition: background-position 300ms, color 300ms ease, border-color 300ms ease
     margin-top: 2%;
   }
   .docr{
-  font-size: 3vw%;
+  font-size: 3.5vw%;
   margin: 4%
   }
   .docr1{
-  font-size:3vw ;
+  font-size:3.5vw ;
   background: underline;
   }
   .docr2{
-    font-size:3vw ;
+    font-size:3.5vw ;
     margin-left: 0.5%;
     margin-right: 1%;
     color: grey;
   }
   .docr3{
-    font-size:2.3vw ;
+    font-size:2.7vw ;
     margin-left: 2%;
     margin-right: 2%;
   }
@@ -839,7 +910,7 @@ transition: background-position 300ms, color 300ms ease, border-color 300ms ease
   }
   .faid{
     background:#aeaeaf;
-  height: 192vw;
+  height: 230vw;
   padding: 1%;
   }
   .fat{
@@ -858,7 +929,7 @@ transition: background-position 300ms, color 300ms ease, border-color 300ms ease
     font-size: 3vw;
     margin-top: 5%;
     width: 92%;
-    height: 88vw;
+    height: 109vw;
     background:#edeeef;
     margin-left:-.5%;
     position: absolute;
@@ -870,9 +941,11 @@ transition: background-position 300ms, color 300ms ease, border-color 300ms ease
     width:85%;
     height: 75vw;
     background-image:url("../images/admissionimg/diverse-students-1140x524.jpg");
+    background-repeat: no-repeat;
+    background-size: 114%;
     position:absolute;
     margin-left:3.3%;
-    margin-top: 83%;
+    margin-top: 106%;
     z-index:1;
     box-shadow: 10px 10px 10px #888888;
 
@@ -907,7 +980,7 @@ transition: background-position 300ms, color 300ms ease, border-color 300ms ease
     font-size: 2.3vw;
     border: 1px solid black;
     margin: 4%;
-    height: 15vw;
+    height: 20vw;
   color: black;
   padding-top: .9%;
   padding-bottom: -15%;
@@ -943,6 +1016,12 @@ transition: background-position 300ms, color 300ms ease, border-color 300ms ease
   .cont:hover img{
      display: none;
   }
+  .cont:hover .contname1 ,.contname5,.contname6,.contname9{
+          margin-top: 10%;
+        }
+  .cont:hover .contname3,.contname4,.contname7,.contname8,.contname2{
+          margin-top: 3%;
+        }
   .mq{
     font-size: 3vw;
     margin: 3%;
@@ -994,9 +1073,9 @@ transition: background-position 300ms, color 300ms ease, border-color 300ms ease
     color: white;
     background-color: blue;
     margin-left: 5%;
-    margin-right: 55%;
+    margin-right: 57%;
     padding: .3%;
-    padding-left: 2%;
+    padding-left: 3%;
     margin-top: 2%;
     margin-bottom: 2%;
   }
@@ -1011,9 +1090,9 @@ transition: background-position 300ms, color 300ms ease, border-color 300ms ease
     color: white;
     background-color: blue;
     margin-left: 5%;
-    margin-right:52%;
+    margin-right:50%;
     padding: .3%;
-    padding-left: 1%;
+    padding-left: 3%;
     margin-top: 2%;
     margin-bottom: 2%;
   }
@@ -1036,7 +1115,7 @@ transition: background-position 300ms, color 300ms ease, border-color 300ms ease
     margin-left: 5%;
     margin-right: 50%;
     padding: .3%;
-    padding-left: 1%;
+    padding-left: 3%;
     margin-top: 2%;
     margin-bottom: 2%;
   }
@@ -1060,9 +1139,9 @@ transition: background-position 300ms, color 300ms ease, border-color 300ms ease
     color: white;
     background-color: blue;
     margin-left: 5%;
-    margin-right: 5%;
+    margin-right: 12%;
     padding: .3%;
-    padding-left: 1%;
+    padding-left: 3%;
     margin-top: 2%;
     margin-bottom: 2%;
 
@@ -1088,8 +1167,214 @@ transition: background-position 300ms, color 300ms ease, border-color 300ms ease
     margin-left: 5%;
   }
 }
+@media screen and (max-width: 43em){
+    .seat{
+      font-size: 4.5vw;
+      font-weight: bolder;
+    }
+    .smd{
+      font-size: 1.9vw;
+      font-weight: 900px;
+      margin-left: 2%;
+      /*margin-right: 15%;*/
+      margin-top: 2%;
+    }
+  }
+@media screen and (max-width: 40em){
 
+    .mobileview{
+      display: block;
+    }
+    .desktopview{
+      display: none;
+    }
+.smdmobile{
+  font-size: 3vw;
+  font-weight: 900px;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 2%;
+}
+table,th, td,tr {
+    border: 1px solid white;
+}
+.smdmobile td{
+  text-align: center;
+}
+    .smd{
+      font-size: 1.9vw;
+      font-weight: 900px;
+      margin-left: 2%;
+      /*margin-right: 15%;*/
+      margin-top: 2%;
+    }
+.cse{
+      margin-top: -16%;
+    font-size: 23px;
+    margin-bottom: 3%;
+    margin-left: 8%;
 
+    }
+.cse i{
+      font-size:38px !important;
+      margin-top: -.6%;
+      margin-right: 2%;
+    }
+.bt{
+      margin-top: -3%;
+    font-size: 18px;
+    margin-bottom: 3%;
+    margin-left: 20%;
+    }
+}
+@media screen and (max-width: 39em) {
+
+  .mainimg img{
+    height:230px;
+  }
+.content{
+ font-size: 3.5vw;
+  }
+.adp{
+  font-size: 4vw;
+    margin-right:46%;
+}
+.dphd{
+  font-size: 4vw;
+  margin-left: 5%;
+  margin-right:36%;
+  padding-left: 3%;
+    }
+.dphdd{
+ font-size: 3.5vw;
+    }
+.dphdd1{
+ font-size: 3.5vw;
+    }
+.cphds{
+  font-size: 4vw;
+margin-right:36%;
+}
+.cphds1{
+ font-size: 3.5vw;
+}
+.cphds2{
+ font-size: 3.5vw;
+}
+.cphds3{
+ font-size: 3.5vw;
+}
+.cadphd{
+  font-size: 4vw;
+  margin-right:2%;
+}
+.cadphd1{
+ font-size: 3.5vw;
+}
+.cadphd2{
+ font-size: 3.5vw;
+}
+.cadphd3{
+ font-size: 3.5vw;
+}
+.adpd{
+  font-size: 3.5vw;
+}
+.miphd{
+font-size: 3vw;
+}  .cont{
+    text-align: center;
+    font-size: 3.2vw;
+    border: 1px solid black;
+    margin: 4%;
+    height: 28vw;
+  color: black;
+  padding-top: .9%;
+  padding-bottom: -15%;
+  /*padding-left: 7%;*/
+  background-size: 200% 200%;
+  background-image:
+  linear-gradient(to top, #095def 50%, transparent 50%);
+  -webkit-transition: background-position 300ms, color 300ms ease, border-color 300ms ease;
+  -moz-transition: background-position 300ms, color 300ms ease, border-color 300ms ease;
+  -ms-transition: background-position 300ms, color 300ms ease, border-color 300ms ease;
+  -o-transition: background-position 300ms, color 300ms ease, border-color 300ms ease;
+  transition: background-position 300ms, color 300ms ease, border-color 300ms ease;
+
+  }
+  .contname3{
+    margin-top: 0%;
+  }
+  .cont img{
+    width:50% ;
+    height:15vw;
+    margin-top: 5%;
+  }
+  .cont:hover {color: white;
+    padding-left: 1%;
+    font-weight: bolder;
+    padding-top: 2%;
+    font-size: 4vw;
+  border-color: #A72424;
+  background-image:
+  linear-gradient(to top, #095def 51%, transparent 50%);
+  background-position: 0 100%;
+  -webkit-transition: background-position 300ms, color 300ms ease, border-color 300ms ease;
+  -moz-transition: background-position 300ms, color 300ms ease, border-color 300ms ease;
+  -ms-transition: background-position 300ms, color 300ms ease, border-color 300ms ease;
+  -o-transition: background-position 300ms, color 300ms ease, border-color 300ms ease;
+  transition: background-position 300ms, color 300ms ease, border-color 300ms ease;}
+  .cont:hover img{
+     display: none;
+  }
+  .cont:hover .contname1,.contname2 ,.contname3,.contname4,.contname5,.contname6,.contname7,.contname9{
+          margin-top: 10%;
+        }
+        .cont:hover .contname2 {
+                margin-top: 10%;
+              }
+              .cont:hover .contname3 {
+                      margin-top: 20%;
+                    }
+  .cont:hover .contname8{
+          margin-top: 3%;
+        }
+}
+@media screen and (max-width: 30em){
+
+.co{
+  color: white;
+  background-image: url("../images/admissionimg/bullet2.png");
+  background-repeat: no-repeat;
+   background-size:100%;
+  margin-top: 0%;
+  margin-left: 7%;
+  margin-right: 50%;
+  padding: 0%;
+  padding-left: 2%;
+  padding-bottom: 20%;
+  font-size: 3.5vw;
+  font-weight: bolder;
+    }
+.cse{
+      margin-top: -14%;
+    font-size: 19px;
+    margin-bottom: 3%;
+    margin-left: .5%;
+
+    }
+.cse i{
+      font-size:32px !important;
+      margin-top: -.6%;
+      margin-right: 2%;
+    }
+.bt{
+      margin-top: -3%;
+    font-size: 16px;
+    margin-bottom: 3%;
+    margin-left: 15%;
+    }
+}
 /*footer styles*/
 
 
@@ -1159,3 +1444,7 @@ footer .list-end li:not(:first-child):before {
 .cont a:hover{
   color: white;
 }
+a {
+    text-decoration: none !important;
+}
+tbody tr:hover {background-color:#b0b1b2;}

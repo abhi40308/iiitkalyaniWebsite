@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>IIITK Admission</title>
+  <title>IIITK UG Admission</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
@@ -14,8 +14,28 @@
 <link rel="stylesheet"  href="../css/admission1.css" media="screen, handheld" />
 <link href="https://fonts.googleapis.com/css?family=Archivo+Black" rel="stylesheet">
 <link rel="stylesheet" href="../css/animate.css">
+
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('html, body').hide();
+
+        if (window.location.hash) {
+            setTimeout(function() {
+                $('html, body').scrollTop(0).show();
+                $('html, body').animate({
+                    scrollTop: $(window.location.hash).offset().top
+                    }, 1000)
+            }, 0);
+        }
+        else {
+            $('html, body').show();
+        }
+    });
+</script>
+
+
 </head>
-<body>
+<body >
 
   <div id="top-of-page" class="header-top">
 
@@ -223,6 +243,7 @@ The institute provides high quality of education, and it ensures that its studen
 Seats are filled up through Joint Seat Allocation Authority (JoSAA) after qualifying
  JEE (Main) examination administered by Central Board of Secondary Education (CBSE).
 </div>
+
 <div class="row mainblock">
   <div class="col-md-4 col-sm-4 col-10 ugb">
     <div class="ugi">
@@ -232,11 +253,359 @@ Seats are filled up through Joint Seat Allocation Authority (JoSAA) after qualif
   </div>
   <div class="col-md-4 col-sm-4 col-10 pgb">
   <div class="pgi">  <i class="fa fa-graduation-cap" style="font-size:70px;color:grey"></i></div>
-  <div class="pgad1">  PG Admission</div>
+  <div class="pgad1" id="pgadmission">  PG Admission</div>
   <a href="admissionpg.html#pgadmission" class="ckbl"></a>
   </div>
 </div>
 
+<div class="ug" >
+<div class="ugad" >
+Undergraduate Admission
+</div>
+<hr class="dr" width="46%">
+<div class="co">
+Course Offered :
+</div>
+<div class="row  cse">
+<i class="fa fa-arrow-circle-right" style="font-size:54px;color:##c4c4c4"></i>
+<b>Computer Science and Engineering</b>
+  </div>
+<div class="bt"> (4 Years, Bachelor of Technology)</div>
+
+ </div>
+ <div class="darkdiv desktopview">
+ <div class="seat">
+   Seat Matrix :
+ </div>
+ <div class="smd">
+   <table class="table  smdtb">
+     <thead class="bgb">
+       <tr>
+         <th scope="col">CATEGORY</th>
+         <th scope="col">OPEN</th>
+         <th scope="col">OPEN-PwD</th>
+         <th scope="col">SC</th>
+         <th scope="col">SC-PwD</th>
+         <th scope="col">ST</th>
+         <th scope="col">ST-PwD</th>
+         <th scope="col">OBC-NCL</th>
+         <th scope="col">OBC-NCL-PwD</th>
+         <th scope="col">Total</th>
+       </tr>
+     </thead>
+     <tbody>
+       <tr>
+         <th scope="row">No. of Seats</th>
+         <td>&nbsp;&nbsp;64</td>
+         <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2</td>
+         <td>18</td>
+         <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1</td>
+         <td>10</td>
+         <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0</td>
+         <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;34</td>
+         <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1</td>
+         <td><b>130</b></td>
+       </tr>
+     </tbody>
+   </table>
+ </div>
+ </div>
+
+ <div class="darkdiv mobileview">
+ <div class="seat">
+   Seat Matrix :
+ </div>
+ <div class="smdmobile">
+   <table class="table ">
+     <thead class="bgb">
+       <tr>
+         <th scope="row">CATEGORY</th>
+         <td><b>No. of Seats</b></td>
+       </tr>
+     </thead>
+     <tbody>
+       <tr>
+         <th scope="row">OPEN</th>
+         <td>64</td>
+       </tr>
+       <tr>
+         <th scope="row">OPEN-PwD</th>
+         <td>2</td>
+       </tr>
+       <tr>
+         <th scope="row">SC</th>
+         <td>18</td>
+       </tr>
+       <tr>
+         <th scope="row">SC-PwD</th>
+         <td>1</td>
+       </tr>
+       <tr>
+         <th scope="row">ST</th>
+         <td>10</td>
+       </tr>
+       <tr>
+         <th scope="row">ST-PwD</th>
+         <td>0</td>
+       </tr>
+       <tr>
+         <th scope="row">OBC-NCL</th>
+         <td>34</td>
+       </tr>
+       <tr>
+         <th scope="row">OBC-NCL-PwD</th>
+         <td>1</td>
+       </tr>
+       <div class="total" >
+       <tr>
+         <th scope="row "> Total </th>
+         <td><b>130</b></td>
+       </tr>
+     </div>
+     </tbody>
+   </table>
+ </div>
+ </div>
+
+ <div class="fee">
+   Fee Structure :
+ </div>
+<div class="feed">
+  <table class="table table-bordered">
+    <thead class="bgb">
+      <tr>
+        <th colspan="2">The fee structure per semester to be effective from academic session 2017 – 2018</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">Tuition Fees </th>
+        <td>&nbsp;&nbsp;&nbsp;&nbsp;90,000/-</td>
+      </tr>
+      <tr>
+        <th scope="row">Registration/Admission fee  </th>
+        <td>&nbsp;&nbsp;&nbsp;&nbsp;500/- (One time)</td>
+      </tr>
+      <tr>
+        <th scope="row">Identity Card Fee</th>
+        <td>&nbsp;&nbsp;&nbsp;&nbsp;120/- (One time)</td>
+      </tr>
+      <tr>
+        <th scope="row">Students’ activities fee </th>
+        <td>&nbsp;&nbsp;&nbsp;&nbsp;500/-</td>
+      </tr>
+      <tr>
+        <th scope="row">Infrastructural Maintenance fee</th>
+        <td>&nbsp;&nbsp;&nbsp;&nbsp;500/-</td>
+      </tr>
+      <tr>
+        <th scope="row">Examination fee </th>
+        <td>&nbsp;&nbsp;&nbsp;&nbsp;500/-</td>
+      </tr>
+      <tr>
+        <th scope="row">Grade Card Fee   </th>
+        <td>&nbsp;&nbsp;&nbsp;&nbsp;100/-</td>
+      </tr>
+      <tr>
+        <th scope="row">Provisional Certificate Fee</th>
+        <td>&nbsp;&nbsp;&nbsp;&nbsp;100/-</td>
+      </tr>
+      <tr>
+        <th scope="row">Transport fee </th>
+        <td>&nbsp;&nbsp;&nbsp;&nbsp;3000/-</td>
+      </tr>
+      <tr>
+        <th scope="row"> Library Caution Money  </th>
+        <td>&nbsp;&nbsp;&nbsp;&nbsp;1000/- (One time)</td>
+      </tr>
+      <tr>
+        <th scope="row">Institute Caution Money (refundable) </th>
+        <td>&nbsp;&nbsp;&nbsp;&nbsp;2000/- (One time)</td>
+      </tr>
+      <div class="total" >
+      <tr>
+        <th scope="row "> Total </th>
+        <td>&nbsp;&nbsp;&nbsp;&nbsp;<b>98,320/-</b></td>
+      </tr>
+    </div>
+    </tbody>
+  </table>
+ </div>
+<div class="darkdiv ">
+ <div class="docr ">
+    <div class="docr1">
+
+<b>Please bring the following documents as outlined in JoSAA website for reporting and admission :-</b>
+<div class="docr2"> ( If any of the documents are found invalid or
+wrong, the allotted seat is liable to be cancelled )</div>
+<p></p>
+<p><br></p>
+</div>
+ <div class="docr3">
+1. Three passport size photographs identical to the one pasted on the JEE (Main) 2017 application form.<br>
+<p></p>
+2. Class XII performance check [Annexure 7(b) of JoSAA Business rules]<br>
+<p></p>
+3. Provisional Seat Allotment Letter<br>
+<p></p>
+4. Undertaking by the candidate [Annexure 9 of JoSAA Business rules]<br>
+<p></p>
+5. (i) Proof of initial fee (Rs. 45,000 for General, Rs. 20,000 for SC/ST/PWD) payment
+(ii) Proof of Special round participation fee (applicable for special round only)<br>
+<p></p>
+6. Original documents for verification (submit self-attested photocopies):<br>
+
+ <div class="docr4"> i)Aadhaar Card<br>
+ ii)Admit Card of JEE (Main)-2017<br>
+ iii)Score Card of JEE (Main)-2017 issued by CBSE
+ (downloaded score card is acceptable)<br>
+ iv) Class X (High School) Board Certificate<br>
+ v) Class XII or equivalent examination Certificate and Marks sheet<br>
+ vi) Certificate of category of SC/ST (Central list), if applicable, issued by the
+ competent authority in the prescribed format (as given in josaa.nic.in)<br>
+ vii) Certificate of category of OBC (Central list), if applicable, issued by the
+ competent authority in the prescribed format (as given in josaa.nic.in).
+ The certificate should clearly mention that the candidate belongs to
+ Non Creamy Layer (NCL). The certificate should have been issued on or
+ after 1st April, 2017. Non Creamy Layer OBC Certificate issued
+ prior to 1st April 2017 shall not be accepted in any case.<br>
+ viii) Certificate for person with Disabilities (Pwd), if applicable. The Certificate should be issued by a Registered Medical Practitioner. The Certificate will be rejected if the disability is less than 40%.<br>
+</div>
+<p></p>
+7. Medical Certificate (Original, Annexure 8 of JoSAA Business Rules)<br>
+<p></p>
+8. Printout of locked choices and terms and conditions duly signed by
+the candidate (applicable to those getting seat allotments for the
+first time in seventh or special round)<br>
+</div>
+</div>
+<div class="adfrm">
+
+  Download admission form for admission to B.Tech. program ,
+  after you have been allotted a seat by CSAB in final round.<br>
+  Students can fill in the details, take a printout, sign (student and parents) and
+  submit it at the time of admission.<br>
+  <p><br></p>
+<a href="../images/admissionimg/IIIT-Admission-form-V5-8th-Round.pdf" target="blank"><div class="row downloader">
+<div class="col-md-3 col-sm-3 col-3 ic">
+<img src="../images/admissionimg/download.png"  width="100%" height="70vw">
+</div>
+<div class="col-md-9 col-sm-9 col-9 adf ">
+  <center>Admission form</center>
+</div>
+
+</div></a>
+</div>
+
+</div>
+<div class="faid">
+  <div id="f-aid" class="fat"> Financial Aid</div>
+  <div class="extracontent"> The Institute provides information to its students for
+    obtaining scholarships under the scheme of Central and State Governments.<br>
+
+Since State Government and Central Government agencies have a large number of scheme
+ to provide scholarship to students,
+the admission office will help the students to apply for such opportunities.</div>
+  <form id="cont1">
+<div class="layer1" runat="server" >
+  <ul>
+  <b>Some of the information on financial aids can be found below:</b><br>
+  <li><a href="https://www.vidyalakshmi.co.in/Students/" target="blank">Vidya Lakshmi Portal.</a></li>
+  <li>Mukhyamantri Medhavi Vidyarthi Yojna:</li> The eligibility criteria for the students are:<br>
+       Student should be domicile of Madhya Pradesh .<br>
+
+       Student must secure 75% or more(in case of M.P. Board) and 85% or more (in case of CBSE/ICSE) .<br>
+
+     Total income should be less than  6 Lacs.<br>
+
+     The details of the  scheme can be found <a href="../images/MMVYojna01.pdf" target="blank">here.</a><br>
+
+  <li>For the students of Bihar:</li>
+  <a href="http://bcebcwelfare.bih.nic.in" target="blank"> http://bcebcwelfare.bih.nic.in</a><br>
+
+  <a href="http://bcebcwelfare.bihar.gov.in" target="blank">http://bcebcwelfare.bihar.gov.in</a><br>
+
+  <li>PARTIAL Freeship (Scholarship) scheme by the Government of West Bengal :</li>
+  Ten (10) students get partial freeship from Government of West Bengal. Eight (8) partial freeships are for students of West Bengal and two (2) partial
+  freeships for students of other states. Please contact IIIT Kalyani office for details.<br>
+
+  <li><a href="https://scholarships.gov.in" target="blank" >National Scholarship Portal.</a></li>
+  <li><a href="../images/admissionimg/RSMS-2017-18-Advertise.pdf" target="blank" >Award of Rajashri Shahu Maharaj Merit Scholarships</a></li>
+</ul>
+</div>
+<div class="layer2">
+</div>
+</from>
+
+</div>
+ <div class="orl">
+
+Other Resources & Links :
+
+ </div>
+ <div class="other">
+<div class="row">
+  <div class="col-md-3 col-sm-5 col-9 cont">
+    <img src="../images/admissionimg/free-Download-Button-png.png "  width="45%" height="70vw"><br>
+    <div class="contname1">Course Structure</div>
+    <a target="blank" href="../images/IIIT-Kalyani-Course-Structure-2017.pdf" class="ckbl"></a>
+</div>
+<div class="col-md-3 col-sm-5 col-9 cont">
+  <img src="../images/admissionimg/free-Download-Button-png.png"  width="45%" height="70vw"><br>
+  <div class="contname2">E-brochure</div>
+  <a target="blank" href="../images/Brochure-17_18.pdf" class="ckbl"></a>
+</div>
+<div class="col-md-3 col-sm-5 col-9 cont">
+  <img src="../images/admissionimg/free-Download-Button-png.png"  width="45%" height="70vw">
+  <div class="contname3">Academic Calender</div>
+  <a target="blank" href="../images/Official_Calendar_IIITKalyani_2018.pdf" class="ckbl"></a>
+</div>
+  <div class="col-md-3 col-sm-5 col-9 cont">
+    <img src="../images/admissionimg/free-Download-Button-png.png"  width="45%" height="70vw"><br>
+    <div class="contname4">Placement Brochure</div>
+    <a target="blank" href="../images/IIIT-Kalyani-Course-Structure-2017.pdf" class="ckbl"></a>
+</div>
+<div class="col-md-3 col-sm-5 col-9 cont">
+  <img src="../images/admissionimg/linkiconfull.png"  width="45%" height="70vw"><br>
+  <div class="contname5">Placement Portal</div>
+  <a target="blank" href="../images/IIIT-Kalyani-Course-Structure-2017.pdf" class="ckbl"></a>
+</div>
+<div class="col-md-3 col-sm-5 col-9 cont">
+  <img src="../images/admissionimg/free-Download-Button-png.png"  width="45%" height="70vw"><br>
+  <div class="contname6">Regulatory Rules</div>
+  <a target="blank" href="#" class="ckbl"></a>
+</div>
+  <div class="col-md-3 col-sm-5 col-9 cont">
+    <img src="../images/admissionimg/free-Download-Button-png.png"  width="45%" height="70vw"><br>
+    <div class="contname7">Name Withdrawal</div>
+  <a target="blank" href="../images/NameWITHDRAWAL.pdf" class="ckbl"></a>
+</div>
+<div class="col-md-3 col-sm-5 col-9 cont">
+  <img src="../images/admissionimg/free-Download-Button-png.png"  width="45%" height="70vw"><br>
+  <div class="contname8">Caution Money Withdrawal</div>
+  <a target="blank" href="../images/CAUTION-MONEY-WITHDRAWAL-FORM.pdf" class="ckbl"></a>
+</div>
+<div class="col-md-3 col-sm-5 col-9 cont">
+  <img src="../images/admissionimg/mobile.png"  width="45%" height="75vw"><br>
+  <div class="contname9">Contact Us</div>
+  <a target="blank" href="#" class="ckbl"></a>
+</div>
+</div>
+
+
+
+</div>
+
+ <div class="mq ">
+
+<i class="fa fa-angle-right" style="font-size:30px;margin-right:2%"></i>
+
+   for more information visit us on
+   <a target="blank" href="https://josaa.nic.in/SeatInfo/root/InstProfile.aspx?instcd=304">
+    jossa website</a>
+
+
+ </div>
 
 <div class=" text-center adin ">
   <div class="adin1 wow fadeInDown">
