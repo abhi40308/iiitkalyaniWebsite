@@ -341,82 +341,6 @@ footer .list-end li:not(:first-child):before {
 
 
 
-@media only screen and (min-width: 770px){
-  .dropdown-link {
-      position: relative;
-      display: inline-block;
-  }
-
-}
-@media only screen and (max-width: 770px){
-  .ti {
-      position: relative;
-      display: inline-block;
-  }
-
-}
-.headgrey{
-
-  padding-top: 1.2%;
-  padding-bottom: 1.15%;
-
-}
-@media only screen and (max-width: 62em){
-.headgrey{
-    /*border: solid 1px red;*/
-      font-size: 13.8px !important;
-    width: 100%;
-}
-}
-@media only screen and (max-width: 52.99em){
-.headgrey{
-    /*border: solid 1px green;*/
-  padding-left: 0;
-  padding-right: 0;
-}
-}
-@media only screen and (max-width: 51.3em){
-.headgrey{
-    /*border: solid 1px red;*/
-  padding-left: -2%;
-}
-#startchange .nav-item{
-  font-size: 12px !important;
-}
-}
-.clgname{
-  margin-left: -8%;
-  margin-top: .8%;
-}
-@media only screen and (max-width: 75em){
-  .clgname{
-    margin-left: -6.5%;
-  }
-}
-@media only screen and (max-width: 62em){
-  .clgname{
-    margin-left: -3.5%;
-  }
-}
-@media only screen and (max-width: 47.9em){
-  .clgname{
-    margin-left: -10.5%;
-    margin-top: 1.5%;
-  }
-}
-@media only screen and (max-width: 42em){
-  .clgname{
-    margin-left: -7.5%;
-    margin-top: 1.5%;
-  }
-}
-@media only screen and (max-width: 32em){
-  .clgname{
-    margin-left: -5.5%;
-    margin-top: 3%;
-  }
-}
-
 
 @import "https://fonts.googleapis.com/css?family=Raleway:400,300,200,500,600,700";
 .fa-spin-fast {
@@ -449,11 +373,8 @@ h1{
 }
 .page-header{
   height: 100px;
-  /*border: 1px solid blue;*/
-  /*margin-right: 20%;*/
   padding-left: 40%;
-  padding-top: .1%;
-
+  padding-top: 1%;
   background-image: url("12.jpg");
   background-repeat: no-repeat;
   background-size: 100%;
@@ -621,7 +542,7 @@ h1{
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   border-radius: 50%;
-  border: 5px solid;
+  border: 5px solid white;
   width: 54px;
   height: 54px;
   line-height: 44px;
@@ -719,7 +640,7 @@ h1{
   right: 0;
   height: 80px;
   padding-top: 15px;
-  padding-left: 20px;
+  padding-left: 5px;
   padding-bottom: 22%;
 }
 .material-card.Indigo h2 {
@@ -786,20 +707,21 @@ h3 {
    /*text-decoration: underline;*/
   font-size: 30px;
   margin-bottom: 5%;
+  margin-top: 2%;
 }
 .phy{
-   text-decoration: underline;
+  /* text-decoration: underline;*/
   font-size: 30px;
   margin-bottom: 5%;
 }
 .ece{
-   text-decoration: underline;
+   /*text-decoration: underline;*/
   font-size: 30px;
   margin: 5%;
   margin-left: 0%;
 }
 .te{
-   text-decoration: underline;
+   /*text-decoration: underline;*/
   font-size: 30px;
   margin-bottom: 3%;
 }
@@ -1150,34 +1072,10 @@ h3 {
   margin-left: 7%;
 }
 
+.material-card .fa{
+  color:white;
+}
 
-
-/*@media only screen and (max-width: 47.9em){
-  #startchange .nav-item{
-    text-align: center;
-    font-size: 18px !important;
-    margin-bottom: 200% !important;
-    margin-left: 40%;
-    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
-    padding-top: 1% !important;
-    padding-bottom: 1.5% !important;
-    padding-left: 10px !important;
-    padding-right: 25px !important;
-    color: grey;
-  }
-  .dropdown-content {
-    margin-top: 1% !important;
-    margin-left: 35% !important;
-  }
-  .navis{
-    margin-left: 20%  !important;
-
-  }
-  .sss{
-  margin-left: 45% !important;
-  margin-top: -6% !important;
-  }
-}*/
 a {
 text-decoration: none !important;
 }
