@@ -625,28 +625,12 @@ h1{
 .material-card.mc-active .mc-content {
   padding-top: 5.6em;
 }
-/*@media screen and (max-width: 767px) {
-  .material-card.mc-active .mc-content {
-    position: relative;
-    margin-right: 16px;
-  }
-}*/
 .material-card.mc-active .mc-description {
   top: 50px;
   padding-top: 5.6em;
   opacity: 1;
   filter: alpha(opacity=100);
 }
-/*@media screen and (max-width: 767px) {
-  .material-card.mc-active .mc-description {
-    position: relative;
-    top: auto;
-    right: auto;
-    left: auto;
-    padding: 50px 30px 70px 30px;
-    bottom: 0;
-  }
-}*/
 .material-card.mc-active .mc-footer {
   overflow: visible;
   position: absolute;
@@ -829,9 +813,9 @@ h3 {
 }
 @media (min-width:62em) and (max-width: 74.95em){
 
-  .cse{
+/*  .cse{
     border: solid 1px ;
-  }
+  }*/
   .type-1{
   margin-top: 3%;
   margin-left: 4%;
@@ -882,13 +866,14 @@ h3 {
   padding-left: 5px;
   padding-bottom: 22%;
 }
-
-
+.material-card .mc-content {
+  bottom: -8.5px;
+}
 }
 @media (min-width:47.9em) and (max-width: 62em){
-    .cse{
+/*    .cse{
     border: solid 1px red;
-  }
+  }*/
 .row{
   margin-left:-12%; 
 }
@@ -1056,7 +1041,9 @@ h3 {
 .material-card.mc-active.tg h2 {
  font-size: 2.3vw; 
 }
-
+.material-card.mc-active .mc-content {
+  bottom: -14px;
+}
 
 }
 @media (min-width:39em) and (max-width:47.9em){
@@ -1072,6 +1059,9 @@ h3 {
     top: 0;
     padding: 15px 16px 30px 90px;
   }
+/*  .material-card.mc-active.mc-content {
+  bottom: -400px ;
+}*/
 }
 
 @media (min-width:30em) and (max-width:39em){
@@ -1388,7 +1378,7 @@ h3 {
   position: absolute;
   right: 0;
   top: 0;
-  bottom: 16px;
+  bottom: 0px;
   left: 16px;
   width: 129%;
   -webkit-transition: all 0.3s;
@@ -1448,9 +1438,9 @@ h3 {
 }
 }
 @media (min-width:36em) and (max-width:39em){
-        .cse{
+/*        .cse{
     border: solid 1px blue;
-  }
+  }*/
   .material-card.mc-active .mc-footer {
   overflow: visible;
   position: absolute;
@@ -1463,11 +1453,14 @@ h3 {
   padding-left: 5px;
   padding-bottom: 22%;
 }
+.material-card.mc-active .mc-content {
+  bottom: -20px;
+}
 }
 @media (min-width:30em) and (max-width: 36em){
-  .cse{
+/*  .cse{
     border: solid 1px;
-  }
+  }*/
 
 .material-card h2 {
       margin-top: -35%;
@@ -1480,6 +1473,9 @@ h3 {
   padding-left: 33px;
 }
 
+.material-card.mc-active .mc-content {
+  bottom: -15px;
+}
 
 }
 @media (max-width: 30em){
@@ -1500,6 +1496,13 @@ h3 {
   .material-card.mc-active .mc-footer {
     padding-left: 30px;
   }
+/*.material-card .ob h2 {
+  position: absolute;
+  top: calc(100% +70px) !important;
+}*/
+/*  .material-card.mc-active .mc-content {
+  bottom: -200px !important;
+}*/
 }
 .cc{
   margin-left: 7%;
