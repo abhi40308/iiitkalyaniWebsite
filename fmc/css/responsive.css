@@ -1,110 +1,151 @@
-@media screen and (max-width: 1024px) {
-#header .header-content {
-	width: 90%;
+
+
+/*
+Author: Bootstrapthemes
+Author URI: http://www.bootstrapthemes.co
+*/
+
+/* Portrait tablets and medium desktops */
+@media (max-width: 1199px) {
+    body {
+        font-size: 1rem;
+    }
+
+
+
+
+
+
+
 }
-.nav-toggle {
-	display: block;
+
+/* Portrait tablets and small desktops */
+@media (max-width: 991px) {
+    html {
+        font-size: 90%;
+    }
+
+    h3 {
+        font-size: 1.575rem;
+        line-height: 2rem;
+        margin-bottom: 15px;
+    }
+    h5 {
+        font-size: 1.1rem;
+        margin-bottom: .5rem;
+        color: #696f7c;
+        line-height: 1.475rem;
+    }
+    h4 {
+        font-size: 1.225rem;
+        line-height: 2rem;
+    }
+    #quote-carousel .carousel-control.left {
+        left: 120px;
+    }
+    #quote-carousel .carousel-control.right {
+        right: 120px;
+    }   
+
+
+
+
 }
-.navigation {
-	position: fixed;
-	background-color: #000;
-	width: 100%;
-	height: 100%;
-	top: 0;
-	left: 0;
-	z-index: 99999;
-	visibility: hidden;
-	opacity: 0;
-	-webkit-transition: opacity 0.5s, visibility 0s 0.5s;
-	transition: opacity 0.5s, visibility 0s 0.5s;
+/* Landscape phones and portrait tablets */
+@media  (max-width: 768px) {
+    html {
+        font-size: 80%;
+    }
+    .navbar-default .navbar-collapse, .navbar-default .navbar-form {
+        border-color: transparent;
+        background-color: rgba(67, 52, 108, 0.5);
+        text-align: center;
+    }
+    .main_menu_bg .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus{
+        border-bottom: 0px solid;
+    }
+    .main_clinetslogo{
+        margin-top:30px;
+    }    
+    .grid-item {
+        width: 49.93%;
+    }
+    .portfolio .grid_item_overlay {
+        padding-top: 37%;
+    }
+    .copyright_text{
+        text-align: center;
+    }
+    .footer_socail{ 
+        text-align: center;
+    }
+    .footer_subcribs_area .navbar-form {
+        padding: 10px;
+    }
+    #quote-carousel .carousel-control.left {
+        left: 80px;
+    }
+    #quote-carousel .carousel-control.right {
+        right: 80px;
+    } 
+    .single_widget ul li a i{
+        width:3%;
+        margin-right:2%;
+    }
+    .navbar-form {
+        border-top: 0px solid transparent;
+        border-bottom: 0px solid transparent;
+        -webkit-box-shadow: inset 0 0px 0 rgba(255,255,255,.1),0 0px 0 rgba(255,255,255,.1);
+        box-shadow: inset 0 0px 0 rgba(255,255,255,.1),0 0px 0 rgba(255,255,255,.1);
+    }
+
+
 }
-.navigation .primary-nav {
-	position: relative;
-	top: 45%;
-	-moz-transform: translateY(-45%);
-	-ms-transform: translateY(-45%);
-	-webkit-transform: translateY(-45%);
-	transform: translateY(-45%);
+
+
+
+/* Landscape phones and smaller */
+@media (max-width: 479px) {
+    html {
+        font-size: 65%;
+    }
+    #quote-carousel .carousel-control.left {
+        display: none;
+    }
+    #quote-carousel .carousel-control.right {
+        display: none;
+    } 
+    #quote-carousel .carousel-indicators li {
+        width: 30px;
+        height: 30px;
+    }
+    #quote-carousel .carousel-indicators .active {
+        width: 35px;
+        height: 35px;
+    } 
+
+
 }
-.navigation li {
-	display: block;
-	margin-bottom: 20px;
+
+
+
+
+
+@media (max-width: 320px) {
+
+
+    html {
+        font-size: 60.5%;
+    }
+
+
+
+
+
+
+
+
+
+
 }
-.navigation a {
-	display: block;
-	font-size: 25px;
-	margin: 0;
-	color: #fff;
-	font-size: 13px;
-	text-align: center;
-}
-.testimonials blockquote {
-	padding: 20px 5% 0;
-}
-.testimonials p {
-	font-size: 26px;
-}
-.flex-control-nav {
-	bottom: 20px;
-}
-}
-@media screen and (max-width: 768px) {
-.banner-text {
-	padding-top: 30%;
-}
-.banner-text h1 {
-	font-size: 42px;
-}
-.banner-text p {
-	font-size: 18px;
-}
-.flexslider {
-	padding-bottom: 80px;
-}
-.flex-control-nav {
-	width: 100%;
-}
-.footer .footer-col {
-	margin-bottom: 50px;
-}
-.detail-contentbox {
-	background-color: #f2f2f2;
-	padding: 6%;
-}
-}
-@media screen and (max-width: 640px) {
-.banner-text {
-	padding-top: 35%;
-}
-.detail-contentbox {
-	background-color: #f2f2f2;
-	padding: 6%;
-}
-}
-@media screen and (max-width: 480px) {
-.banner-text {
-	padding-top: 45%;
-}
-.banner-text h1 {
-	font-size: 32px;
-}
-.detail-contentbox {
-	background-color: #f2f2f2;
-	padding: 6%;
-}
-}
-@media screen and (max-width: 320px) {
-.banner-text {
-	padding-top: 55%;
-}
-.testimonials blockquote {
-	padding: 20px 5% 0;
-}
-.testimonials p {
-	font-size: 11px;
-}
-.detail-contentbox {
-	background-color: #f2f2f2;
-	padding: 6%;
-}
-}
+
