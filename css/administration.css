@@ -481,6 +481,11 @@ footer .list-end li:not(:first-child):before {
         margin-bottom: 15%;
         margin-left: 13%;
       }
+      .ms .img-responsive{
+        width:18vw;
+        margin-bottom: 15%;
+        margin-left: 13%;
+      }
       .imagebox{
         margin-top:1%;
         margin-bottom:0%;
