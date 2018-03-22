@@ -1,505 +1,424 @@
+<!doctype html>
+
 <html>
 
 <head>
-    <meta charset="UTF-8">
-    <title>Algoholic 3.0</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!--    bootstrap-->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
-    <!--   google fonts-->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
+
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Monoton" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Homemade+Apple" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Arizonia|Cookie|Homemade+Apple|Leckerli+One" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Arizonia|Cookie|Graduate|Homemade+Apple|Leckerli+One|Libre+Barcode+39+Text" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Libre+Barcode+39+Text|VT323" rel="stylesheet">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400,500,700">
-    
-    <link rel="stylesheet" href="../css/algoholic/split.css">
-    <link rel="stylesheet" href="../css/algoholic/event.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="../css/algoholic/aboutalgoholic.css">
-    <link rel="stylesheet" href="../css/algoholic/techmember.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
-    <link rel="stylesheet" href="../css/algoholic/animate.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/animate.css">
     <script src="../js/wow.min.js"></script>
-
-
-    <style>
-        hr {
-            width: 25em;
-            align-items: center;
-            color: black;
-
-        }
-
-        div,
-        body {
-            margin: 0;
-            padding: 0;
-            font-family: exo, sans-serif;
-
-        }
-
-        .bk {
-            /* The image used */
-            background-image: url("../images/algoholic/layer2.jpg");
-
-            /* Center and scale the image nicely */
-            background-repeat: no-repeat;
-            background-size: cover;
-
-            background-position: center center;
-            background-repeat: no-repeat;
-            background-attachment: fixed;
-            background-size: cover;
-            background-color: #999;
-
-
-        }
-
-        .center {
-            margin: auto;
-            width: 50%;
-
-
-        }
-
-        html,
-        body {
-            height: 100%;
-            background-color: white;
-        }
-
-        body {
-
-            background-position: center center;
-            background-repeat: no-repeat;
-            background-attachment: fixed;
-            background-size: cover;
-            background-color: #999;
-            overflow-x: hidden;
-
-        }
-
-        div,
-        body {
-            margin: 0;
-            padding-top: 2px;
-            font-family: exo, sans-serif;
-
-        }
-
-        .wrapper {
-            height: 100%;
-            width: 100%;
-        }
-
-        .message {
-            -webkit-box-sizing: border-box;
-            -moz-box-sizing: border-box;
-            box-sizing: border-box;
-
-            text-align: center;
-
-            display: block;
-
-
-            color: #fff;
-            position: relative;
-
-            top: 50%;
-            left: 5%;
-            margin-top: -50px;
-            margin-left: -100px;
-
-
-        }
-    </style>
-
-
+   
+ 
 </head>
 
 <body>
-    <!--<body style="background-color: darkorange">-->
+    <!--navbar -->
+    <div class="navbar-fixed">
+    <nav>
+        <div class="nav-wrapper black">
+            <a href="#" class="brand-logo">AGOHOLIC 3.0</a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li><a href="#about">ABOUT US</a></li>
+                <li><a href="#members">MEMBER</a></li>
+                <li><a href="#events">EVENTS</a></li>
+                <li><a href="../index.html">HOME</a></li>
 
-    <!--nav bar-->
-
-    <nav class="navbar navbar-expand-lg navbar-light bg-secondary  ">
-        <a class="navbar-brand " href="#aboutus"  style="color:white" >ALGOHOLIC</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav float-right">
-                <a class="nav-item nav-link active" href="#members"   style="color:white">MEMBERS </a>
-                <a class="nav-item nav-link  active  " href="#events"  style="color:white" >EVENTS</a>
-                <a class="nav-item nav-link active " href="../fmc/index.html#gallery"   style="color:white">GALLERY</a>
-
-            </div>
+            </ul>
         </div>
     </nav>
-
-
-    <!--    1 page-->
-
-    <div class="bk container-fluid ">
-        <div class="text-center ">
-            <div class="wrapper">
-                <div class="message wow slideInUp">
-
-                    <h1 class="align-middle  data-wow-offset=10  data-wow-iteration=20 "style="font-family: monoton;letter-spacing: 4px;color:darkorange;font-size: 100px">
-                        ALGOHOLIC</h1>
-                    <h2>
-                        <small class="text-muted" style="font-family:Graduate ;letter-spacing: 2px ;color: aliceblue">IIIT KALYANI CODING CLUB</small>
-
-                    </h2>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-
-
-    <!--    about us -->
-    <!--  <div style="width: 100%" class="container-fluid">-->
-
-    <div id="aboutus" class="row   ">
-        <div class="col-8 bak">
-            <h2 class="vt"><b class="vt">ALGOHOLIC</b></h2>
-
-            <img class="imge wow bounceInUp" src="../images/algoholic/code4.jpg" alt="">
-            <h2 class="vt wow bounceInUp"><b class="vt">About this club</b></h2>
-            <p class="vt wow slideInLeft">Algoholic is IIIT Kalyani's coding club.The aim of Algoholic is to promote programming as a culture in the Institute. The club brings people together, so that they may sharpen their skills in programming. This is the performance sheet achieved by IIIT Kalyani teams in ACM ICPC Online Preliminary Round 2016 which is quite simply the world’s oldest, largest, and most prestigious programming contest.
-            </p>
-
-
-            <div>
-
-            </div>
-
-        </div>
-        <div class="col-4 bak2 ">
-            <h2 class="vt"> <b class="vt">What we do?</b></h2>
-            <p class="vt wow slideInRight">We conduct sessions and workshops, hold lectures and talks, and even host coding competitions and hackathons. There is something for everyone. Whether you want to learn, participate in hackathons and win big prizes, or prepare for the ACM-ICPC, you can do it all here. We have a list of events planned up for the coming year. Keep watching this space to know more.</p>
-
-            <button type="button" class="btn btn-primary btn-lg btn-warning vt text-center">KNOW MORE</button>
-
-
-
-
-        </div>
-    </div>
-    <!--  </div>-->
-
-    <hr>
-
-
-    <!--member-->
-    <div id="members" class="container-fluid">
-        <div class="at-section">
-            <div class="at-section__title wow slideInUp" style="font-family:poiret one ;color:blue;background-color:;color:black">ALGOHOLIC TEAM</div>
-        </div>
-        <div class="at-grid" data-column="3">
-            <div class="at-column">
-                <div class="at-user wow slideInUp">
-                    <div class="at-user__avatar"><img src="../images/algoholic/abhishek.jpg" /></div>
-                    <div class="at-user__name">Abhishek Shukla </div>
-                    <div class="at-user__title">abhishek@iiitkalyani.ac.in</div>
-                    <ul class="at-social">
-                        <i class="fa fa-github" aria-hidden="true"></i>
-
-                    </ul>
-                </div>
-            </div>
-            <div class="at-column">
-                <div class="at-user wow slideInUp">
-                    <div class="at-user__avatar"><img src="../images/algoholic/akarsh.jpg" /></div>
-                    <div class="at-user__name">Akarsh Somani</div>
-                    <div class="at-user__title">akarshsomani@iiitkalyani.ac.in</div>
-                    <ul class="at-social">
-                        <i class="fa fa-github" aria-hidden="true"></i>
-                    </ul>
-                </div>
-            </div>
-            <div class="at-column">
-                <div class="at-user wow slideInUp">
-                    <div class="at-user__avatar"><img src="../images/algoholic/dilpreet.jpg" /></div>
-                    <div class="at-user__name">Dilpreet Chawla</div>
-                    <div class="at-user__title">dilpreet@iiitkalyani.ac.in</div>
-                    <ul class="at-social">
-                        <i class="fa fa-github" aria-hidden="true"></i>
-
-                    </ul>
-                </div>
-            </div>
-            <div class="at-column">
-                <div class="at-user wow slideInUp">
-                    <div class="at-user__avatar"><img src="../images/algoholic/shekhar.jpg" /></div>
-                    <div class="at-user__name">Pavuluri Chandra Shekhar</div>
-                    <div class="at-user__title">pchandrashekhar21@gmail.com</div>
-                    <ul class="at-social">
-                        <i class="fa fa-github" aria-hidden="true"></i>
-
-                    </ul>
-                </div>
-            </div>
-            <div class="at-column">
-                <div class="at-user wow slideInUp">
-                    <div class="at-user__avatar"><img src="../images/algoholic/satyam.jpg" /></div>
-                    <div class="at-user__name">Satyam Kumar</div>
-                    <div class="at-user__title">satyam@iiitkalyani.ac.in</div>
-                    <ul class="at-social">
-                        <i class="fa fa-github" aria-hidden="true"></i>
-
-                    </ul>
-                </div>
-            </div>
-
-        </div>
-    </div>
-
-    <!--   split/and event coding session-->
-
-    <div id="events" style="max-width:100%" class="cont wow slideInUp">
-        <div class="lft">
-            <h1 style="font-family:VT323">Events </h1>
-            <hr>
-            <div class="eve">
-                <ul class="main">
-                    <li class="date wow slideInUp">
-                        <h3>JAN 18</h3>
-                        <p>Schedule of Events</p>
-                    </li>
-                    <li class="events">
-                        <ul class="events-detail">
-                            <li class="wow slideInLeft">
-                                <a href="#">
-          <span class="event-time wow slideInUp">2:00pm - </span>
-          <span class="event-name wow slideInUp">hackthon</span>
-          <br />
-          <span class="event-location">iiit boys hostel</span>
-        </a>
-                            </li>
-
-                            <li class="wow slideInLeft">
-                                <a href="#">
-          <span class="event-time wow slideInUp">2:00pm - </span>
-          <span class="event-name wow slideInUp">gameing and coding</span>
-          <br />
-          <span class="event-location wow slideInUp">A/10 iiitlky</span>
-        </a>
-                            </li>
-
-
-
-                            <li class="wow slideInLeft">
-                                <a href="#">
-          <span class="event-time">2:00pm - </span>
-          <span class="event-name">gameing and coding</span>
-          <br />
-          <span class="event-location">A/10 iiitlky</span>
-        </a>
-                            </li >
-                        </ul>
-
-                    </li>
-
-                    <li class="date">
-                        <h3>Dec 19</h3>
-                        <p>Schedule of Events</p>
-                    </li>
-                    <li class="events cf">
-                        <ul class="events-detail">
-                            <li class="wow slideInLeft">
-                                <a href="#">
-          <span class="event-time">2:00pm - </span>
-          <span class="event-name">gameing and coding</span>
-          <br />
-          <span class="event-location">A/10 iiitlky</span>
-        </a>
-                            </li>
-
-                            <li class="wow slideInLeft">
-                                <a href="#">
-          <span class="event-time">2:00pm - </span>
-          <span class="event-name">gameing and coding</span>
-          <br />
-          <span class="event-location">A/10 iiitlky</span>
-        </a>
-                            </li>
-
-                            <li class="wow slideInLeft">
-                                <a href="#">
-          <span class="event-time">2:00pm - </span>
-          <span class="event-name">gameing and coding</span>
-          <br />
-          <span class="event-location">A/10 iiitlky</span>
-        </a>
-                            </li>
-
-                        </ul>
-
-                    </li>
-
-                </ul>
-            </div>
-
-
-
-
-
-        </div>
-        <div class="rigt ">
-            <h1 style="font-family: VT323">Coding session </h1>
-
-            <hr>
-
-            <div>
-                <div class="eve">
-                    <ul class="main">
-                        <li class="date">
-                            <h3>Dec 18</h3>
-                            <p>Schedule of Events</p>
-                        </li>
-                        <li class="events">
-                            <ul class="events-detail">
-                                <li class="wow slideInRight">
-                                    <a href="#">
-          <span class="event-time">2:00pm - </span>
-          <span class="event-name">gameing and coding</span>
-          <br />
-          <span class="event-location">A/10 iiitlky</span>
-        </a>
-                                </li>
-
-                                <li class="wow slideInRight">
-                                    <a href="#">
-          <span class="event-time">2:00pm - </span>
-          <span class="event-name">gameing and coding</span>
-          <br />
-          <span class="event-location">A/10 iiitlky</span>
-        </a>
-                                </li>
-
-                                <li class="wow slideInRight">
-                                    <a href="#">
-          <span class="event-time">2:00pm - </span>
-          <span class="event-name">gameing and coding</span>
-          <br />
-          <span class="event-location">A/10 iiitlky</span>
-        </a>
-                                </li>
-
-
-                            </ul>
-
-                        </li >
-
-                        <li class="date">
-                            <h3>Dec 19</h3>
-                            <p>Schedule of Events</p>
-                        </li>
-                        <li class="events cf">
-                            <ul class="events-detail">
-                                <li class="wow slideInRight">
-                                    <a href="#">
-          <span class="event-time">2:00pm - </span>
-          <span class="event-name">gameing and coding</span>
-          <br />
-          <span class="event-location">A/10 iiitlky</span>
-        </a>
-                                </li>
-
-                                <li>
-                                    <a href="#">
-          <span class="event-time">2:00pm - </span>
-          <span class="event-name">gameing and coding</span>
-          <br />
-          <span class="event-location">A/10 iiitlky</span>
-        </a>
-                                </li>
-
-                                <li class="wow slideInRight">
-                                    <a href="#">
-          <span class="event-time">2:00pm - </span>
-          <span class="event-name">gameing and coding</span>
-          <br />
-          <span class="event-location">A/10 iiitlky</span>
-        </a>
-                                </li>
-                            </ul>
-
-                        </li>
-
-                    </ul>
-                </div>
-
-            </div>
-
-
-
-        </div>
     </div>
 
 
 
 
 
+    <!--slider-->
+    <div class="slider ">
+
+        <ul class="slides fullscreen">
+
+            <li>
+
+                <img style="    -webkit-filter: brightness(20%);filter: brightness(20%);"src="../images/algoholic/c1.gif">
+                <!-- random image -->
+
+                <div class="caption center-align">
+
+                    <h3 > <b>ALOHOLIC 3.0</b></h3>
+
+                    <h5  >"IIIT Kalyani CODING CLUB"</h5>
+
+                </div>
+
+            </li>
+
+<!--             <li>
+
+                <img src="../images/algoholic/c2.jpg">
+
+                <div class="caption left-align">
+
+                    <h3>Code Chef</h3>
+
+                    <h5 class="light grey-text text-lighten-3">"We have achive 37th ranks in codechef"</h5>
+
+                </div>
+
+            </li> -->
+
+<!--
+            <li>
+
+                <img src="../images/algoholic/c3.jpg">
+                 random image 
+
+                <div class="caption right-align">
+
+                    <h3> IIIT Kalyani teams in ACM ICPC </h3>
+
+                    <h5 class="light grey-text text-lighten-3">"Online Preliminary Round 2016 which is quite simply the world's oldest, largest, and most prestigious programming contest."</h5>
+
+                </div>
+
+            </li>
+-->
+<!-- 
+            <li>
+
+                <img src="../images/algoholic/c4.jpg">
+
+                <div class="caption center-align">
+
+                    <h3>CODACHARYA'18</h3>
+
+                    <h5 class="light grey-text text-lighten-3">"Great chance to showcase your coding skills, a day long coding competition."</h5>
+
+                </div>
+
+            </li> -->
+
+        </ul>
+
+    </div>
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+
+            $('.slider').slider({
+                full_width: true
+
+            });
+            $('.slider').slider({
+                height: 650
+
+            });
+            
 
 
-    <footer>
-        <div class="container ">
+        });
+    </script>
+
+
+    <!--   about us -->
+
+
+
+    <div class="row" id="about">
+        <div class="grid-example col s12"><span class="flow-text"><h3 class="center-align">About Us</h3></span></div>
+        <div class="grid-example col s12 m12 l6"><span class="flow-text"><img class="materialboxed" width="650" src="../images/algoholic/about.gif"></span></div>
+        <div class="grid-example col s12 m12 l6 wow fadeInRight "><span class="flow-text  "><p>Algoholic is IIIT Kalyani's coding club.The aim of Algoholic is to promote programming as a culture in the Institute. The club brings people together, so that they may sharpen their skills in programming. This is the performance sheet achieved by IIIT Kalyani teams in ACM ICPC Online Preliminary Round 2016 which is quite simply the world’s oldest, largest, and most prestigious programming contest. </p></span></div>
+    </div>
+
+
+
+    <!-- team member  -->
+
+
+    <div class="container">
+
+        <h3 class="center-align" id="members">TEAM MEMBERS </h3>
+        <div class="divider black "></div>
+
+        <div class="row">
+            <div class="col s12 m6 l4 wow fadeInLeft " wow-data-duration="10s">
+                <div class="card  hoverable">
+                    <div class="card  ">
+                        <div class="card-image waves-effect waves-block waves-light">
+                            <img class="activator " src="../images/algoholic/abhishek.jpg">
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title activator grey-text text-darken-4">Abhishek Shukla<i class="material-icons right">more_vert</i></span>
+                            <p>
+                                <a href="https://www.facebook.com/darkarcherx">  <i class="fa fa-facebook-square" style="font-size:36px;color: black"></i></a>
+                                <a href="https://www.github.com/dark-archerx "><i class="fa fa-github-square" style="font-size:36px;color:black"></i></a></p>
+                        </div>
+                        <div class="card-reveal">
+                            <span class="card-title grey-text text-darken-4">Abhishek Shukla<i class="material-icons right">close</i></span>
+                            <p>Contact No : 9062426290 <br> Mail ID : abhishek@iiitkalyani.ac.in <br> GitHub Profile : github.com/dark-archerx </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col s12 m6 l4 wow fadeInUp">
+                <div class="card ">
+                    <div class="card hoverable">
+                        <div class="card-image waves-effect waves-block waves-light">
+                            <img class="activator" src="../images/algoholic/dilpreet.jpg">
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title activator grey-text text-darken-4">Dilpreet  Chawla<i class="material-icons right">more_vert</i></span>
+                            <p>
+                                <a href="https://www.facebook.com/dilpreet.chawla.31"><i class="fa fa-facebook-square" style="font-size:36px;color: black"></i></a>
+                                <a href="https://www.github.com/iamdsc">  <i class="fa fa-github-square" style="font-size:36px;color:black"></i></a>
+                            </p>
+                        </div>
+                        <div class="card-reveal">
+                            <span class="card-title grey-text text-darken-4">Dilpreet Singh Chawla<i class="material-icons right">close</i></span>
+                            <p>Contact No : 7595932084<br> Mail ID : dilpreet@iiitkalyani.ac.in<br> GitHub Profile : https://github.com/iamdsc<br> LinkedIn Profile : https://www.linkedin.com/in/dilpreet-chawla-88036b137/
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col s12 m6 l4 wow fadeInRight">
+                <div class="card ">
+                    <div class="card  hoverable">
+                        <div class="card-image waves-effect waves-block waves-light">
+                            <img class="activator" src="../images/algoholic/akarsh.jpg">
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title activator grey-text text-darken-4">Akarsh Somani<i class="material-icons right">more_vert</i></span>
+                            <p>
+                                <a href="https://www.facebook.com/akarsh.somani"><i class="fa fa-facebook-square" style="font-size:36px;color: black"></i></a>
+                                <a href="https://www.github.com/akarshsomani "><i class="fa fa-github-square" style="font-size:36px;color:black"></i></a></p>
+                        </div>
+                        <div class="card-reveal">
+                            <span class="card-title grey-text text-darken-4">Akarsh Somani<i class="material-icons right">close</i></span>
+                            <p>Contact No : 8820233934<br> Mail ID : akarshsomani@iiitkalyani.ac.in<br> LinkedIn Profile : https://www.linkedin.com/in/akarsh-somani-266a91155/<br> GitHub Profile : https://github.com/akarshsomani
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="col s12 m6 l4 wow slideInLeft">
+                <div class="card ">
+                    <div class="card  hoverable">
+                        <div class="card-image waves-effect waves-block waves-light">
+                            <img class="activator" src="../images/algoholic/satyam.jpg">
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title activator grey-text text-darken-4">Satyam Kumar<i class="material-icons right">more_vert</i></span>
+                            <p>
+                                <i class="fa fa-facebook-square" style="font-size:36px;color: black"></i>
+                                <i class="fa fa-github-square" style="font-size:36px;color:black"></i></p>
+                        </div>
+                        <div class="card-reveal">
+                            <span class="card-title grey-text text-darken-4">Satyam Kumar<i class="material-icons right">close</i></span>
+                            <p>
+                                Name : Satyam Kumar <br> Contact No : 7004902305 <br> Mail ID : satyam@iiitkalyani.ac.in <br> GitHub Profile : https://github.com/Satyam-TG </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col s12 m6 l4 wow fadeInRight">
+                <div class="card ">
+                    <div class="card  hoverable">
+                        <div class="card-image waves-effect waves-block waves-light">
+                            <img class="activator" src="../images/algoholic/shekhar.jpg">
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title activator grey-text text-darken-4">P. Chandra<i class="material-icons right">more_vert</i></span>
+                            <p>
+                                <i class="fa fa-facebook-square" style="font-size:36px;color: black"></i>
+                                <i class="fa fa-github-square" style="font-size:36px;color:black"></i></p>
+                        </div>
+                        <div class="card-reveal">
+                            <span class="card-title grey-text text-darken-4">Pavuluri Chandra Shekhar<i class="material-icons right">close</i></span>
+                            <p>
+
+                                Name : Pavuluri Chandra Shekhar<br> Contact No : 9088522350 <br> Mail ID : pchandrashekhar21@gmail.com <br> LinkedIn Profile : https://www.linkedin.com/in/pavulurishekhar2114/
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+
+        <!--   events and session-->
+    </div>
+    <div class="divider black"></div>
+    <div class="row " id="events">
+        <div class="col s12 m6 l6 wow zoomInLeft " wow-data-duration="10s">
+
+            <h3 class="center-align">Events </h3>
+
+            <div class="divider black"></div>
+
+            <div class="col s12 m12  ">
+                <div class=" card horizontal hoverable ">
+                    <div class="card-image hoverable ">
+                        <img src="../images/algoholic/e1.jpg">
+                    </div>
+                    <div class="card-stacked">
+                        <div class="card-content">
+                            <h6>WEBNET </h6>
+                            <P>VANUE:KALYANI</P>
+                            <P>TIME:__ __</P>
+                            <P>DATE:12-march,2018</P>
+                        </div>
+                        <div class="card-action">
+                            <i class="fa fa-facebook-square" style="font-size:36px;color: black"></i>
+                            <i class="fa fa-github-square" style="font-size:36px;color:black"></i>
+                            <i class="fa fa-youtube-square" style="font-size:36px;color:black"></i>
+                            <i class="fa fa-google-plus-square" style="font-size:36px;color:black"></i>
+
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col s12 m12 wow zoomInLeft" wow-data-duration="10s">
+                <div class="card horizontal hoverable">
+                    <div class="card-image hoverable">
+                        <img src="../images/algoholic/e4.jpg">
+                    </div>
+                    <div class="card-stacked">
+                        <div class="card-content">
+                            <h6>CHODACHARYA</h6>
+                            <P>VANUE:KALYANI</P>
+                            <P>TIME:__ __</P>
+                            <P>DATE:12-march,2018</P>
+                        </div>
+                        <div class="card-action">
+                            <i class="fa fa-facebook-square" style="font-size:36px;color: black"></i>
+                            <i class="fa fa-github-square" style="font-size:36px;color:black"></i>
+                            <i class="fa fa-youtube-square" style="font-size:36px;color:black"></i>
+                            <i class="fa fa-google-plus-square" style="font-size:36px;color:black"></i>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+        <div class="col s12 m6 l6">
+
+
+            <h3 class="center-align">Session </h3>
+            <div class="divider black"></div>
+            <div class="col s12 m12 wow zoomInLeft" wow-data-duration="10s">
+                <div class="card horizontal hoverable">
+                    <div class="card-image hoverable">
+                        <img src="../images/algoholic/e2.jpg">
+                    </div>
+                    <div class="card-stacked">
+                        <div class="card-content">
+                            <h6>WEBNET </h6>
+                            <P>VANUE:KALYANI</P>
+                            <P>TIME:__ __</P>
+                            <P>DATE:12-march,2018</P>
+                        </div>
+                        <div class="card-action">
+                            <i class="fa fa-facebook-square" style="font-size:36px;color: black"></i>
+                            <i class="fa fa-github-square" style="font-size:36px;color:black"></i>
+                            <i class="fa fa-youtube-square" style="font-size:36px;color:black"></i>
+                            <i class="fa fa-google-plus-square" style="font-size:36px;color:black"></i>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col s12 m12 wow zoomInLeft" wow-data-duration="50s">
+                <div class="card horizontal hoverable">
+                    <div class="card-image hoverable">
+                        <img src="../images/algoholic/e3.jpg">
+                    </div>
+                    <div class="card-stacked">
+                        <div class="card-content">
+                            <h6>WEBNET </h6>
+                            <P>VANUE:KALYANI</P>
+                            <P>TIME:__ __</P>
+                            <P>DATE:12-march,2018</P>
+                        </div>
+                        <div class="card-action">
+
+                            <i class="fa fa-facebook-square" style="font-size:36px;color: black"></i>
+                            <i class="fa fa-github-square" style="font-size:36px;color:black"></i>
+                            <i class="fa fa-youtube-square" style="font-size:36px;color:black"></i>
+                            <i class="fa fa-google-plus-square" style="font-size:36px;color:black"></i>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+    </div>
+
+    <!--    footer-->
+
+    <footer class="page-footer grey darken-4" id="footer">
+        <div class="container">
             <div class="row">
-                <div class="col-sm wow slideInRight">
-                    <h1 style="font-family:Poiret One">Explore more</h1>
+                <div class="col l6 s12">
+                    <h5 class="white-text">ALGOHOLIC "The coding Club"</h5>
+                    <p class="grey-text text-lighten-4">Algoholic is IIIT Kalyani's coding club.The aim of Algoholic is to promote programming as a culture in the Institute. The club brings people together. </p>
+                    <!--                  icons-->
+                    <i class="fa fa-facebook-square" style="font-size:48px;color: aliceblue"></i>
+                    <i class="fa fa-github-square" style="font-size:48px;color:aliceblue"></i>
+                    <i class="fa fa-youtube-square" style="font-size:48px;color:aliceblue"></i>
+                    <i class="fa fa-google-plus-square" style="font-size:48px;color:aliceblue"></i>
+                </div>
+                <div class="col l4 offset-l2 s12">
+                    <h5 class="white-text">Links</h5>
                     <ul>
-
-                        <li style="font-family:Poiret One"><a href="https://www.hackerrank.com">hackerrank</a></li>
-                        <li style="font-family:Poiret One"><a href="https://www.codechef.com
-">codechef</a></li>
-                        <li style="font-family:Poiret One"><a href="https://www.hackerearth.com
-">hackerearth</a></li>
-                        <li style="font-family:Poiret One"><a href="https://github.com
-">Github</a></li>
+                        <li><a class="grey-text text-lighten-3" href="https://www.github.com">Github</a></li>
+                        <li><a class="grey-text text-lighten-3" href="https://www.codechef.com">Codechef</a></li>
+                        <li><a class="grey-text text-lighten-3" href="https://www.hackerearth.com">Hackerearth</a></li>
+                        <li><a class="grey-text text-lighten-3" href="https://www.spoj.com">Spoj</a></li>
                     </ul>
-
-
                 </div>
-                <div class="col-sm wow slideInUp">
-                    <h1 style="font-family:Poiret One">ALGOHALIC </h1>
-                    <ul>
-
-                        <li style="font-family:Poiret One">hackrrank</li>
-                        <li style="font-family:Poiret One">codechef</li>
-                        <li style="font-family:Poiret One">hackthon</li>
-                        <li style="font-family:Poiret One">workshop</li>
-                    </ul>
-                    <a href="">All right reserved by @iiit klayani</a>
-                </div>
-
-                <div class="col-sm wow slideInLeft ">
-                    <h1 style="font-family:Poiret One">Contact us </h1>
-                    <p style="font-family:Poiret One">
-                        Indian institute of information technology,kalyani,W.B
-                    </p>
-                    <i style="font-family:Poiret One"><a href="https://www.facebook.com/groups/algoholic/about/">facebook</a></i>
-                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+                © 2018 IIIT kalyani
+                <a class="grey-text text-lighten-4 right" href="../index.html">Home</a>
             </div>
         </div>
     </footer>
-
-
     <script>
         new WOW().init();
     </script>
+
+
+
 </body>
 
 </html>

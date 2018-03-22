@@ -12,7 +12,7 @@ body {
     font-family: 'Raleway', sans-serif;
 }
 /*
-PRE LOADER 
+PRE LOADER
 */
 .preloader {
     position: fixed;
@@ -569,7 +569,7 @@ input:-ms-input-placeholder {
     -o-background-size: cover;
     background-size: cover;
     width: 100%;
-    overflow: hidden;
+  overflow: hidden;
     color:#fff;
 }
 .skill-heading h4{
@@ -882,7 +882,7 @@ input:-ms-input-placeholder {
 }
 
 .cd-timeline-img {
-    
+
     position: absolute;
     /*margin-top: 10px;*/
     top: 0;
@@ -1241,6 +1241,7 @@ input:-ms-input-placeholder {
 }
 #footer .footer-first-content .logo{
     margin-bottom:20px;
+    text-align: center;
 }
 .footer-mid-content .post{
     border-bottom:1px solid #404040;
@@ -1299,13 +1300,13 @@ input:-ms-input-placeholder {
 .scrollup:hover{
     color:#333;
     transform:scale(1.1);
-}	
+}
 /* --- Map --- */
 .map{
 	position:relative;
 	padding-top:0px;
 	margin-top:0px;
-	
+
 }
 
 .map iframe{

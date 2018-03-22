@@ -15,12 +15,12 @@
     html {
         font-size: 90%;
     }
-	
+
 	.home-content h1 {
     font-size: 40px;
 	line-height:50px;
 	}
-   
+
 
 
 }
@@ -30,12 +30,12 @@
     html {
         font-size: 90%;
     }
-	
+
 	.home-content h1 {
     font-size: 40px;
 	line-height:60px;
 	}
-   
+
 
 
 }
@@ -62,7 +62,7 @@
 		border:0;
 		color:#7b6c63;
 	}
-	.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus 
+	.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus
 	{
     border-bottom:0;
 	}
@@ -86,7 +86,7 @@
 	.social {
 		left:255px;
 	}
-   
+
 }
 
 
@@ -96,11 +96,11 @@
     html {
         font-size: 65%;
     }
-	
+
 	.home-content h1 {
     font-size: 25px;
 	}
-	
+
 	.heading-content h3 {
     font-size: 30px;
 	}
@@ -160,7 +160,7 @@
 	.project-item:hover .project-content {
     bottom: 110px;
 	}
-	
+
 	.home-content h1 {
     font-size: 16px;
 	}
@@ -182,14 +182,13 @@
 	.twitter-content h5 {
     font-size: 20px;
 	}
-	
+
 	.client-content h3 {
     font-size: 15px;
 	}
 	.copyright-footer .copyright p {
     font-size: 12px;
 	}
-	
-	
-}
 
+
+}
