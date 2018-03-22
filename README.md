@@ -15,4 +15,4 @@ Please read and understand the git workflow before doing anything. Acquire good 
 3. Add and commit changes in the local repo. (using: git add and git commit commands)
 4. Push changes to original repo on github. (use :  git push origin master(master is the local branchname) )
 
-Read and understand git and github fully before doing anything else you will fuck up everyone else's work.
+Read and understand git and github fully before doing anything else you will destroy everyone else's work.
