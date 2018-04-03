@@ -1,0 +1,49 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.cont {
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+  height: 100vh;
+    
+}
+.cont div {
+  flex: 1;
+  height: 100vh;
+  transition: flex 0.5s ease-out;
+  color: white;
+  font-family: sans-serif;
+  text-align: center;
+}
+/*
+.cont div h1 {
+  padding-top: 40vh;
+  transition: color 0.5s ease-out;
+}
+*/
+.cont .lft {
+  background: #BDBBAA;
+}
+.container .lft:hover {
+  flex: 1.5;
+}
+.cont .lft:hover h1 {
+  color: darkorange;
+}
+.cont .lft::after {
+  width: 100px;
+  height: 100px;
+  background: black;
+}
+.cont .rigt {
+  background:#F1DE53;
+}
+.cont .rigt:hover {
+  flex: 1.5;
+}
+.cont .rigt:hover h1 {
+  color: #ff4c5b;
+}

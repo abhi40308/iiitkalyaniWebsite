@@ -1,0 +1,91 @@
+
+
+.header{
+  background-image: url("6.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: right;
+}
+.rounded-circle{
+  width: 60%;
+  margin-left:10%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+.name{
+  margin-top: 3%;
+  font-size: 200%;
+  font-weight: bold;
+}
+.details{
+  font-size: 100%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+.ri{
+  /*border: 1px solid black;*/
+  background-color: #f4f4f4;
+  margin-left: 5%;
+  margin-top: 3%;
+  padding: 3%;
+}
+.rp{
+  /*border: 1px solid black;*/
+  background-color: #f4f4f4;
+  margin-left: 4%;
+  margin-top: 3%;
+  padding: 3%;
+}
+.sdi{
+  /*border: 1px solid black;*/
+  margin-left: 25.5%;
+  margin-top: 3%;
+  background-color: #f4f4f4;
+  margin-right: 7%;
+}
+.head{
+  /*border: 1px solid black;*/
+font-size: 120%;
+background-color: #d8d8d8;
+padding-top: 1.5%;
+padding-bottom:1.5%;
+padding-left: 2%;
+margin-bottom: 2%;
+}
+.coursehead{
+  font-size: 18px;
+  margin-left: 3%;
+}
+.sld{
+  margin-left: 5%;
+}
+.course{
+  margin-bottom: 2%;
+}
+@media only screen and (max-width:35.99em){
+  .name{
+    margin-top: 1%;
+    font-size: 160%;
+    margin-left: 5%;
+  }
+  .details{
+    font-size: 90%;
+    margin-top: 2%;
+    margin-left: 5%;
+    margin-bottom: 5%;
+  }
+  .rounded-circle{
+    width: 45%;
+    margin-left:20%;
+    margin-top: 3%;
+  }
+  .sdi{
+    /*border: 1px solid black;*/
+    margin-left: 5%;
+    margin-top: 3%;
+    background-color: #f4f4f4;
+    margin-right: 7%;
+  }
+  .header{
+background-size: 120%;
+}
