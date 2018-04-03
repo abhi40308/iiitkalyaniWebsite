@@ -1,5 +1,54 @@
-{% url "contact" as contact_url %}
-
+{% url "contact_us" as contact_us %}
+{% url "about_us" as about_us %}
+{% url "academic_cal" as academic_cal %}
+{% url "administration" as administration %}
+{% url "admission" as admission %}
+{% url "admissionpg" as admissionpg %}
+{% url "admissionug" as admissionug %}
+{% url "anti_ragging" as anti_ragging %}
+{% url "campus" as campus %}
+{% url "constitution" as constitution %}
+{% url "course_stru" as course_stru %}
+{% url "digitalInitiatives" as digitalInitiatives %}
+{% url "eBrochure" as eBrochure %}
+{% url "faculties" as faculties %}
+{% url "faculty1" as faculty1 %}
+{% url "faculty" as faculty %}
+{% url "facultyOld" as facultyOld %}
+{% url "fee_structure" as fee_structure %}
+{% url "hostel" as hostel %}
+{% url "iiitpppAct" as iiitpppAct %}
+{% url "labs" as labs %}
+{% url "lib_about" as lib_about %}
+{% url "lib_contact" as lib_contact %}
+{% url "lib_guidelines" as lib_guidelines %}
+{% url "lib_services" as lib_services %}
+{% url "library" as library %}
+{% url "medical" as medical %}
+{% url "mentor_institute" as mentor_institute %}
+{% url "music" as music %}
+{% url "news" as news %}
+{% url "news_events" as news_events %}
+{% url "notifications" as notifications %}
+{% url "other" as other %}
+{% url "programmes" as programmes %}
+{% url "reach_iiit_kalyani" as reach_iiit_kalyani %}
+{% url "regul_rules" as regul_rules %}
+{% url "rti" as rti %}
+{% url "sports" as sports %}
+{% url "staff" as staff %}
+{% url "team" as team %}
+{% url "webteam" as webteam %}
+{% url "why_iiit" as why_iiit %}
+{% url "dnd" as dnd %}
+{% url "im" as im %}
+{% url "ob" as ob %}
+{% url "sc" as sc %}
+{% url "sk" as sk %}
+{% url "skh" as skh %}
+{% url "sp" as sp %}
+{% url "tg" as tg %}
+{% url "ud" as ud %}
 
 <!DOCTYPE html>
 <html lang="en">
@@ -51,7 +100,7 @@
         <a class="nav-link" href="../templates/html/reach_iiit_kalyani.html">How to reach</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="{{contact_url}}">Contact Us</a>
+        <a class="nav-link" href="{{contact_us}}">Contact Us</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="../templates/html/notifications.html">Notifications</a>
@@ -534,7 +583,7 @@
         <div class="col-lg-4 col-sm-12">
         <h3>Our mission</h3>
         <br>
-        <p>The Indian Institute of Information Technology Kalyani has been setup with an objective to produce best-in-class human resources in IT and to harness the multidimensional facets of IT in various domains. <span><a id="small-screen-aboutus" href="../templates/html/about_us.html">Read more...</a></span> </p>
+        <p>The Indian Institute of Information Technology Kalyani has been setup with an objective to produce best-in-class human resources in IT and to harness the multidimensional facets of IT in various domains. <span><a id="small-screen-aboutus" href="{{about_us}}">Read more...</a></span> </p>
         <p id="big-screen-aboutus"> IIIT Kalyani strives to evolve into a world-class academic institution with the highest quality of education and research facilities and produce industry ready IT graduates to meet the industry demands. The institute will act as a catalyst in fostering an innovative entrepreneur-focused ecosystem to ensure that new products, solutions and IP are created in the State taking advantage of the intellectual capital of the State.</p>
 
         </div>
@@ -543,7 +592,7 @@
         <h3>Location</h3>
         <br>
         <p>Kalyani is located in the Nadia district of West Bengal, within the Kolkata metropolitan area and is the administrative headquarter of Kalyani subdivision.
-        <span><a id="small-screen-aboutus" href="../templates/html/about_us.html">Read more...</a></span></p>   <p id="big-screen-aboutus">Situated on the banks of Hooghly River, the city is spread over a sprawling area of 29.14 square kilometres (11.25 sq mi). Kalyani being a planned town, is characterized by underground sewerage system, paved roads forming rectangular grids, tree lined avenues and community parks.</p>
+        <span><a id="small-screen-aboutus" href="{{about_us}}">Read more...</a></span></p>   <p id="big-screen-aboutus">Situated on the banks of Hooghly River, the city is spread over a sprawling area of 29.14 square kilometres (11.25 sq mi). Kalyani being a planned town, is characterized by underground sewerage system, paved roads forming rectangular grids, tree lined avenues and community parks.</p>
         </div>
 
         <div class="col-lg-4 col-sm-12">
@@ -557,7 +606,7 @@
       </div>
       <div class="row">
         <div class="ml-auto">
-          <a href="../templates/html/about_us.html">
+          <a href="{{about_us}}">
           <button class="button-aboutus">Read More..</button>
         </a>
         </div>
