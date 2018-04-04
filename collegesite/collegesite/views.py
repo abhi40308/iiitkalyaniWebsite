@@ -48,7 +48,7 @@ def digitalInitiatives(request):
 def eBrochure(request):
 		return render(request, "e-Brochure.html")
 
-def faculties(request):
+def facilties(request):
 		return render(request, "Facilities_landing_page-v6.html")
 
 def faculty1(request):
