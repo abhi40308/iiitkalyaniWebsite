@@ -1,848 +1,484 @@
-{% url "contact_us" as contact_us %}
-{% url "about_us" as about_us %}
-{% url "academic_cal" as academic_cal %}
-{% url "administration" as administration %}
-{% url "admission" as admission %}
-{% url "admissionpg" as admissionpg %}
-{% url "admissionug" as admissionug %}
-{% url "anti_ragging" as anti_ragging %}
-{% url "campus" as campus %}
-{% url "constitution" as constitution %}
-{% url "course_stru" as course_stru %}
-{% url "digitalInitiatives" as digitalInitiatives %}
-{% url "eBrochure" as eBrochure %}
-{% url "faculties" as faculties %}
-{% url "faculty1" as faculty1 %}
-{% url "faculty" as faculty %}
-{% url "facultyOld" as facultyOld %}
-{% url "fee_structure" as fee_structure %}
-{% url "hostel" as hostel %}
-{% url "iiitpppAct" as iiitpppAct %}
-{% url "labs" as labs %}
-{% url "lib_about" as lib_about %}
-{% url "lib_contact" as lib_contact %}
-{% url "lib_guidelines" as lib_guidelines %}
-{% url "lib_services" as lib_services %}
-{% url "library" as library %}
-{% url "medical" as medical %}
-{% url "mentor_institute" as mentor_institute %}
-{% url "music" as music %}
-{% url "news" as news %}
-{% url "news_events" as news_events %}
-{% url "notifications" as notifications %}
-{% url "other" as other %}
-{% url "programmes" as programmes %}
-{% url "reach_iiit_kalyani" as reach_iiit_kalyani %}
-{% url "regul_rules" as regul_rules %}
-{% url "rti" as rti %}
-{% url "sports" as sports %}
-{% url "staff" as staff %}
-{% url "team" as team %}
-{% url "webteam" as webteam %}
-{% url "why_iiit" as why_iiit %}
-{% url "dnd" as dnd %}
-{% url "im" as im %}
-{% url "ob" as ob %}
-{% url "sc" as sc %}
-{% url "sk" as sk %}
-{% url "skh" as skh %}
-{% url "sp" as sp %}
-{% url "tg" as tg %}
-{% url "ud" as ud %}
-
-{% load static %}
-
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <!-- Required meta tags always come first -->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta http-equiv="x-ua-compatible" content="ie=edge">
-
-  <link rel="stylesheet" href="{% static "css/animate.css" %}"
-
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
-
-
-  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-
-  <link rel="stylesheet" type="text/css" href="{% static "css/frontpage_styles.css" %}">
+{% extends "base.html" %} {% load static %} {% block base_head %}
+  <link rel="stylesheet" type="text/css" href="../static/css/frontpage_styles.css">
   <title>Indian Institute of Information Technology</title>
-  <link rel="shortcut icon" type="image/x-icon" href="{% static "images/front-page/logo-blue-small.png" %}" /><!--title logo-->
-</head>
+{% endblock %} {% block content %}
+  <!-- slideshow after first navbar -->
+  <div class="enclosing">
+    <div class="tinted-back-slideshow">
 
-<body>
-
-<!-- <script>
-  (function() {
-    var cx = '006158153867003141322:jlgijze17-w';
-    var gcse = document.createElement('script');
-    gcse.type = 'text/javascript';
-    gcse.async = true;
-    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
-    var s = document.getElementsByTagName('script')[0];
-    s.parentNode.insertBefore(gcse, s);
-  })();
-</script>
-<gcse:search></gcse:search> -->
-
-
-<div id="top-of-page" class="header-top">
-
-    <div class="header-navbar">
-    <nav id="big-screen" class="navbar navbar-toggleable-xl">
-    <div class="container">
-
-  <!-- <div class="collapse navbar-collapse" id="navbarNavAltMarkup1"> -->
-    <ul id="big-screen" class="navbar-nav ml-auto">
-      <li class="nav-item">
-        <a class="nav-link" href="../templates/html/reach_iiit_kalyani.html">How to reach</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="{{contact_us}}">Contact Us</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="../templates/html/notifications.html">Notifications</a>
-      </li>
-      <!-- <li class="nav-item">
-        <a class="nav-link" href="#">Login</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Register</a>
-      </li> -->
-    </ul>
-
-        <div id="big-screen" class="row">
-          <div class="col-lg-12">
-
-            <form  id="search" method="get" id="016180310773126037638:5no86vhxxiy" action="http://google.com/cse">
-            <input value="016180310773126037638:5no86vhxxiy" name="cx" type="hidden"/>
-<!-- <input value="FORID:11" name="cof" type="hidden"/> -->
-            <input  id="q" name="q" size="70" type="text"  placeholder="Search..." />
-            </form>
-
-
-          </div>
-        </div>
-    </div>
-    </nav>
-
-
-    <nav id="small-screen" class="navbar navbar-toggleable-xl">
-    <ul id="small-screen" class="navbar-nav ml-auto">
-      <li class="nav-item">
-        <a class="nav-link" href="../templates/html/reach_iiit_kalyani.html"><span class="fa fa-cab"></span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="{{contact_url}}"><span class="fa fa-phone"></span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="../templates/html/notifications.html"><span class="fa fa-bell"></span></a>
-      </li>
-      <!-- <li class="nav-item">
-        <a class="nav-link" href="#"><span class="fa fa-sign-in"></span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#"><span class="fa fa-user-plus"></span></a>
-      </li> -->
-      <form  id="search" method="get" id="006158153867003141322:jlgijze17-w" action="http://google.com/cse">
-            <input value="006158153867003141322:jlgijze17-w" name="cx" type="hidden"/>
-<!-- <input value="FORID:11" name="cof" type="hidden"/> -->
-            <input  id="q" name="q" size="70" type="text"  placeholder="Search..." />
-            </form>
-    </ul>
-    </nav>
-
-
-    </div>
-
-<!-- <div class="container">
-<div class="row justify-content-center"><a  href="#"><img src="img/logo-blue-small.png"> </a>
-</div>
-<div class=" top-logo-text">
-<a href="#">
-    <div class="row justify-content-center">
-      <p>Indian Institute of Information Technology</p>
-    </div>
-    <div class="row justify-content-center">
-      <p>Kalyani</p>
-    </div>
-</a>
-</div>
-</div> -->
-
-<div class="container">
-<div class="container">
-  <div class="row top-logo-text align-self-center">
-  	<!-- <div class="col-sm-2">  -->
-    <a class="scroll-link" href="#aboutus"><img class="img-fluid" src="../static/images/front-page/logo-blue-small.png"></a>
-
-    <!-- <div class="col-sm-10 top-logo-text align-self-center"> -->
-    	<a style="padding-top: 8px;" href="#aboutus" class="scroll-link">
-
-
-    	<p>&nbsp Indian Institute of Information Technology
-    	<br>&nbsp <span >Kalyani, West Bengal</span> <!-- <br> &nbsp<span class="small">(Mentored by IIT Kharagpur)</span> -->
-    	<br>&nbsp <span style="color: grey" class="small">(mentored by IIT Kharagpur)</span>
-    	</p>
-    	</a>
-
-    	<!-- <p><br>(Mentored by IIT Kharagpur)</p> -->
-<!--     </div> -->
-  </div>
-</div>
-</div>
-</div>
-
-<div id="first-navbar"></div>
-
-<nav style="z-index: 999;" id="startchange" class="navbar sticky-top navbar-toggleable-sm navbar-light bg-faded">
-    <div class="container">
-
-
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="fa fa-bars"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav mr-auto">
-            	<a id="first-nav" href="#" class="nav-item nav-link leaf first-nav-active">Home</a>
-            	<div class="dropdown-link">
-                  <a id="first-nav" class="nav-item nav-link leaf">About IIITK</a>
-                    <div class="dropdown-content" id="dropdown-content">
-                        <a href="../static/images/administrationimg/Message-of-Mentor-Director.pdf">Director's message</a>
-                        <a href="../templates/html/why_iiit.html">Why IIIT Kalyani</a>
-                        <a href="{{administration}}">Administrative body</a>
-                        <a href="../templates/html/Mentor_institute.html">Mentor Institute</a>
-                        <a href="../templates/html/iiit-pppAct.html">IIIT-PPP Act</a>
-                        <a href="../templates/html/rti.html">RTI information</a>
-                       <!--  <a href="#">Caution Money Withdrawal</a> -->
-                    </div>
-                </div>
-                <div class="dropdown-link">
-                  <a id="first-nav" class="nav-item nav-link leaf">Academics</a>
-                    <div class="dropdown-content" id="dropdown-content">
-                    	<a href="../templates/html/programmes.html">Programmes</a>
-                        <a href="{{admission}}">Admissions</a>
-                        <a href="{{academic_cal}}">Academic calender</a>
-                        <a href="{{course_stru}}">Course Structure</a>
-                        <a href="../templates/html/fee_structure.html">Fee Structure</a>
-
-                    </div>
-                </div>
-
-                <div class="dropdown-link">
-                  <a id="first-nav" href="../templates/html/faculty.html" class="nav-item nav-link leaf">Faculty</a>
-                    <!-- <div class="dropdown-content" id="dropdown-content">
-                        <a href="../templates/html/faculty.html">Current Faculty</a>
-                    </div> -->
-                </div>
-
-                <div class="dropdown-link">
-                  <a id="first-nav" class="nav-item nav-link leaf">Students</a>
-                    <div class="dropdown-content" id="dropdown-content">
-                        <a href="../static/images/front-page/curr_students.pdf">Current Students</a>
-                        <a href="{{admissionug}}#f-aid">Scope of Financial aid</a>
-                        <a href="../templates/html/regul_rules.html">Regulatory rules</a>
-                        <a href="{{anti_ragging}}">Anti ragging</a>
-                        <a href="../templates/html/e-Brochure.html">E brouchure</a>
-                        <!-- <div class="dropdown-link">
-                  		 <a id="first-nav" class="nav-item nav-link leaf">Placements</a>
-                    	<div class="dropdown-content" id="dropdown-content">
-                        <a href="placements/index.html">Placement portal</a>
-                        <a href="placements/pdf1.pdf">Placement brochure</a>
-
-                    	</div> -->
-
-                    </div>
-                </div>
-
-              <div class="dropdown-link">
-                  <a id="first-nav" class="nav-item nav-link leaf">Placements</a>
-                    <div class="dropdown-content" id="dropdown-content">
-                        <a href="placements/index.html">Placement portal</a>
-                        <a href="placements/pdf1.pdf">Placement brochure</a>
-
-                    </div>
-              </div>
-
-               <div class="dropdown-link">
-                  <a id="first-nav" class="nav-item nav-link leaf">Facilities</a>
-                    <div class="dropdown-content" id="dropdown-content">
-                        <a href="../templates/html/Facilities_landing_page-v6.html">All facilities</a>
-                        <a href="{{campus}}">Campus</a>
-                		<a href="../templates/html/Labs.html">Labs</a>
-                		<a href="../templates/html/Library.html">Library</a>
-                		<a href="../templates/html/Hostel.html">Hostel</a>
-                		<a href="../templates/html/Medical.html">Medical Services</a>
-                		<a href="../templates/html/Other.html">Other Amenities</a>
-                    </div>
-              </div>
-
-                <div class="dropdown-link">
-                  <a id="first-nav" class="nav-item nav-link leaf">Gymkhana</a>
-                    <div class="dropdown-content" id="dropdown-content">
-
-                        <a href="../templates/html/sports.html">Sports Club</a>
-                        <a href="fmc/index.html">Film and Media Club (FMC)</a>
-                        <a href="../templates/html/music.html">Symphony (Music club)</a>
-                        <a href="../templates/html/algoholic3.0.html">Algoholic (Technical club)</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-                <span id="big-screen" class="nav-imagelogo">
-                  <a class="scroll-link" href="#top-of-page"><img class="img-fluid" src="../static/images/front-page/logo.png"></a>
-                </span>
-    </div>
-</nav>
-
-<!-- ////////////////// -->
-
-<!-- slideshow after first navbar -->
-
-<div class="enclosing">
-<div class="tinted-back-slideshow">
-
-  <div class="container">
-      <div class="row align-self-center">
+      <div class="container">
+        <div class="row align-self-center">
           <div class="tinted-text col-md-3 col-xs-12">
-          <h2 class="animated fadeIn">IIIT Kalyani</h2>
-          <br>
-          <h3 class="animated fadeIn">A place where technology meets creativity</h3>
-          <br>
-          <p class="animated fadeIn">Preparing students to make meaningful contributions to society.</p>
-          <br>
+            <h2 class="animated fadeIn">IIIT Kalyani</h2>
+            <br>
+            <h3 class="animated fadeIn">A place where technology meets creativity</h3>
+            <br>
+            <p class="animated fadeIn">Preparing students to make meaningful contributions to society.</p>
+            <br>
           </div>
 
 
 
           <div class="col-md-9 col-xs-12 align-self-center">
-          <!-- <div class="container"> -->
+            <!-- <div class="container"> -->
             <div class="row">
               <div class="col">
-            <div class="slideshow">
-                      <div id="mycarousel" class="carousel slide" data-ride="carousel" data-interval="3000">
-                            <div class="carousel-inner" role="listbox">
+                <div class="slideshow">
+                  <div id="mycarousel" class="carousel slide" data-ride="carousel" data-interval="3000">
+                    <div class="carousel-inner" role="listbox">
 
-                                <div class="carousel-item active">
-                                            <img class="img-fluid"
-                                                src="../static/images/front-page/img5.jpg">
-                                            <div class="carousel-caption">
-                                            <h3 class="animated bounceInLeft" style=" color: white;">Explore Excellence</h3>
-                                            <p class="animated bounceInUp" style="color: white;">@ IIIT Kalyani</p>
-                                            </div>
-                                        </div>
-                                <div class="carousel-item">
-                                  <img class="img-fluid"
-                                        src="../static/images/front-page/img.jpeg">
-                                  <div class="carousel-caption">
-                                    <h3 class="animated bounceInLeft" style="color: white;">Explore Photography</h3>
-                                    <a href="fmc/index.html"><p class="animated bounceInUp" style="color: white;">@ FMC</p></a>
-                                  </div>
+                      <div class="carousel-item active">
+                        <img class="img-fluid" src="../static/images/front-page/img5.jpg">
+                        <div class="carousel-caption">
+                          <h3 class="animated bounceInLeft" style=" color: white;">Explore Excellence</h3>
+                          <p class="animated bounceInUp" style="color: white;">@ IIIT Kalyani</p>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <img class="img-fluid" src="../static/images/front-page/img.jpeg">
+                        <div class="carousel-caption">
+                          <h3 class="animated bounceInLeft" style="color: white;">Explore Photography</h3>
+                          <a href="fmc/index.html">
+                            <p class="animated bounceInUp" style="color: white;">@ FMC</p>
+                          </a>
+                        </div>
 
-                               </div>
-                                <div class="carousel-item">
-                                  <img class="img-fluid"
-                                                src="../static/images/front-page/img1.jpg">
-                                  <div class="carousel-caption">
-                                    <h3 class="animated bounceInLeft" style="color: white;">Explore Creativity</h3>
-                                     <a href="https://www.facebook.com/Udaan-IIIT-Kalyani-412738869084302/"><p class="animated bounceInUp" style="color: white;">@ Udaan</p></a>
-                                  </div>
-                               </div>
-                                        <div class="carousel-item">
-                                            <img class="img-fluid"
-                                                src="../static/images/front-page/img4.jpg">
-                                            <div class="carousel-caption">
-                                             <h3 class="animated bounceInLeft" style="color: white;">Explore Inner spirit</h3>
-                                             <a href="../templates/html/sports.html"><p class="animated bounceInUp" style="color: white;">@ Sports Club</p></a>
-                                  </div>
-                                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <img class="img-fluid" src="../static/images/front-page/img1.jpg">
+                        <div class="carousel-caption">
+                          <h3 class="animated bounceInLeft" style="color: white;">Explore Creativity</h3>
+                          <a href="https://www.facebook.com/Udaan-IIIT-Kalyani-412738869084302/">
+                            <p class="animated bounceInUp" style="color: white;">@ Udaan</p>
+                          </a>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <img class="img-fluid" src="../static/images/front-page/img4.jpg">
+                        <div class="carousel-caption">
+                          <h3 class="animated bounceInLeft" style="color: white;">Explore Inner spirit</h3>
+                          <a href="../templates/html/sports.html">
+                            <p class="animated bounceInUp" style="color: white;">@ Sports Club</p>
+                          </a>
+                        </div>
+                      </div>
 
-                                        <div class="carousel-item">
-                                            <img class="img-fluid"
-                                                src="../static/images/front-page/img2.jpg">
-                                            <div class="carousel-caption">
-                                            <h3 class="animated bounceInLeft" style=" color: white;">Explore Music</h3>
-                                             <a href="../templates/html/music.html"><p class="animated bounceInUp" style="color: white;">@ Symphony</p></a>
-                                            </div>
-                                        </div>
-                                      <div class="carousel-item">
-                                            <img class="img-fluid"
-                                                src="../static/images/front-page/img7.jpg">
-                                            <div class="carousel-caption">
-                                            <h3 class="animated bounceInLeft" style=" color: white;">Express Yourself</h3>
-                                             <a href="https://www.facebook.com/SmciiitKalyani/"><p class="animated bounceInUp" style="color: white;">@ Culturals</p></a>
-                                            </div>
-                                        </div>
-                                        <ol class="carousel-indicators">
-                                        <li data-target="#mycarousel" data-slide-to="0" class="active"></li>
-                                        <li data-target="#mycarousel" data-slide-to="1"></li>
-                                        <li data-target="#mycarousel" data-slide-to="2"></li>
-                                        <li data-target="#mycarousel" data-slide-to="3"></li>
-                                        <li data-target="#mycarousel" data-slide-to="4"></li>
-                                        <li data-target="#mycarousel" data-slide-to="5"></li>
+                      <div class="carousel-item">
+                        <img class="img-fluid" src="../static/images/front-page/img2.jpg">
+                        <div class="carousel-caption">
+                          <h3 class="animated bounceInLeft" style=" color: white;">Explore Music</h3>
+                          <a href="../templates/html/music.html">
+                            <p class="animated bounceInUp" style="color: white;">@ Symphony</p>
+                          </a>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <img class="img-fluid" src="../static/images/front-page/img7.jpg">
+                        <div class="carousel-caption">
+                          <h3 class="animated bounceInLeft" style=" color: white;">Express Yourself</h3>
+                          <a href="https://www.facebook.com/SmciiitKalyani/">
+                            <p class="animated bounceInUp" style="color: white;">@ Culturals</p>
+                          </a>
+                        </div>
+                      </div>
+                      <ol class="carousel-indicators">
+                        <li data-target="#mycarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#mycarousel" data-slide-to="1"></li>
+                        <li data-target="#mycarousel" data-slide-to="2"></li>
+                        <li data-target="#mycarousel" data-slide-to="3"></li>
+                        <li data-target="#mycarousel" data-slide-to="4"></li>
+                        <li data-target="#mycarousel" data-slide-to="5"></li>
 
 
 
-                                    </ol>
-                                    <a class="carousel-control-prev" data-target="#mycarousel" role="button" data-slide="prev">
-                                        <span class="carousel-control-prev-icon"></span>
-                                    </a>
-                                    <a class="carousel-control-next" data-target="#mycarousel" role="button" data-slide="next">
-                                        <span class="carousel-control-next-icon"></span>
-                                    </a>
-                                    </div>
+                      </ol>
+                      <a class="carousel-control-prev" data-target="#mycarousel" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                      </a>
+                      <a class="carousel-control-next" data-target="#mycarousel" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                      </a>
+                    </div>
+                  </div>
                 </div>
-          </div>
 
-      </div>
-    </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-</div>
-</div>
-
-<!-- slideshow container ends -->
-<!-- /////////////////////// -->
-
-<!-- <div class=""> -->
-<div class="quotes-section" id="quotes-section">
-<div class="container">
-  <br>
-  <br>
-  <div class="row head-quotes justify-content-center">
-    <h2>Faces of IIIT Kalyani</h2>
   </div>
-  <hr>
-  <br>
-  <div class="quotes-slideshow-wrapper">
-  <div class="row justify-content-center">
-      <div class="col-lg-8">
-         <div class="quotes-slideshow">
-            <div class="container">
-              <div id="quote-carousel" class="carousel slide" data-ride="carousel">
-                <ol class="carousel-indicators">
-                  <li data-target="#quote-carousel" data-slide-to="0" class="active"></li>
-                  <li data-target="#quote-carousel" data-slide-to="1"></li>
-                  <li data-target="#quote-carousel" data-slide-to="2"></li>
-                  <li data-target="#quote-carousel" data-slide-to="3"></li>
-                  <li data-target="#quote-carousel" data-slide-to="4"></li>
-                  <li data-target="#quote-carousel" data-slide-to="5"></li>
-                  <li data-target="#quote-carousel" data-slide-to="6"></li>
+  <!-- slideshow container ends -->
 
-                </ol>
-                <div class="carousel-inner" role="listbox">
-                  <div class="carousel-item active">
-                     <blockquote>
+  <!-- <div class=""> -->
+  <div class="quotes-section" id="quotes-section">
+    <div class="container">
+      <br>
+      <br>
+      <div class="row head-quotes justify-content-center">
+        <h2>Faces of IIIT Kalyani</h2>
+      </div>
+      <hr>
+      <br>
+      <div class="quotes-slideshow-wrapper">
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <div class="quotes-slideshow">
+              <div class="container">
+                <div id="quote-carousel" class="carousel slide" data-ride="carousel">
+                  <ol class="carousel-indicators">
+                    <li data-target="#quote-carousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#quote-carousel" data-slide-to="1"></li>
+                    <li data-target="#quote-carousel" data-slide-to="2"></li>
+                    <li data-target="#quote-carousel" data-slide-to="3"></li>
+                    <li data-target="#quote-carousel" data-slide-to="4"></li>
+                    <li data-target="#quote-carousel" data-slide-to="5"></li>
+                    <li data-target="#quote-carousel" data-slide-to="6"></li>
+
+                  </ol>
+                  <div class="carousel-inner" role="listbox">
+                    <div class="carousel-item active">
+                      <blockquote>
                         <div class="row">
                           <div class="col-sm-3 text-center">
-                             <img class="img-circle" src="../static/images/front-page/img_quotes5.jpg" style="width: 100px;height:100px;">
+                            <img class="img-circle" src="../static/images/front-page/img_quotes5.jpg" style="width: 100px;height:100px;">
                           </div>
                           <div class="col-sm-9">
-                            <p>I will not teach you anything that is in the text book. After all, you are capable enough to read. What I will do is, try to tell you things that are, in general, relevant to the area.<br>
-                              <small>- Prof. Partha P. Chakrabarti<!--  (Mentor Director) --></small>
+                            <p>I will not teach you anything that is in the text book. After all, you are capable enough to read.
+                              What I will do is, try to tell you things that are, in general, relevant to the area.
+                              <br>
+                              <small>- Prof. Partha P. Chakrabarti
+                                <!--  (Mentor Director) -->
+                              </small>
                             </p>
 
-                         </div>
-                       </div>
-                    </blockquote>
-                  </div>
-                  <div class="carousel-item">
-                     <blockquote>
+                          </div>
+                        </div>
+                      </blockquote>
+                    </div>
+                    <div class="carousel-item">
+                      <blockquote>
                         <div class="row">
                           <div class="col-sm-3 text-center">
-                             <img class="img-circle" src="../static/images/front-page/img_quotes6.jpeg" style="width: 100px;height:100px;">
+                            <img class="img-circle" src="../static/images/front-page/img_quotes6.jpeg" style="width: 100px;height:100px;">
                           </div>
                           <div class="col-sm-9">
-                            <p>Sometimes questions are difficult but their solutions are easy<br>
-                              <small>- Prof. Anupam Basu<!--  (Executive Director) --></small>
+                            <p>Sometimes questions are difficult but their solutions are easy
+                              <br>
+                              <small>- Prof. Anupam Basu
+                                <!--  (Executive Director) -->
+                              </small>
                             </p>
 
-                         </div>
-                       </div>
-                    </blockquote>
-                  </div>
-                  <div class="carousel-item">
-                     <blockquote>
+                          </div>
+                        </div>
+                      </blockquote>
+                    </div>
+                    <div class="carousel-item">
+                      <blockquote>
                         <div class="row">
                           <div class="col-sm-3 text-center">
-                             <img class="img-circle" src="../static/images/front-page/img_quotes4.jpg" style="width: 100px;height:100px;">
+                            <img class="img-circle" src="../static/images/front-page/img_quotes4.jpg" style="width: 100px;height:100px;">
                           </div>
                           <div class="col-sm-9">
-                            <p>There are many paths to reach a destination , but a good teacher tells you the shortest path.<br>
+                            <p>There are many paths to reach a destination , but a good teacher tells you the shortest path.
+                              <br>
                               <small>- Dr. Madhumita Sengupta</small>
                             </p>
 
-                         </div>
-                       </div>
-                    </blockquote>
-                  </div>
-                  <div class="carousel-item">
-                    <blockquote>
+                          </div>
+                        </div>
+                      </blockquote>
+                    </div>
+                    <div class="carousel-item">
+                      <blockquote>
                         <div class="row">
                           <div class="col-sm-3 text-center">
-                             <img class="img-circle" src="../static/images/front-page/img_quotes1.png" style="width: 100px;height:100px;">
+                            <img class="img-circle" src="../static/images/front-page/img_quotes1.png" style="width: 100px;height:100px;">
                           </div>
                           <div class="col-sm-9">
                             <p>It is one of the fastest growing institutes in the country.
-                            <br>
+                              <br>
                               <small>- Dr. Uma Das</small>
                             </p>
-                           </div>
-                       </div>
-                    </blockquote>
-                  </div>
-                  <div class="carousel-item">
-                     <blockquote>
+                          </div>
+                        </div>
+                      </blockquote>
+                    </div>
+                    <div class="carousel-item">
+                      <blockquote>
                         <div class="row">
                           <div class="col-sm-3 text-center">
-                             <img class="img-circle" src="../static/images/front-page/img_quotes7.jpg" style="width: 100px;height:100px;">
+                            <img class="img-circle" src="../static/images/front-page/img_quotes7.jpg" style="width: 100px;height:100px;">
                           </div>
                           <div class="col-sm-9">
-                            <p>It's the best place to be, with so much going on round the year, everything is just awesome here!!<br>
+                            <p>It's the best place to be, with so much going on round the year, everything is just awesome here!!
+                              <br>
                               <small>- Dr. Sandeep Karmakar</small>
                             </p>
 
-                         </div>
-                       </div>
-                    </blockquote>
-                  </div>
+                          </div>
+                        </div>
+                      </blockquote>
+                    </div>
 
 
-                  <div class="carousel-item">
-                    <blockquote>
+                    <div class="carousel-item">
+                      <blockquote>
                         <div class="row">
                           <div class="col-sm-3 text-center">
-                             <img class="img-circle" src="../static/images/front-page/img_quotes3.jpg" style="width: 100px;height:100px;">
+                            <img class="img-circle" src="../static/images/front-page/img_quotes3.jpg" style="width: 100px;height:100px;">
                           </div>
                           <div class="col-sm-9">
                             <p>Happy to graduate hundreds of students every year.
-                            <br>
-                              <small>- Dr. Imon Mukherjee</small></p>
+                              <br>
+                              <small>- Dr. Imon Mukherjee</small>
+                            </p>
 
-                         </div>
-                       </div>
-                    </blockquote>
-                  </div>
-                  <div class="carousel-item">
-                    <blockquote>
+                          </div>
+                        </div>
+                      </blockquote>
+                    </div>
+                    <div class="carousel-item">
+                      <blockquote>
                         <div class="row">
                           <div class="col-sm-3 text-center">
-                             <img class="img-circle" src="../static/images/front-page/img_quotes2.jpg" style="width: 100px;height:100px;">
+                            <img class="img-circle" src="../static/images/front-page/img_quotes2.jpg" style="width: 100px;height:100px;">
                           </div>
                           <div class="col-sm-9">
                             <p>We are not just teachers, we will be with them and we will be for them.
-                            <br>
+                              <br>
                               <small>- Dr. SK Hafizul Islam</small>
                             </p>
-                           </div>
-                       </div>
-                    </blockquote>
-                  </div>
+                          </div>
+                        </div>
+                      </blockquote>
+                    </div>
 
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- second navbar starts -->
+  <nav id="second-nav" class="navbar navbar-toggleable-xl sticky-top bg-faded" style="z-index: 998">
+    <div class="container">
+      <div class="navbar-nav ml-auto">
+        <a class="second-nav-anchor nav-item nav-link" href="#aboutus">About us</a>
+        <a class="second-nav-anchor nav-item nav-link" href="#news">News</a>
+        <a class="second-nav-anchor nav-item nav-link" href="#events">Events</a>
+        <a class="second-nav-anchor nav-item nav-link disappear" href="#footer">Important Links</a>
+      </div>
+    </div>
+  </nav>
+  <!-- second navbar ends -->
+
+  <div class="content">
+
+    <section id="aboutus">
+      <div class="wrapper-aboutus tinted-back-aboutus">
+        <div class="container">
+          <div class="row align-self-center">
+            <div class="col-lg-4 col-sm-12">
+              <h3>Our mission</h3>
+              <br>
+              <p>The Indian Institute of Information Technology Kalyani has been setup with an objective to produce best-in-class
+                human resources in IT and to harness the multidimensional facets of IT in various domains.
+                <span>
+                  <a id="small-screen-aboutus" href="{{about_us}}">Read more...</a>
+                </span>
+              </p>
+              <p id="big-screen-aboutus"> IIIT Kalyani strives to evolve into a world-class academic institution with the highest quality of education
+                and research facilities and produce industry ready IT graduates to meet the industry demands. The institute
+                will act as a catalyst in fostering an innovative entrepreneur-focused ecosystem to ensure that new products,
+                solutions and IP are created in the State taking advantage of the intellectual capital of the State.</p>
+
+            </div>
+
+            <div class="col-lg-4 col-sm-12">
+              <h3>Location</h3>
+              <br>
+              <p>Kalyani is located in the Nadia district of West Bengal, within the Kolkata metropolitan area and is the administrative
+                headquarter of Kalyani subdivision.
+                <span>
+                  <a id="small-screen-aboutus" href="{{about_us}}">Read more...</a>
+                </span>
+              </p>
+              <p id="big-screen-aboutus">Situated on the banks of Hooghly River, the city is spread over a sprawling area of 29.14 square kilometres (11.25
+                sq mi). Kalyani being a planned town, is characterized by underground sewerage system, paved roads forming
+                rectangular grids, tree lined avenues and community parks.</p>
+            </div>
+
+            <div class="col-lg-4 col-sm-12">
+              <h3 id="big-screen-aboutus">Mentor institute</h3>
+              <br>
+              <p id="big-screen-aboutus">Presently, the institute is being mentored by Indian Institute of Technology Kharagpur with Prof. Partha P. Chakrabarti,
+                Director, IIT Kharagpur as Mentor Director and Prof. Anupam Basu, Professor, Department of Computer Science
+                and Engineering, IIT Kharagpur as Executive Director/Professor-In-Charge.</p>
+              <p id="big-screen-aboutus">
+                IIIT Kalyani has been attributed the status of Institute of National Importance (INI) by the cabinet in March 2017.</p>
+
+            </div>
+          </div>
+          <div class="row">
+            <div class="ml-auto">
+              <a href="{{about_us}}">
+                <button class="button-aboutus">Read More..</button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="news">
+      <div class="wrapper">
+        <br>
+        <br>
+        <br>
+        <div class="container">
+          <h1>News</h1>
+          <hr>
+          <div class="row">
+            <div class="col-xs-12 col-md-6 col-sm-12">
+              <img src="../static/images/front-page/news.jpg" class="img-fluid">
+              <h5>
+                <span class="news-date">28 Nov, 2017</span>
+                <br>Computer Literacy Program: 13th December to 30th December 2017</h5>
+              <p>IIIT Kalyani is organizing computer literacy program from 13th December to 30th December 2017.</p>
+            </div>
+            <div class="col-xs-12 col-md-6 col-sm-12">
+              <div class="col-xs-12 col-md-12">
+                <h5>
+                  <span class="news-date">28 Nov, 2017</span>
+                  <br>PhD Admission even semester 2018</h5>
+                <p>PhD shortlisting is done. List in Notifications. Applications are invited for PhD admission. Details in Notifications.</p>
+              </div>
+              <div class="col-xs-12 col-md-12 col-sm-12">
+
+                <h5>
+                  <span class="news-date">16 March, 2017</span>
+                  <br>IIIT Kalyani has received status of Institute of National Importance</h5>
+                <p>The parliament has passed the IIIT Act where in Indian Institute of Information Technology Kalyani has received
+                  the status of Institute of National Importance, giving the authority to award Degrees to all our students.</p>
+              </div>
+              <div class="col-xs-12 col-md-12 col-sm-12">
+                <h5>
+                  <span class="news-date">10 Feb, 2017</span>
+                  <br>Change of mentor institute</h5>
+                <p>Indian Institute of Technology, Kharagpur is now mentoring IIIT Kalyani.</p>
+              </div>
+
+            </div>
+
+          </div>
+          <div class="row">
+            <div class="ml-auto">
+              <a href="../templates/html/news_events.html">
+                <button class="button-aboutus">Older News</button>
+              </a>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+    </section>
+
+
+
+    <section id="events">
+      <div class="wrapper">
+        <br>
+        <br>
+        <br>
+        <div class="container">
+          <h1>Events</h1>
+          <hr>
+          <div class="row">
+            <div class="col-md-4 col-sm-12" style="padding-bottom:20px;">
+              <div class="flip" style="margin:0px auto;">
+                <div class="back" style="line-height:1.6em;text-align:center;">
+                  <h2 style="padding-top:15px;">Kite Competition</h2>
+                  Date:26th Jan 2018
+                  <br> Venue:IIIT-Kalyani Main Campus
+                  <br> *Kites will be provided by the college
+                  <br>
+                  <button type="button" class="btn btn-secondary">See More</button>
+
+                </div>
+                <div class="front">
+                  <div class="date"></div>
+                  <img src="../static/images/front-page/kite.JPG" class="img-fluid" style="height:240px;">
 
                 </div>
               </div>
             </div>
+
+            <div class="col-md-4 col-sm-12" style="padding-bottom:20px;">
+              <div class="flip" style="margin:0px auto;">
+                <div class="back" style="line-height:1.6em;text-align:center;">
+                  <h2 style="padding-top:15px;color:#EA9726;">Republic Day</h2>
+                  IIIT-Kalyani celebrates 69th Republic Day
+                  <br> Date:26th Jan 2018
+                  <br>
+                  <span style="color:#337C1D;">Venue:IIIT-Kalyani Main Campus</span>
+                  <br>
+                  <br>
+                  <button type="button" class="btn btn-secondary">See More</button>
+
+                </div>
+                <div class="front">
+                  <div class="date"></div>
+                  <img src="../static/images/front-page/republic.jpg" class="img-fluid" style="height:240px;">
+
+                </div>
+              </div>
             </div>
-           </div>
-      </div>
-  </div>
-</div>
-</div>
 
+            <div class="col-md-4 col-sm-12" style="padding-bottom:20px;">
+              <div class="flip" style="margin:0px auto;">
+                <div class="back" style="line-height:1.6em;text-align:center;">
+                  <h2 style="padding-top:30px;">Paryatan parv</h2>
+                  Event Regarding: Tourism event
+                  <br> Date: 31st Oct 2017
+                  <br> Venue: Kolkata
+                  <br>
+                  <br>
+                  <button type="button" class="btn btn-secondary">See More</button>
 
-<!-- //////////////////// -->
+                </div>
+                <div class="front">
+                  <div class="date"></div>
+                  <img src="../static/images/front-page/parv.jpg" class="img-fluid" style="height:240px;">
 
-<!-- second navbar starts -->
-
-<nav id="second-nav" class="navbar navbar-toggleable-xl sticky-top bg-faded" style="z-index: 998">
-  <div class="container">
-    <div class="navbar-nav ml-auto">
-      <a class="second-nav-anchor nav-item nav-link" href="#aboutus">About us</a>
-      <a class="second-nav-anchor nav-item nav-link" href="#news">News</a>
-      <a class="second-nav-anchor nav-item nav-link" href="#events">Events</a>
-      <a class="second-nav-anchor nav-item nav-link disappear" href="#footer">Important Links</a>
-    </div>
-  </div>
-</nav>
-
-<!-- second navbar ends -->
-
-<!-- //////////////////// -->
-
-<div class="content">
-
-  <section id="aboutus">
-    <div class="wrapper-aboutus tinted-back-aboutus">
-      <div class="container">
-      <div class="row align-self-center">
-        <div class="col-lg-4 col-sm-12">
-        <h3>Our mission</h3>
-        <br>
-        <p>The Indian Institute of Information Technology Kalyani has been setup with an objective to produce best-in-class human resources in IT and to harness the multidimensional facets of IT in various domains. <span><a id="small-screen-aboutus" href="{{about_us}}">Read more...</a></span> </p>
-        <p id="big-screen-aboutus"> IIIT Kalyani strives to evolve into a world-class academic institution with the highest quality of education and research facilities and produce industry ready IT graduates to meet the industry demands. The institute will act as a catalyst in fostering an innovative entrepreneur-focused ecosystem to ensure that new products, solutions and IP are created in the State taking advantage of the intellectual capital of the State.</p>
-
-        </div>
-
-        <div class="col-lg-4 col-sm-12">
-        <h3>Location</h3>
-        <br>
-        <p>Kalyani is located in the Nadia district of West Bengal, within the Kolkata metropolitan area and is the administrative headquarter of Kalyani subdivision.
-        <span><a id="small-screen-aboutus" href="{{about_us}}">Read more...</a></span></p>   <p id="big-screen-aboutus">Situated on the banks of Hooghly River, the city is spread over a sprawling area of 29.14 square kilometres (11.25 sq mi). Kalyani being a planned town, is characterized by underground sewerage system, paved roads forming rectangular grids, tree lined avenues and community parks.</p>
-        </div>
-
-        <div class="col-lg-4 col-sm-12">
-        <h3 id="big-screen-aboutus">Mentor institute</h3>
-        <br>
-        <p id="big-screen-aboutus">Presently, the institute is being mentored by Indian Institute of Technology Kharagpur with Prof. Partha P. Chakrabarti, Director, IIT Kharagpur as Mentor Director and Prof. Anupam Basu, Professor, Department of Computer Science and Engineering, IIT Kharagpur as Executive Director/Professor-In-Charge.</p>
-        <p id="big-screen-aboutus">
-        IIIT Kalyani has been attributed the status of Institute of National Importance (INI) by the cabinet in March 2017.</p>
-
-        </div>
-      </div>
-      <div class="row">
-        <div class="ml-auto">
-          <a href="{{about_us}}">
-          <button class="button-aboutus">Read More..</button>
-        </a>
-        </div>
-      </div>
-    </div>
-  </div>
-  </section>
-
-  <section id="news">
-    <div class="wrapper">
-      <br>
-      <br>
-      <br>
-      <div class="container">
-      <h1>News</h1>
-      <hr>
-      <div class="row">
-          <div class="col-xs-12 col-md-6 col-sm-12">
-            <img src="../static/images/front-page/news.jpg" class="img-fluid" style="">
-            <h5><span class="news-date">28 Nov, 2017</span>
-            <br>Computer Literacy Program: 13th December to 30th December 2017</h5>
-            <p>IIIT Kalyani is organizing computer literacy program from 13th December to 30th December 2017.</p>
+                </div>
+              </div>
+            </div>
           </div>
-        <div class="col-xs-12 col-md-6 col-sm-12">
-         <div class="col-xs-12 col-md-12">
-          <h5><span class="news-date">28 Nov, 2017</span>
-            <br>PhD Admission even semester 2018</h5>
-          <p>PhD shortlisting is done. List in Notifications.
-          Applications are invited for PhD admission. Details in Notifications.</p>
-        </div>
-        <div class="col-xs-12 col-md-12 col-sm-12">
 
-            <h5><span class="news-date">16 March, 2017</span>
-            <br>IIIT Kalyani has received status of Institute of National Importance</h5>
-            <p>The parliament has passed the IIIT Act where in Indian Institute of Information Technology Kalyani has received the status of Institute of National Importance, giving the authority to award Degrees to all our students.</p>
-        </div>
-        <div class="col-xs-12 col-md-12 col-sm-12">
-            <h5><span class="news-date">10 Feb, 2017</span>
-            <br>Change of mentor institute</h5>
-            <p>Indian Institute of Technology, Kharagpur is now mentoring IIIT Kalyani.</p>
-        </div>
-
-      </div>
-
-      </div>
-      <div class="row">
-        <div class="ml-auto">
-          <a href="../templates/html/news_events.html">
-          <button class="button-aboutus">Older News</button>
-        </a>
-        </div>
-      </div>
-
-
-    </div>
-    </div>
-  </section>
-
-
-
-  <section id="events">
-    <div class="wrapper">
-      <br>
-      <br>
-      <br>
-      <div class="container">
-      <h1>Events</h1>
-      <hr>
-      <div class="row">
-        <div class="col-md-4 col-sm-12" style="padding-bottom:20px;" >
-          <div class="flip" style="margin:0px auto;" >
-          <div class="back" style="line-height:1.6em;text-align:center;">
-            <h2 style="padding-top:15px;">Kite Competition</h2>
-            Date:26th Jan 2018<br>
-            Venue:IIIT-Kalyani Main Campus<br>
-            *Kites will be provided by the college<br>
-            <button type="button" class="btn btn-secondary">See More</button>
-
+          <div class="row" style="padding-top:20px;">
+            <div class="ml-auto">
+              <a href="../templates/html/news_events.html#events_page">
+                <button class="button-aboutus">Older Events</button>
+              </a>
+            </div>
           </div>
-          <div class="front">
-            <div class="date"></div>
-            <img src="../static/images/front-page/kite.JPG" class="img-fluid" style="height:240px;">
-
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-4 col-sm-12" style="padding-bottom:20px;">
-        <div class="flip" style="margin:0px auto;">
-        <div class="back" style="line-height:1.6em;text-align:center;">
-          <h2 style="padding-top:15px;color:#EA9726;">Republic Day</h2>
-          IIIT-Kalyani celebrates 69th Republic Day<br>
-           Date:26th Jan 2018<br>
-          <span style="color:#337C1D;">Venue:IIIT-Kalyani Main Campus</span><br><br>
-          <button type="button" class="btn btn-secondary">See More</button>
-
-        </div>
-        <div class="front">
-          <div class="date"></div>
-          <img src="../static/images/front-page/republic.jpg" class="img-fluid" style="height:240px;">
 
         </div>
       </div>
-    </div>
-
-    <div class="col-md-4 col-sm-12" style="padding-bottom:20px;">
-      <div class="flip" style="margin:0px auto;">
-      <div class="back" style="line-height:1.6em;text-align:center;">
-        <h2  style="padding-top:30px;">Paryatan parv</h2>
-        Event Regarding: Tourism event<br>
-        Date: 31st Oct 2017<br>
-        Venue: Kolkata<br><br>
-        <button type="button" class="btn btn-secondary">See More</button>
-
-      </div>
-      <div class="front">
-        <div class="date"></div>
-        <img src="../static/images/front-page/parv.jpg" class="img-fluid" style="height:240px;">
-
-      </div>
-    </div>
+    </section>
   </div>
-      </div>
-
-      <div class="row" style="padding-top:20px;">
-        <div class="ml-auto">
-          <a href="../templates/html/news_events.html#events_page">
-          <button class="button-aboutus">Older Events</button>
-        </a>
-        </div>
-      </div>
-
-    </div>
-    </div>
-  </section>
-</div>
-
-<br>
-<br>
-
-
-
-<!-- footer starts -->
-
-<div id="footer">
-    <footer class="footer">
-        <div class="container">
-            <div class="row justify-content-center">
-                <a class="scroll-link" href="#top-of-page"><img src="../static/images/front-page/logo.png"></a>
-            </div>
-            <br>
-            <div class="row">
-                <div class="col-xs-12 col-sm-6 col-lg-3">
-                    <p class="node">Academics</p>
-                    <ul class="list-unstyled">
-                        <li class="leaf"><a href="{{admission}}">Admission</a></li>
-                        <li class="leaf"><a href="placements/index.html">Placement portal</a></li>
-                        <li class="leaf"><a href="placements/pdf1.pdf">Placement brochure</a></li>
-                        <li class="leaf"><a href="../templates/html/fee_structure.html">Fee Structure</a></li>
-                        <li class="leaf"><a href="{{course_stru}}">Course Structure</a></li>
-                        <li class="leaf"><a href="{{academic_cal}}">Acedemic Calender</a></li>
-
-                    </ul>
-                </div>
-                <div class="col-xs-12 col-sm-6 col-lg-3">
-                    <p class="node">Quick Links</p>
-                    <ul class="list-unstyled">
-                        <li class="leaf"><a href="../templates/html/e-Brochure.html">E brochure</a></li>
-                        <li class="leaf"><a href="../templates/html/faculty.html">Faculty Members</a></li>
-                        <li class="leaf"><a href="{{administration}}">Administrative body</a></li>
-                        <li class="leaf"><a href="../templates/html/Mentor_institute.html">Mentor Institute</a></li>
-
-                        <li class="leaf"><a href="{{anti_ragging}}">Anti ragging</a></li>
-                        <li class="leaf"><a href="../templates/html/notifications.html">Notifications</a></li>
-                        <li class="leaf"><a href="../templates/html/news_events.html">News and events</a></li>
-                        <li class="leaf"><a href="../templates/html/iiit-pppAct.html">IIIT-PPP act</a></li>
-                        <li class="leaf"><a href="../templates/html/rti.html">RTI</a></li>
-                    </ul>
-                </div>
-                <div class="col-xs-12 col-sm-6 col-lg-3">
-                    <p class="node">Explore IIITK</p>
-                    <ul class="list-unstyled">
-                        <li class="leaf"><a href="../templates/html/Facilities_landing_page-v6.html">Facilities</a></li>
-                        <li class="leaf"><a href="../templates/html/sports.html">Sports club</a></li>
-                        <li class="leaf"><a href="fmc/index.html">Film and Media Club (FMC)</a></li>
-
-                        <li class="leaf"><a href="../templates/html/music.html">Symphony (Music club)</a></li>
-                        <li class="leaf"><a href="../templates/html/algoholic3.0.html">Algoholic (Technical club)</a></li>
-                        <li class="leaf"><a href="../templates/html/reach_iiit_kalyani.html">How to reach IIIT Kalyani</a></li>
-                    </ul>
-                </div>
-                <div class="col-xs-12 col-sm-6 col-lg-3">
-                    <p class="node">Contact us</p>
-                    <ul class="list-unstyled">
-                        <address>Indian Institute of Information Technology, Kalyani<br> Webel IT Park (Near Buddha Park), Kalyani – 741235<br>Nadia, West Bengal</address>
-                        <a class="con" href = "mailto: office@iiitkalyani.ac.in">office@iiitkalyani.ac.in</a>
-                        <br>
-                        <a href = "mailto: admission@iiitkalyani.ac.in">admission@iiitkalyani.ac.in</a>
-
-                    </ul>
-                </div>
-           </div>
-           <br>
-           <div class="row justify-content-center">
-                    <div class="social-links">
-                        <a class="fa fa-google-plus-square" href="https://plus.google.com/113956524857746941344"></a>
-                        <a class="fa fa-facebook-square" href="https://www.facebook.com/iiitkalyani/"></a>
-                        <!-- <a class="fa fa-linkedin-square" href="http://www.linkedin.com/in/"></a> -->
-                        <a class="fa fa-twitter-square" href="https://twitter.com/iiit_kalyani?lang=en"></a>
-                        <a class="fa fa-youtube-square" href="https://www.youtube.com/channel/UCdnaperuWO_6YfXzEov6-QA/videos"></a>
-                    </div>
-            </div>
-            <hr>
-            <div class="row justify-content-center">
-                    <p class="small">Copyright © 2017 IIIT Kalyani. All rights reserved.</p>
-            </div>
-            <div class="row justify-content-center">
-                <ul class="list-unstyled list-end">
-                        <li><a href="../templates/html/webteam.html">Web Team</a></li>
-                        <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSfzO9mfsCZR23MZwn9y__0LXyu439SoTDqo8p4_mOuYtCOUTA/viewform?usp=sf_link">Feedback</a></li>
-                        <!-- <li><a href="http://iiitkalyani.ac.in/" target="blank">Old website</a></li> -->
-                </ul>
-            </div>
-        </div>
-    </footer>
-</div>
-
-
-    <!-- jQuery first, then Tether, then Bootstrap JS. -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
-
-       <script type="text/javascript" src="../static/js/frontpage/scripts.js"></script>
-       <script src="{% static "js/frontpage/jquery.singlePageNav.min.js" %}"></script>
-</body>
-</html>
+  <br>
+  <br>
+{% endblock %} {% block base_foot %}
+<script type="text/javascript" src="../static/js/frontpage/scripts.js"></script>
+<script src="../static/js/frontpage/jquery.singlePageNav.min.js"></script>
+{% endblock %}
