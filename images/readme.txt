@@ -1,1 +1,0 @@
-Any images or other kind of files goes here. Create a folder of your page_name and then add the files.
