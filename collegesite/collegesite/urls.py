@@ -20,7 +20,6 @@ from .views import *
 
 urlpatterns = [
 	url(r'^$', home_page, name="home"),
-	url(r'^dnd/$',dnd, name="dnd"),
 	#teams
 	url(r'^staff/$',staff,name="staff"),
 	url(r'^team/$',team,name="team"),
@@ -81,6 +80,7 @@ urlpatterns = [
 	url(r'^faculty/sp/$',sp, name="sp"),
 	url(r'^faculty/tg/$',tg, name="tg"),
 	url(r'^faculty/ud/$',ud, name="ud"),
+	url(r'^faculty/dnd/$',dnd, name="dnd"),
 	#admin
 	url(r'^admin/', admin.site.urls),
 ]
