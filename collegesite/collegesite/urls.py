@@ -32,6 +32,7 @@ urlpatterns = [
 	url(r'^gymkhana/sports/$',sports,name="sports"),
 	url(r'^gymkhana/algoholics/$', algoholics, name="algoholics"),
 	url(r'^gymkhana/music/$',music,name="music"),
+	url(r'^gymkhana/fmc/$',fmc,name="fmc"),
 	#about
 	url(r'^about/mentor_institute/$',mentor_institute,name="mentor_institute"),
 	url(r'^about/why_iiit/$',why_iiit,name="why_iiit"),
