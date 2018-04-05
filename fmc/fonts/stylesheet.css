@@ -1,0 +1,36 @@
+@font-face {
+	font-family:"playfair_displayblack";
+	font-weight:normal;
+	font-style:normal;
+	src:url("playfairdisplay-black-webfont.woff2") format("woff2");
+}
+@font-face {
+	font-family:"playfair_displaybold";
+	font-weight:normal;
+	font-style:normal;
+	src:url("playfairdisplay-bold-webfont.woff2") format("woff2");
+}
+@font-face {
+	font-family:"playfair_displayregular";
+	font-weight:normal;
+	font-style:normal;
+	src:url("playfairdisplay-regular-webfont.woff2") format("woff2");
+}
+@font-face {
+	font-family:"robotoblack";
+	font-weight:normal;
+	font-style:normal;
+	src:url("roboto-black.woff2") format("woff2");
+}
+@font-face {
+	font-family:"robotolight";
+	font-weight:normal;
+	font-style:normal;
+	src:url("roboto-light.woff2") format("woff2");
+}
+@font-face {
+	font-family:"hammersmith_oneregular";
+	font-weight:normal;
+	font-style:normal;
+	src:url("hammersmithone-webfont.woff2") format("woff2");
+}
