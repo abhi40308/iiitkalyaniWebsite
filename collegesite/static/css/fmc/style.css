@@ -39,7 +39,7 @@ body {
     position: absolute;
     left: 50%;
     top: 50%;
-    background-image: url(../images/loading.gif);
+    background-image: url(../../images/fmc/loading.gif);
     background-repeat: no-repeat;
     background-position: center;
     -moz-background-size: cover;
@@ -167,7 +167,7 @@ h2 {
 }
 h3 {
     font-size:1.375rem;
-    line-height: 2.5rem;  
+    line-height: 2.5rem;
     text-transform: uppercase;
     font-family: 'playfair_displaybold';
 }
@@ -310,7 +310,7 @@ Separator
     height: 10px;
     width: 127px;
     margin: 20px auto;
-    background: url(../images/whiseparator.png) no-repeat;
+    background: url(../../images/fmc/whiseparator.png) no-repeat;
 }
 .separator2 {
     height: 2px;
@@ -500,7 +500,7 @@ input::-ms-input-placeholder {
 
 
 /*.img-bg{
-  background: url(../images/home-msg.jpg) no-repeat center top fixed;
+  background: url(../../images/fmc/home-msg.jpg) no-repeat center top fixed;
   background-size
   -moz-background-size: cover;
   -webkit-background-size: cover;
@@ -514,9 +514,9 @@ input::-ms-input-placeholder {
     padding-top: 0px;
     padding-bottom: 0px;
     position: fixed;
-    top: 0; 
-    left: 0; 
-    right: 0; 
+    top: 0;
+    left: 0;
+    right: 0;
     z-index: 300;
     box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
     -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
@@ -534,8 +534,8 @@ input::-ms-input-placeholder {
     background-color: transparent;
 }
 .main_menu_bg .navbar-default {
-    background-color: transparent; 
-    border-color: transparent; 
+    background-color: transparent;
+    border-color: transparent;
     transition: all .6s;
     margin: 15px auto;
 }
@@ -590,7 +590,7 @@ input::-ms-input-placeholder {
 
 /*home section*/
 .home{
-    background: url(../images/homebg.jpg) no-repeat 100% 100%;
+    background: url(../../images/fmc/homebg.jpg) no-repeat 100% 100%;
     background-size: cover;
 }
 
@@ -641,7 +641,7 @@ input::-ms-input-placeholder {
 .about .main_about_area{}
 .about .main_about_content{}
 .about .main_about_content .single_about{
-    position: relative;  
+    position: relative;
     transition: all 0.6s;
     margin-bottom: 20px;
 }
@@ -654,7 +654,7 @@ input::-ms-input-placeholder {
 /*video section css*/
 
 .video{
-    background: url(../images/videobg.jpg) no-repeat top center;
+    background: url(../../images/fmc/videobg.jpg) no-repeat top center;
     background-size:cover;
 }
 .video .main_video{
@@ -706,7 +706,7 @@ input::-ms-input-placeholder {
 
 /* Team section css */
 .team{
-    background: url(../images/teambg.jpg) no-repeat center center;
+    background: url(../../images/fmc/teambg.jpg) no-repeat center center;
     overflow:hidden;
     background-size: cover;
     color:#fff;
@@ -853,7 +853,7 @@ input::-ms-input-placeholder {
 
 /* Carousel */
 .testimonial{
-    background: url(../images/teambg.jpg) no-repeat center center;
+    background: url(../../images/fmc/teambg.jpg) no-repeat center center;
     background-size: cover;
 }
 .main_testimonial {
@@ -964,7 +964,7 @@ input::-ms-input-placeholder {
 /*maps section css*/
 
 .maps{
-    background: url(../images/mapbg.jpg) no-repeat top center;
+    background: url(../../images/fmc/mapbg.jpg) no-repeat top center;
     overflow: hidden;
     background-size: cover;
 }
@@ -984,12 +984,12 @@ input::-ms-input-placeholder {
 /*footer widget*/
 
 .footer_widget{
-    background: url(../images/footerbg.jpg) no-repeat top center;
+    background: url(../../images/fmc/footerbg.jpg) no-repeat top center;
     color:#fff;
     background-size: cover;
 }
 .footer_widget .main_widget{
-    padding: 55px 15px 80px 15px; 
+    padding: 55px 15px 80px 15px;
     overflow: hidden;
 }
 .single_widget{
