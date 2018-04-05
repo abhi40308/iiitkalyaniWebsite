@@ -1,86 +1,83 @@
 {% extends "base.html" %} {% load static %} {% block base_head %}
-  <title>IIITK Admission</title>
-  <link rel="stylesheet"  href="../../static/css/admission.css" media="screen, handheld" />
-<link rel="stylesheet"  href="../../static/css/admission1.css" media="screen, handheld" />
-<link href="https://fonts.googleapis.com/css?family=Archivo+Black" rel="stylesheet">
-{% endblock %} {% block content %}
+<title>IIITK Admission</title>
+<link rel="stylesheet" href="../../static/css/admission.css" media="screen, handheld" />
+<link rel="stylesheet" href="../../static/css/admission1.css" media="screen, handheld" />
+<link href="https://fonts.googleapis.com/css?family=Archivo+Black" rel="stylesheet"> {% endblock %} {% block content %}
 <div class="container-fluid">
-<div class="header" style="font-family: Lucidia sans-serif;">
-Admissions
-</div>
-<div class="mainline" style="font-family: Lucidia sans-serif;">IIIT Kalyani Students come
-   from across India,
-  representing diverse experiences, backgrounds and cultures.
-</div>
-<div class="mainimg">
-<img src="../../static/images/admissionimg/admission.JPG" alt="student img" width="100%" height="510px">
-</div>
-<div class=" content">
-  The academic structure of IIIT Kalyani exhibits the diversity,
-  comprehensiveness, and depth befitting an institution of its age and stature.
-   The programme/course offered at the institute have the flexibility to
-   evolve and change in response to new requirements. They serve the dual purpose
-    of building a solid foundation of knowledge and of enhancing confidence,
-    creativity and innovation in its students. <br> <br> A unique attribute of IIIT Kalyani's
-    academic structure is the autonomy enjoyed by the faculty in designing and
-    structuring their curriculum and courses . All courses, however, need to be
-    approved by the senate. A favourable student-teacher ratio ensures productive,
-    personal contact between the student and the teacher.  <br> <br>Finally, credit-based
-    academic programmes offer flexibility to students to progress at their own pace.
-   This system ensures an academic programme which is dynamic and constantly evolving
-    and which reflects the institute’s commitment to stay in tune with the expanding
-    frontiers of knowledge worldwide.
-
-The institute provides high quality of education, and it ensures that its students
- are also of exceptionally high calibre. Admission to IIIT Kalyani is enabled through
- Joint Entrance Examination (JEE) only for the
-  undergraduate programme.<br> <br>
-  IIIT Kalyani's B.Tech. programme admits 130 students for only one of its discipline, Computer
-  Science and Engineering (CSE).
-Seats are filled up through Joint Seat Allocation Authority (JoSAA) after qualifying
- JEE (Main) examination administered by Central Board of Secondary Education (CBSE).
-</div>
-<div class="row mainblock">
-  <div class="col-md-4 col-sm-4 col-10 ugb">
-    <div class="ugi">
-    <i class="fa fa-graduation-cap" style="font-size:70px;color:grey"></i><br></div>
-    <div class="ugad1">UG Admission</div>
-    <a href="admissionug.html#pgadmission" class="ckbl"></a>
+  <div class="header" style="font-family: Lucidia sans-serif;">
+    Admissions
   </div>
-  <div class="col-md-4 col-sm-4 col-10 pgb">
-  <div class="pgi">  <i class="fa fa-graduation-cap" style="font-size:70px;color:grey"></i></div>
-  <div class="pgad1">  Ph.D. Admission</div>
-  <a href="admissionpg.html#pgadmission" class="ckbl"></a>
+  <div class="mainline" style="font-family: Lucidia sans-serif;">IIIT Kalyani Students come from across India, representing diverse experiences, backgrounds and cultures.
   </div>
-</div>
-
-
-<div class=" text-center adin ">
-  <div class="adin1 wow fadeInDown" style="font-family: Lucidia sans-serif;">
-    Admission Incharge<br>
+  <div class="mainimg">
+    <img src="../../static/images/admissionimg/admission.JPG" alt="student img" width="100%" height="510px">
   </div>
-  <div class="adin2 text-center wow zoomIn" style="font-family: Lucidia sans-serif;">
-For Admission related queries, contact Admission Incharge of IIIT Kalyani.
+  <div class=" content">
+    The academic structure of IIIT Kalyani exhibits the diversity, comprehensiveness, and depth befitting an institution of its
+    age and stature. The programme/course offered at the institute have the flexibility to evolve and change in response
+    to new requirements. They serve the dual purpose of building a solid foundation of knowledge and of enhancing confidence,
+    creativity and innovation in its students.
+    <br>
+    <br> A unique attribute of IIIT Kalyani's academic structure is the autonomy enjoyed by the faculty in designing and structuring
+    their curriculum and courses . All courses, however, need to be approved by the senate. A favourable student-teacher
+    ratio ensures productive, personal contact between the student and the teacher.
+    <br>
+    <br>Finally, credit-based academic programmes offer flexibility to students to progress at their own pace. This system ensures
+    an academic programme which is dynamic and constantly evolving and which reflects the institute’s commitment to stay
+    in tune with the expanding frontiers of knowledge worldwide. The institute provides high quality of education, and it
+    ensures that its students are also of exceptionally high calibre. Admission to IIIT Kalyani is enabled through Joint
+    Entrance Examination (JEE) only for the undergraduate programme.
+    <br>
+    <br> IIIT Kalyani's B.Tech. programme admits 130 students for only one of its discipline, Computer Science and Engineering
+    (CSE). Seats are filled up through Joint Seat Allocation Authority (JoSAA) after qualifying JEE (Main) examination administered
+    by Central Board of Secondary Education (CBSE).
   </div>
-  <div class="row">
-  <div class="col-md-8 col-sm-6 col-6 imgbox">
-    <img src="../../static/images/admissionimg/UD-150x150.png" class="rounded-circle img-fluid  tocenter wow slideInLeft" />
-  </div>
-  <div class="col-md-4 col-sm-5 col-5 udd wow slideInRight">
-    Dr. UMA DAS<br>
-    Email : umakota AT iiitkalyani.ac.in<br>
-    Contacts:274547282
-  </div>
+  <div class="row mainblock">
+    <div class="col-md-4 col-sm-4 col-10 ugb">
+      <div class="ugi">
+        <i class="fa fa-graduation-cap" style="font-size:70px;color:grey"></i>
+        <br>
+      </div>
+      <div class="ugad1">UG Admission</div>
+      <a href="{{admissionug}}" class="ckbl"></a>
+    </div>
+    <div class="col-md-4 col-sm-4 col-10 pgb">
+      <div class="pgi">
+        <i class="fa fa-graduation-cap" style="font-size:70px;color:grey"></i>
+      </div>
+      <div class="pgad1"> Ph.D. Admission</div>
+      <a href="{{admissionpg}}" class="ckbl"></a>
+    </div>
   </div>
 
-</div>
+
+  <div class=" text-center adin ">
+    <div class="adin1 wow fadeInDown" style="font-family: Lucidia sans-serif;">
+      Admission Incharge
+      <br>
+    </div>
+    <div class="adin2 text-center wow zoomIn" style="font-family: Lucidia sans-serif;">
+      For Admission related queries, contact Admission Incharge of IIIT Kalyani.
+    </div>
+    <div class="row">
+      <div class="col-md-8 col-sm-6 col-6 imgbox">
+        <img src="../../static/images/admissionimg/UD-150x150.png" class="rounded-circle img-fluid  tocenter wow slideInLeft" />
+      </div>
+      <div class="col-md-4 col-sm-5 col-5 udd wow slideInRight">
+        Dr. UMA DAS
+        <br> Email : umakota AT iiitkalyani.ac.in
+        <br> Contacts:274547282
+      </div>
+    </div>
+
+  </div>
 
 </div>
 {% endblock %} {% block base_foot %}
 <script type="text/javascript" src="../../static/js/frontpage/scripts.js"></script>
 
 <script src="../../static/js/wow1.js"></script>
-             <script>
-             new WOW().init();
-             </script>
+<script>
+  new WOW().init();
+</script>
 {% endblock %}
