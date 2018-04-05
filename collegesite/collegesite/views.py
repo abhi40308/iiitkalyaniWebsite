@@ -162,3 +162,5 @@ def tg(request):
 def ud(request):
 		return render(request, "ud.html")
 
+def fmc(request):
+		return render(request, "fmc.html")
