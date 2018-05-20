@@ -1,3 +1,7 @@
 venv
 *.pyc
+<<<<<<< HEAD
 settings.json
+=======
+*.json
+>>>>>>> 88be4e276fa60ba2a00244c0daa882e75f44ddab

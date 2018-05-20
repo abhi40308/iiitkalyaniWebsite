@@ -1495,7 +1495,11 @@ h3 {
   }
   .material-card.mc-active .mc-footer {
     padding-left: 30px;
+    margin-top: 10%;
   }
+  .material-card.mc-active .mc-description {
+ height: 220px;
+}
 /*.material-card .ob h2 {
   position: absolute;
   top: calc(100% +70px) !important;
