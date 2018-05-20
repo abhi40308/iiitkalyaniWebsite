@@ -15,6 +15,7 @@ Including another URLconf
 """
 from django.conf.urls import url, include
 from django.contrib import admin
+from django.contrib.auth import views as auth_views
 
 from .views import *
 
@@ -84,4 +85,12 @@ urlpatterns = [
 	url(r'^faculty/dnd/$',dnd, name="dnd"),
 	#admin
 	url(r'^admin/', admin.site.urls),
+	url(r'^login/$', auth_views.login, {'template_name': '../templates/login.html'}, name='login'),
+  url(r'^logout/$', auth_views.logout, {'next_page': '/'}, name='logout'),
 ]
+
+#admin
+#test@1234
+
+
+#sandip@iiitkalyani.ac.in - faculty001
