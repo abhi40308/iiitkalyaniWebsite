@@ -34,9 +34,10 @@
         <br> Dept : Computer Science and Engineering
         <br> Email : sandipkarmakar AT iiitkalyani.ac.in
         <br>
-      </div>
+      </div> 
     </div>
   </div>
+
   <div class="mainarea row">
 	{% for c in content %}
     <div class="col-md-2 col-sm-3 col-11 ri">
@@ -57,9 +58,11 @@
     <div class="head">
       Suggested Links and Downloads
     </div>
+    <div id='info'>
 	{{c.links|safe}}
 	{%endfor%}
   </div>
+  </div>
+ <a href="/admin/faculty/sk/1/change/"><button class="btn btn-default" style='float:right;margin:20px 90px 20px 0;'>Edit Info</button></a>
 </body>
-
 </html>
