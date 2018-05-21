@@ -2,6 +2,7 @@ from django.contrib.auth import authenticate, login, get_user_model
 from django.http import HttpResponse
 from django.shortcuts import render, redirect
 
+
 #Returns rendered "home_page.html" when base url calls home_page function from urls.py
 def home_page(request):
     return render(request, "index.html")
@@ -53,9 +54,6 @@ def facilties(request):
 
 def faculty1(request):
 		return render(request, "faculty-1.htm")
-
-def faculty(request):
-		return render(request, "faculty.html")
 
 def facultyOld(request):
 		return render(request, "faculty_old_page.html")
@@ -134,33 +132,6 @@ def webteam(request):
 
 def why_iiit(request):
 		return render(request, "why_iiit.html")
-
-def dnd(request):
-		return render(request, "dnd.html")
-
-def im(request):
-		return render(request, "im.html")
-
-def ob(request):
-		return render(request, "ob.html")
-
-def sc(request):
-		return render(request, "sc.html")
-
-def sk(request):
-		return render(request, "sk.html")
-
-def skh(request):
-		return render(request, "skh.html")
-
-def sp(request):
-		return render(request, "sp.html")
-
-def tg(request):
-		return render(request, "tg.html")
-
-def ud(request):
-		return render(request, "ud.html")
 
 def fmc(request):
 		return render(request, "fmc.html")

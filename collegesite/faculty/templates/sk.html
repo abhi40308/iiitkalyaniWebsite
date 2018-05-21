@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Faculty's Page</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ"
+    crossorigin="anonymous">
+
+
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+    crossorigin="anonymous">
+
+
+  <link rel="stylesheet" href="../../static/css/facultymain.css">
+
+</head>
+
+<body>
+  <div class="header row">
+
+    <div class="col-md-3 col-sm-4 col-11">
+      <img src="../../static/images/faculty/skmain.jpg" class="rounded-circle img-fluid" alt="profile image">
+    </div>
+
+    <div class="col-md-8 col-sm-7 col-11">
+      <div class="name">
+        Dr. Sandip Karmakar
+      </div>
+      <div class="details">
+        Ph.D. [IIT Kharagpur]
+        <br> Dept : Computer Science and Engineering
+        <br> Email : sandipkarmakar AT iiitkalyani.ac.in
+        <br>
+      </div>
+    </div>
+  </div>
+  <div class="mainarea row">
+	{% for c in content %}
+    <div class="col-md-2 col-sm-3 col-11 ri">
+      <b>Research Interests:</b>
+      <br>
+      <p></p>
+	  {{c.research_interests}}
+    </div>
+    <div class="col-md-8 col-sm-7 col-11 rp">
+      <b>Recent Publications:</b>
+      <br>
+      <p></p>
+	  {{c.recent_publications|safe}}
+    </div>
+
+  </div>
+  <div class="sdi">
+    <div class="head">
+      Suggested Links and Downloads
+    </div>
+	{{c.links|safe}}
+	{%endfor%}
+  </div>
+</body>
+
+</html>

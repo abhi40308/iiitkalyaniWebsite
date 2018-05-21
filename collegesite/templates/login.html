@@ -16,10 +16,10 @@
         IIIT Kalyani Faculty Login
       </h3>
       <div class="row">
-        <div class="col-lg-6 col-md-6 col-sm-12">
+        <div class="col-lg-6 col-md-6 col-sm-12"  style="margin:auto">
           <div class="card">
             <div class="card-body">
-              <form method="post" novalidate>
+              <form method="post" novalidate  style="margin:auto">
                 {% csrf_token %}
                 {{ form.as_p }}
                 <button type="submit" class="btn btn-primary btn-block">Log in</button>

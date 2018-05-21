@@ -72,21 +72,12 @@ urlpatterns = [
 	url(r'^facilties/library/digitalInitiatives/$',digitalInitiatives,name="digitalInitiatives"),
 	#faculty
 	url(r'^faculty1/$',faculty1,name="faculty1"),
-	url(r'^faculty/$',faculty,name="faculty"),
+	url(r'^faculty/',include('faculty.urls'),name='faculty'),
 	url(r'^facultyOld/$',facultyOld,name="facultyOld"),
-	url(r'^faculty/im/$',im, name="im"),
-	url(r'^faculty/ob/$',ob, name="ob"),
-	url(r'^faculty/sc/$',sc, name="sc"),
-	url(r'^faculty/sk/$',sk, name="sk"),
-	url(r'^faculty/skh/$',skh, name="skh"),
-	url(r'^faculty/sp/$',sp, name="sp"),
-	url(r'^faculty/tg/$',tg, name="tg"),
-	url(r'^faculty/ud/$',ud, name="ud"),
-	url(r'^faculty/dnd/$',dnd, name="dnd"),
 	#admin
 	url(r'^admin/', admin.site.urls),
 	url(r'^login/$', auth_views.login, {'template_name': '../templates/login.html'}, name='login'),
-  url(r'^logout/$', auth_views.logout, {'next_page': '/'}, name='logout'),
+	url(r'^logout/$', auth_views.logout, {'next_page': '/'}, name='logout'),
 ]
 
 #admin
