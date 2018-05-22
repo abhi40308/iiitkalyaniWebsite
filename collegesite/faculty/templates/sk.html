@@ -63,6 +63,8 @@
 	{%endfor%}
   </div>
   </div>
+  {% if user.is_authenticated and user.username == 'sandip@iiitkalyani.ac.in'%}
  <a href="/admin/faculty/sk/1/change/"><button class="btn btn-default" style='float:right;margin:20px 90px 20px 0;'>Edit Info</button></a>
+  {% endif %}
 </body>
 </html>
