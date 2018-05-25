@@ -1302,8 +1302,67 @@ margin-bottom: 9%;
  }
 
 
+.feed{
+  background-color: white;
+  font-size: 20px;
+  font-weight: normal !important;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 2%;
+}
+table,th, td,tr {
+    border: 1px solid white;
+}
+.bgb{
+  background-color: #1934e5;
+  color: white;
+}
+.feed tbody tr:hover {background-color:#cecece;}
 
+@media only screen and (max-width: 1199px) and (min-width: 991px)  {
+.feed{
+  font-size: 18px;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 2%;
+}
+}
 
+@media only screen and (max-width: 991px) and (min-width: 766px)  {
+.feed{
+  font-size: 16px;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 2%;
+}
+}
+
+@media only screen and (max-width: 766px) and (min-width: 575px)  {
+.feed{
+  font-size: 16px;
+  margin-left: 7%;
+  margin-right: 7%;
+  margin-top: 2%;
+}
+}
+
+@media only screen and (max-width: 575px) and (min-width: 376px)  {
+.feed{
+  font-size: 12px;
+  margin-left: 3%;
+  margin-right: 3%;
+  margin-top: 2%;
+}
+}
+
+@media only screen and (max-width: 376px){
+.feed{
+  font-size: 15px;
+  margin-left: 1%;
+  margin-right: 1%;
+  margin-top: 2%;
+}
+}
 
 
 

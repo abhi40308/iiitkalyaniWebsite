@@ -111,7 +111,7 @@ body,html {
 }*/
 
 .header-top a img{
-  image-rendering: -webkit-optimize-contrast;
+  image-rendering: auto;
   width: 90px;
   height: 120px;
 }
@@ -720,4 +720,8 @@ footer .list-end li a{
 
 footer .list-end li:not(:first-child):before {
     content: " | ";
+}
+
+.back a:hover {
+    color: white;
 }
