@@ -23,7 +23,24 @@
 	<!--<link rel="icon" type="image/gif" href="">-->
 	<title>&nbsp;Library - Indian Institute Of Information Technology Kalyani</title>
 	<link rel="shortcut icon" type="image/x-icon" href="../images/front-page/logo-blue-small.png">
-	<link rel="shortcut icon" type="image/x-icon" href="../images/facilities/IIIT_Kalyani_new_logo.ico">  
+	<link rel="shortcut icon" type="image/x-icon" href="../images/facilities/IIIT_Kalyani_new_logo.ico"> 
+  <script type="text/javascript">
+    $(document).ready(function() {
+        $('html, body').hide();
+
+        if (window.location.hash) {
+            setTimeout(function() {
+                $('html, body').scrollTop(0).show();
+                $('html, body').animate({
+                    scrollTop: $(window.location.hash).offset().top
+                    }, 1000)
+            }, 0);
+        }
+        else {
+            $('html, body').show();
+        }
+    });
+</script> 
 	
 </head>
 <body>
@@ -336,11 +353,11 @@
           <div class="left-navigation">
                     <ul class="list">
                         <h5   style="font-family: 'Source Serif Pro', serif;"><a href="Library.html" style="color: #3F3F3F;text-decoration: none;"><strong>LIBRARY</strong></a></h5>
-                        <li id="title"><a href="Lib-About.html" style="color: #3F3F3F; text-decoration: none;">About</a></li>
-                        <li><a href="Lib-Services.html" style="color: #3F3F3F; text-decoration: none;">Services</a></li>
-                        <li ><a href="Lib-Guidelines.html" style="color: #3F3F3F; text-decoration: none;">Guidelines</a></li>
-                        <li><a href="digital-Initiatives.html" style="color: #3F3F3F; text-decoration: none;">Digital Initiatives</a></li>
-                        <li><a href="Lib-contact.html" style="color: #3F3F3F; text-decoration: none;">Contact Us</a></li>
+                        <li id="title"><a href="Lib-About.html#spacing" style="color: #3F3F3F; text-decoration: none;">About</a></li>
+                        <li><a href="Lib-Services.html#spacing" style="color: #3F3F3F; text-decoration: none;">Services</a></li>
+                        <li ><a href="Lib-Guidelines.html#spacing" style="color: #3F3F3F; text-decoration: none;">Guidelines</a></li>
+                        <li><a href="digital-Initiatives.html#spacing" style="color: #3F3F3F; text-decoration: none;">Digital Initiatives</a></li>
+                        <li><a href="Lib-contact.html#spacing" style="color: #3F3F3F; text-decoration: none;">Contact Us</a></li>
                     </ul>
                 </div>
         </div>
